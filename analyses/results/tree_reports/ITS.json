@@ -1,0 +1,50 @@
+{
+  "analysis": "ITS",
+  "tips": 46,
+  "local_tips": 5,
+  "rooting": "midpoint",
+  "model": "F81+I",
+  "interpretation": "Nearest-reference distances describe placement, not definitive species assignment.",
+  "specimens": [
+    {
+      "sample": "YPM-IZ-116694",
+      "local_tip": "local__YPM-IZ-116694",
+      "nearest_reference_distance": 0.0,
+      "nearest_reference_tips": "ref__YPM-IZ-106935;ref__YPM-IZ-110433;ref__YPM-IZ-110880;ref__YPM-IZ-106954;ref__YPM-IZ-110694;ref__YPM-IZ-110738;ref__YPM-IZ-111013;ref__YPM-IZ-110254;ref__YPM-IZ-110847",
+      "nearest_reference_species": "Physalia physalis",
+      "same_specimen_reference_distance": "not_available"
+    },
+    {
+      "sample": "YPM-IZ-116695",
+      "local_tip": "local__YPM-IZ-116695",
+      "nearest_reference_distance": 0.0,
+      "nearest_reference_tips": "ref__YPM-IZ-106935;ref__YPM-IZ-110433;ref__YPM-IZ-110880;ref__YPM-IZ-106954;ref__YPM-IZ-110694;ref__YPM-IZ-110738;ref__YPM-IZ-111013;ref__YPM-IZ-110254;ref__YPM-IZ-110847",
+      "nearest_reference_species": "Physalia physalis",
+      "same_specimen_reference_distance": "not_available"
+    },
+    {
+      "sample": "YPM-IZ-116696",
+      "local_tip": "local__YPM-IZ-116696",
+      "nearest_reference_distance": 0.0,
+      "nearest_reference_tips": "ref__YPM-IZ-106935;ref__YPM-IZ-110433;ref__YPM-IZ-110880;ref__YPM-IZ-106954;ref__YPM-IZ-110694;ref__YPM-IZ-110738;ref__YPM-IZ-111013;ref__YPM-IZ-110254;ref__YPM-IZ-110847",
+      "nearest_reference_species": "Physalia physalis",
+      "same_specimen_reference_distance": "not_available"
+    },
+    {
+      "sample": "YPM-IZ-116693",
+      "local_tip": "local__YPM-IZ-116693",
+      "nearest_reference_distance": 2e-06,
+      "nearest_reference_tips": "ref__YPM-IZ-110843",
+      "nearest_reference_species": "Physalia physalis",
+      "same_specimen_reference_distance": "not_available"
+    },
+    {
+      "sample": "YPM-IZ-116697",
+      "local_tip": "local__YPM-IZ-116697",
+      "nearest_reference_distance": 0.0,
+      "nearest_reference_tips": "ref__YPM-IZ-106936;ref__YPM-IZ-111014;ref__YPM-IZ-110716",
+      "nearest_reference_species": "Physalia physalis",
+      "same_specimen_reference_distance": "not_available"
+    }
+  ]
+}

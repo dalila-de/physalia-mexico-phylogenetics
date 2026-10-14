@@ -1,0 +1,16 @@
+{
+  "sample": "YPM-IZ-116693",
+  "workflow_status": "complete",
+  "input_pairs": 10000000,
+  "retained_pairs": 9993871,
+  "forward_only_reads": 10,
+  "reverse_only_reads": 16,
+  "dropped_pairs": 6103,
+  "human_mapped_records": 0,
+  "human_percent_reads": 0.0,
+  "marker_files": 15,
+  "mitogenome_status": "paths_recovered",
+  "mitogenome_files": 1,
+  "getorganelle_error_lines": 0,
+  "source_work_directory": "/vast/palmer/scratch/dunn/dd2233/physalia-illumina-qc/cohort-2026-10-09"
+}

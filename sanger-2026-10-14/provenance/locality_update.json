@@ -1,0 +1,25 @@
+{
+  "reason": "User-provided collection locality clarification",
+  "changes": {
+    "YPM-IZ-116693\u2013116697": "Gulf of Mexico (Progreso)",
+    "CH887": "Caribbean Sea (Puerto Morelos)"
+  },
+  "changed_artifacts": [
+    "inputs/genetic_annotations.tsv",
+    "results/genetic_groups/16S.annotations.tsv",
+    "results/genetic_groups/16S.focal.pdf",
+    "results/genetic_groups/16S.focal.png",
+    "results/genetic_groups/16S.focal.svg",
+    "results/genetic_groups/16S.pdf",
+    "results/genetic_groups/16S.png",
+    "results/genetic_groups/16S.svg",
+    "results/genetic_groups/CO1.annotations.tsv",
+    "results/genetic_groups/CO1.focal.pdf",
+    "results/genetic_groups/CO1.focal.png",
+    "results/genetic_groups/CO1.focal.svg",
+    "results/genetic_groups/CO1.pdf",
+    "results/genetic_groups/CO1.png",
+    "results/genetic_groups/CO1.svg"
+  ],
+  "validation": "Only locality annotations and rendered figures changed; all other retained artifact hashes match."
+}

@@ -1,0 +1,58 @@
+[
+  {
+    "sample": "CH887",
+    "gene": "CO1",
+    "file": "CH887-D01_M13F_B03.ab1",
+    "direction": "forward",
+    "raw_length": 704,
+    "raw_median_Q": 56.0,
+    "trim_start_1based": 51,
+    "trim_end_1based_inclusive": 672,
+    "retained_length": 622,
+    "retained_below_Q20": 3,
+    "primer_clip": {
+      "name": "HCO2198_reverse_complement",
+      "raw_start_1based": 673,
+      "note": "Exact terminal motif; experimental primer identity unconfirmed"
+    }
+  },
+  {
+    "sample": "CH887",
+    "gene": "CO1",
+    "file": "CH887-D01_M13R_B03.ab1",
+    "direction": "reverse",
+    "raw_length": 650,
+    "raw_median_Q": 11.0,
+    "trim_start_1based": 639,
+    "trim_end_1based_inclusive": 640,
+    "retained_length": 2,
+    "retained_below_Q20": 0,
+    "primer_clip": null
+  },
+  {
+    "sample": "CH887",
+    "gene": "16S",
+    "file": "CH887A-D01_M13F_D05.ab1",
+    "direction": "forward",
+    "raw_length": 638,
+    "raw_median_Q": 47.0,
+    "trim_start_1based": 39,
+    "trim_end_1based_inclusive": 630,
+    "retained_length": 592,
+    "retained_below_Q20": 11,
+    "primer_clip": null
+  },
+  {
+    "sample": "CH887",
+    "gene": "16S",
+    "file": "CH887A-D01_M13R_D05.ab1",
+    "direction": "reverse",
+    "raw_length": 1228,
+    "raw_median_Q": 28.0,
+    "trim_start_1based": 27,
+    "trim_end_1based_inclusive": 635,
+    "retained_length": 609,
+    "retained_below_Q20": 6,
+    "primer_clip": null
+  }
+]

@@ -1,0 +1,6 @@
+sample	local_tip	nearest_reference_distance	nearest_reference_tips	nearest_reference_species	same_specimen_reference_distance
+YPM-IZ-116696	local__YPM-IZ-116696	0.0006642267000000001	ref__YPM-IZ-110972	Physalia physalis	not_available
+YPM-IZ-116694	local__YPM-IZ-116694	0.0019535017	ref__YPM-IZ-110667;ref__YPM-IZ-110694	Physalia physalis	not_available
+YPM-IZ-116693	local__YPM-IZ-116693	0.0	ref__YPM-IZ-106941;ref__YPM-IZ-110846;ref__YPM-IZ-111014	Physalia physalis	not_available
+YPM-IZ-116697	local__YPM-IZ-116697	0.0	ref__YPM-IZ-106941;ref__YPM-IZ-110846;ref__YPM-IZ-111014	Physalia physalis	not_available
+YPM-IZ-116695	local__YPM-IZ-116695	0.0019345958	ref__YPM-IZ-106941;ref__YPM-IZ-110846;ref__YPM-IZ-111014	Physalia physalis	not_available

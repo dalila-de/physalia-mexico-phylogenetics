@@ -1,0 +1,23 @@
+{
+  "scope": [
+    "YPM-IZ-116693",
+    "YPM-IZ-116694",
+    "YPM-IZ-116695",
+    "YPM-IZ-116696",
+    "YPM-IZ-116697"
+  ],
+  "operation": "Select completed Mexican QC outputs; no scientific rerun",
+  "historical_snapshot": "/vast/palmer/pi/dunn/dd2233/physalia-analysis-archive/before-mexico-only-qc-2026-10-14.tar",
+  "snapshot_sha256": "86fe9b4a759950428456450279dd6e0a3f5e51b4ff2bdd6d9f0b5bc3afaf68a3",
+  "original_working_project": "/vast/palmer/pi/dunn/dd2233/physalia-illumina-qc",
+  "historical_execution_records": "provenance/illumina-qc (unchanged, original 40-specimen run)",
+  "phylogenetic_cohort": "analyses/inputs/cohort.tsv",
+  "removed_artifacts": 732,
+  "updated_artifacts": [
+    "analyses/inputs/mitogenome_audit_queries.fasta",
+    "illumina-qc-run/results/cohort-2026-10-09/sample_summary.tsv"
+  ],
+  "unchanged_retained_artifacts": 201,
+  "tree_sequences_regenerated_identically": true,
+  "candidate_selections_verified": true
+}

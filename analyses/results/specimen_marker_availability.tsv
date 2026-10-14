@@ -1,0 +1,201 @@
+sample	cohort	marker	local_records	repo_records	ncbi_accessions	ncbi_record_type	availability	repository_listed_mito_accession
+FM-16644	published	16S	0	1	PZ224317.1	mitogenome	NCBI_and_repo	
+FM-16644	published	18S	0	1	PZ802573.1	18S	NCBI_and_repo	
+FM-16644	published	CO1	0	1	PZ224317.1	mitogenome	NCBI_and_repo	
+FM-16644	published	ITS	0	1	PZ804143.1	ITS	NCBI_and_repo	
+FM-16644	published	mitogenome	0	1	PZ224317.1	mitogenome	NCBI_and_repo	PZ224317
+YPM-IZ-106935	published	16S	0	1	PZ224350.1	mitogenome	NCBI_and_repo	
+YPM-IZ-106935	published	18S	0	1	PZ802617.1	18S	NCBI_and_repo	
+YPM-IZ-106935	published	CO1	0	1	PZ224350.1	mitogenome	NCBI_and_repo	
+YPM-IZ-106935	published	ITS	0	1	PZ804192.1	ITS	NCBI_and_repo	
+YPM-IZ-106935	published	mitogenome	0	1	PZ224350.1	mitogenome	NCBI_and_repo	PZ224350
+YPM-IZ-106936	published	16S	0	1	PZ224351.1	mitogenome	NCBI_and_repo	
+YPM-IZ-106936	published	18S	0	1	PZ802618.1	18S	NCBI_and_repo	
+YPM-IZ-106936	published	CO1	0	1	PZ224351.1	mitogenome	NCBI_and_repo	
+YPM-IZ-106936	published	ITS	0	1	PZ804193.1	ITS	NCBI_and_repo	
+YPM-IZ-106936	published	mitogenome	0	1	PZ224351.1	mitogenome	NCBI_and_repo	PZ224351
+YPM-IZ-106937	published	16S	0	1	PZ224352.1	mitogenome	NCBI_and_repo	
+YPM-IZ-106937	published	18S	0	1	PZ802619.1	18S	NCBI_and_repo	
+YPM-IZ-106937	published	CO1	0	1	PZ224352.1	mitogenome	NCBI_and_repo	
+YPM-IZ-106937	published	ITS	0	1	PZ804194.1	ITS	NCBI_and_repo	
+YPM-IZ-106937	published	mitogenome	0	1	PZ224352.1	mitogenome	NCBI_and_repo	PZ224352
+YPM-IZ-106941	published	16S	0	1	PZ224353.1	mitogenome	NCBI_and_repo	
+YPM-IZ-106941	published	18S	0	1	PZ802620.1	18S	NCBI_and_repo	
+YPM-IZ-106941	published	CO1	0	1	PZ224353.1	mitogenome	NCBI_and_repo	
+YPM-IZ-106941	published	ITS	0	1	PZ804195.1	ITS	NCBI_and_repo	
+YPM-IZ-106941	published	mitogenome	0	1	PZ224353.1	mitogenome	NCBI_and_repo	PZ224353
+YPM-IZ-106954	published	16S	0	1	PZ224355.1	mitogenome	NCBI_and_repo	
+YPM-IZ-106954	published	18S	0	1	PZ802622.1	18S	NCBI_and_repo	
+YPM-IZ-106954	published	CO1	0	1	PZ224355.1	mitogenome	NCBI_and_repo	
+YPM-IZ-106954	published	ITS	0	1	PZ804197.1	ITS	NCBI_and_repo	
+YPM-IZ-106954	published	mitogenome	0	1	PZ224355.1	mitogenome	NCBI_and_repo	PZ224355
+YPM-IZ-106958	published	16S	0	1	PZ224356.1	mitogenome	NCBI_and_repo	
+YPM-IZ-106958	published	18S	0	1	PZ802623.1	18S	NCBI_and_repo	
+YPM-IZ-106958	published	CO1	0	1	PZ224356.1	mitogenome	NCBI_and_repo	
+YPM-IZ-106958	published	ITS	0	1	PZ804198.1	ITS	NCBI_and_repo	
+YPM-IZ-106958	published	mitogenome	0	1	PZ224356.1	mitogenome	NCBI_and_repo	PZ224356
+YPM-IZ-110251	published	16S	0	1	PZ224357.1	mitogenome	NCBI_and_repo	
+YPM-IZ-110251	published	18S	0	1	PZ802624.1	18S	NCBI_and_repo	
+YPM-IZ-110251	published	CO1	0	1	PZ224357.1	mitogenome	NCBI_and_repo	
+YPM-IZ-110251	published	ITS	0	1	PZ804199.1	ITS	NCBI_and_repo	
+YPM-IZ-110251	published	mitogenome	0	1	PZ224357.1	mitogenome	NCBI_and_repo	PZ224357
+YPM-IZ-110254	published	16S	0	1	PZ224358.1	mitogenome	NCBI_and_repo	
+YPM-IZ-110254	published	18S	0	1	PZ802625.1	18S	NCBI_and_repo	
+YPM-IZ-110254	published	CO1	0	1	PZ224358.1	mitogenome	NCBI_and_repo	
+YPM-IZ-110254	published	ITS	0	1	PZ804200.1	ITS	NCBI_and_repo	
+YPM-IZ-110254	published	mitogenome	0	1	PZ224358.1	mitogenome	NCBI_and_repo	PZ224358
+YPM-IZ-110433	published	16S	0	1	PZ224365.1	mitogenome	NCBI_and_repo	
+YPM-IZ-110433	published	18S	0	1	PZ802632.1	18S	NCBI_and_repo	
+YPM-IZ-110433	published	CO1	0	1	PZ224365.1	mitogenome	NCBI_and_repo	
+YPM-IZ-110433	published	ITS	0	1	PZ804207.1	ITS	NCBI_and_repo	
+YPM-IZ-110433	published	mitogenome	0	1	PZ224365.1	mitogenome	NCBI_and_repo	PZ224365
+YPM-IZ-110434	published	16S	0	1	PZ224366.1	mitogenome	NCBI_and_repo	
+YPM-IZ-110434	published	18S	0	1	PZ802633.1	18S	NCBI_and_repo	
+YPM-IZ-110434	published	CO1	0	1	PZ224366.1	mitogenome	NCBI_and_repo	
+YPM-IZ-110434	published	ITS	0	1	PZ804208.1	ITS	NCBI_and_repo	
+YPM-IZ-110434	published	mitogenome	0	1	PZ224366.1	mitogenome	NCBI_and_repo	PZ224366
+YPM-IZ-110436	published	16S	0	1	PZ224367.1	mitogenome	NCBI_and_repo	
+YPM-IZ-110436	published	18S	0	1	PZ802634.1	18S	NCBI_and_repo	
+YPM-IZ-110436	published	CO1	0	1	PZ224367.1	mitogenome	NCBI_and_repo	
+YPM-IZ-110436	published	ITS	0	1	PZ804209.1	ITS	NCBI_and_repo	
+YPM-IZ-110436	published	mitogenome	0	1	PZ224367.1	mitogenome	NCBI_and_repo	PZ224367
+YPM-IZ-110631	published	16S	0	1	PZ224393.1	mitogenome	NCBI_and_repo	
+YPM-IZ-110631	published	18S	0	1	PZ802660.1	18S	NCBI_and_repo	
+YPM-IZ-110631	published	CO1	0	1	PZ224393.1	mitogenome	NCBI_and_repo	
+YPM-IZ-110631	published	ITS	0	1	PZ804235.1	ITS	NCBI_and_repo	
+YPM-IZ-110631	published	mitogenome	0	1	PZ224393.1	mitogenome	NCBI_and_repo	PZ224393
+YPM-IZ-110633	published	16S	0	1	PZ224394.1	mitogenome	NCBI_and_repo	
+YPM-IZ-110633	published	18S	0	1	PZ802661.1	18S	NCBI_and_repo	
+YPM-IZ-110633	published	CO1	0	1	PZ224394.1	mitogenome	NCBI_and_repo	
+YPM-IZ-110633	published	ITS	0	1	PZ804236.1	ITS	NCBI_and_repo	
+YPM-IZ-110633	published	mitogenome	0	1	PZ224394.1	mitogenome	NCBI_and_repo	PZ224394
+YPM-IZ-110667	published	16S	0	1	PZ224395.1	mitogenome	NCBI_and_repo	
+YPM-IZ-110667	published	18S	0	1	PZ802662.1	18S	NCBI_and_repo	
+YPM-IZ-110667	published	CO1	0	1	PZ224395.1	mitogenome	NCBI_and_repo	
+YPM-IZ-110667	published	ITS	0	1	PZ804237.1	ITS	NCBI_and_repo	
+YPM-IZ-110667	published	mitogenome	0	1	PZ224395.1	mitogenome	NCBI_and_repo	PZ224395
+YPM-IZ-110694	published	16S	0	1	PZ224396.1	mitogenome	NCBI_and_repo	
+YPM-IZ-110694	published	18S	0	1	PZ802663.1	18S	NCBI_and_repo	
+YPM-IZ-110694	published	CO1	0	1	PZ224396.1	mitogenome	NCBI_and_repo	
+YPM-IZ-110694	published	ITS	0	1	PZ804238.1	ITS	NCBI_and_repo	
+YPM-IZ-110694	published	mitogenome	0	1	PZ224396.1	mitogenome	NCBI_and_repo	PZ224396
+YPM-IZ-110716	published	16S	0	1	PZ224397.1	mitogenome	NCBI_and_repo	
+YPM-IZ-110716	published	18S	0	1	PZ802664.1	18S	NCBI_and_repo	
+YPM-IZ-110716	published	CO1	0	1	PZ224397.1	mitogenome	NCBI_and_repo	
+YPM-IZ-110716	published	ITS	0	1	PZ804239.1	ITS	NCBI_and_repo	
+YPM-IZ-110716	published	mitogenome	0	1	PZ224397.1	mitogenome	NCBI_and_repo	PZ224397
+YPM-IZ-110726	published	16S	0	1	PZ224398.1	mitogenome	NCBI_and_repo	
+YPM-IZ-110726	published	18S	0	1	PZ802665.1	18S	NCBI_and_repo	
+YPM-IZ-110726	published	CO1	0	1	PZ224398.1	mitogenome	NCBI_and_repo	
+YPM-IZ-110726	published	ITS	0	1	PZ804240.1	ITS	NCBI_and_repo	
+YPM-IZ-110726	published	mitogenome	0	1	PZ224398.1	mitogenome	NCBI_and_repo	PZ224398
+YPM-IZ-110738	published	16S	0	1	PZ224399.1	mitogenome	NCBI_and_repo	
+YPM-IZ-110738	published	18S	0	1	PZ802666.1	18S	NCBI_and_repo	
+YPM-IZ-110738	published	CO1	0	1	PZ224399.1	mitogenome	NCBI_and_repo	
+YPM-IZ-110738	published	ITS	0	1	PZ804241.1	ITS	NCBI_and_repo	
+YPM-IZ-110738	published	mitogenome	0	1	PZ224399.1	mitogenome	NCBI_and_repo	PZ224399
+YPM-IZ-110842	published	16S	0	1	PZ224407.1	mitogenome	NCBI_and_repo	
+YPM-IZ-110842	published	18S	0	1	PZ802674.1	18S	NCBI_and_repo	
+YPM-IZ-110842	published	CO1	0	1	PZ224407.1	mitogenome	NCBI_and_repo	
+YPM-IZ-110842	published	ITS	0	1	PZ804249.1	ITS	NCBI_and_repo	
+YPM-IZ-110842	published	mitogenome	0	1	PZ224407.1	mitogenome	NCBI_and_repo	PZ224407
+YPM-IZ-110843	published	16S	0	1	PZ224408.1	mitogenome	NCBI_and_repo	
+YPM-IZ-110843	published	18S	0	1	PZ802675.1	18S	NCBI_and_repo	
+YPM-IZ-110843	published	CO1	0	1	PZ224408.1	mitogenome	NCBI_and_repo	
+YPM-IZ-110843	published	ITS	0	1	PZ804250.1	ITS	NCBI_and_repo	
+YPM-IZ-110843	published	mitogenome	0	1	PZ224408.1	mitogenome	NCBI_and_repo	PZ224408
+YPM-IZ-110844	published	16S	0	1	PZ224409.1	mitogenome	NCBI_and_repo	
+YPM-IZ-110844	published	18S	0	1	PZ802676.1	18S	NCBI_and_repo	
+YPM-IZ-110844	published	CO1	0	1	PZ224409.1	mitogenome	NCBI_and_repo	
+YPM-IZ-110844	published	ITS	0	1	PZ804251.1	ITS	NCBI_and_repo	
+YPM-IZ-110844	published	mitogenome	0	1	PZ224409.1	mitogenome	NCBI_and_repo	PZ224409
+YPM-IZ-110845	published	16S	0	1	PZ224410.1	mitogenome	NCBI_and_repo	
+YPM-IZ-110845	published	18S	0	1	PZ802677.1	18S	NCBI_and_repo	
+YPM-IZ-110845	published	CO1	0	1	PZ224410.1	mitogenome	NCBI_and_repo	
+YPM-IZ-110845	published	ITS	0	1	PZ804252.1	ITS	NCBI_and_repo	
+YPM-IZ-110845	published	mitogenome	0	1	PZ224410.1	mitogenome	NCBI_and_repo	PZ224410
+YPM-IZ-110846	published	16S	0	1	PZ224411.1	mitogenome	NCBI_and_repo	
+YPM-IZ-110846	published	18S	0	1	PZ802678.1	18S	NCBI_and_repo	
+YPM-IZ-110846	published	CO1	0	1	PZ224411.1	mitogenome	NCBI_and_repo	
+YPM-IZ-110846	published	ITS	0	1	PZ804253.1	ITS	NCBI_and_repo	
+YPM-IZ-110846	published	mitogenome	0	1	PZ224411.1	mitogenome	NCBI_and_repo	PZ224411
+YPM-IZ-110847	published	16S	0	1	PZ224412.1	mitogenome	NCBI_and_repo	
+YPM-IZ-110847	published	18S	0	1	PZ802679.1	18S	NCBI_and_repo	
+YPM-IZ-110847	published	CO1	0	1	PZ224412.1	mitogenome	NCBI_and_repo	
+YPM-IZ-110847	published	ITS	0	1	PZ804254.1	ITS	NCBI_and_repo	
+YPM-IZ-110847	published	mitogenome	0	1	PZ224412.1	mitogenome	NCBI_and_repo	PZ224412
+YPM-IZ-110876	published	16S	0	1	PZ224413.1	mitogenome	NCBI_and_repo	
+YPM-IZ-110876	published	18S	0	1	PZ802680.1	18S	NCBI_and_repo	
+YPM-IZ-110876	published	CO1	0	1	PZ224413.1	mitogenome	NCBI_and_repo	
+YPM-IZ-110876	published	ITS	0	1	PZ804255.1	ITS	NCBI_and_repo	
+YPM-IZ-110876	published	mitogenome	0	1	PZ224413.1	mitogenome	NCBI_and_repo	PZ224413
+YPM-IZ-110880	published	16S	0	1	PZ224416.1	mitogenome	NCBI_and_repo	
+YPM-IZ-110880	published	18S	0	1	PZ802683.1	18S	NCBI_and_repo	
+YPM-IZ-110880	published	CO1	0	1	PZ224416.1	mitogenome	NCBI_and_repo	
+YPM-IZ-110880	published	ITS	0	1	PZ804258.1	ITS	NCBI_and_repo	
+YPM-IZ-110880	published	mitogenome	0	1	PZ224416.1	mitogenome	NCBI_and_repo	PZ224416
+YPM-IZ-110972	published	16S	0	1			repo_only	
+YPM-IZ-110972	published	18S	0	1	PZ802697.1	18S	NCBI_and_repo	
+YPM-IZ-110972	published	CO1	0	1			repo_only	
+YPM-IZ-110972	published	ITS	0	1	PZ804272.1	ITS	NCBI_and_repo	
+YPM-IZ-110972	published	mitogenome	0	2			repo_only	
+YPM-IZ-111012	published	16S	0	1	PZ224435.1	mitogenome	NCBI_and_repo	
+YPM-IZ-111012	published	18S	0	1	PZ802703.1	18S	NCBI_and_repo	
+YPM-IZ-111012	published	CO1	0	1	PZ224435.1	mitogenome	NCBI_and_repo	
+YPM-IZ-111012	published	ITS	0	1	PZ804278.1	ITS	NCBI_and_repo	
+YPM-IZ-111012	published	mitogenome	0	1	PZ224435.1	mitogenome	NCBI_and_repo	PZ224435
+YPM-IZ-111013	published	16S	0	1	PZ224436.1	mitogenome	NCBI_and_repo	
+YPM-IZ-111013	published	18S	0	1	PZ802704.1	18S	NCBI_and_repo	
+YPM-IZ-111013	published	CO1	0	1	PZ224436.1	mitogenome	NCBI_and_repo	
+YPM-IZ-111013	published	ITS	0	1	PZ804279.1	ITS	NCBI_and_repo	
+YPM-IZ-111013	published	mitogenome	0	1	PZ224436.1	mitogenome	NCBI_and_repo	PZ224436
+YPM-IZ-111014	published	16S	0	1	PZ224437.1	mitogenome	NCBI_and_repo	
+YPM-IZ-111014	published	18S	0	1	PZ802705.1	18S	NCBI_and_repo	
+YPM-IZ-111014	published	CO1	0	1	PZ224437.1	mitogenome	NCBI_and_repo	
+YPM-IZ-111014	published	ITS	0	1	PZ804280.1	ITS	NCBI_and_repo	
+YPM-IZ-111014	published	mitogenome	0	1	PZ224437.1	mitogenome	NCBI_and_repo	PZ224437
+YPM-IZ-111016	published	16S	0	1	PZ224438.1	mitogenome	NCBI_and_repo	
+YPM-IZ-111016	published	18S	0	1	PZ802706.1	18S	NCBI_and_repo	
+YPM-IZ-111016	published	CO1	0	1	PZ224438.1	mitogenome	NCBI_and_repo	
+YPM-IZ-111016	published	ITS	0	1	PZ804281.1	ITS	NCBI_and_repo	
+YPM-IZ-111016	published	mitogenome	0	1	PZ224438.1	mitogenome	NCBI_and_repo	PZ224438
+YPM-IZ-111017	published	16S	0	1	PZ224439.1	mitogenome	NCBI_and_repo	
+YPM-IZ-111017	published	18S	0	1	PZ802707.1	18S	NCBI_and_repo	
+YPM-IZ-111017	published	CO1	0	1	PZ224439.1	mitogenome	NCBI_and_repo	
+YPM-IZ-111017	published	ITS	0	1	PZ804282.1	ITS	NCBI_and_repo	
+YPM-IZ-111017	published	mitogenome	0	1	PZ224439.1	mitogenome	NCBI_and_repo	PZ224439
+YPM-IZ-111018	published	16S	0	1	PZ224440.1	mitogenome	NCBI_and_repo	
+YPM-IZ-111018	published	18S	0	1	PZ802708.1	18S	NCBI_and_repo	
+YPM-IZ-111018	published	CO1	0	1	PZ224440.1	mitogenome	NCBI_and_repo	
+YPM-IZ-111018	published	ITS	0	1	PZ804283.1	ITS	NCBI_and_repo	
+YPM-IZ-111018	published	mitogenome	0	1	PZ224440.1	mitogenome	NCBI_and_repo	PZ224440
+YPM-IZ-106943	published	16S	0	1	PZ224354.1	mitogenome	NCBI_and_repo	
+YPM-IZ-106943	published	18S	0	1	PZ802621.1	18S	NCBI_and_repo	
+YPM-IZ-106943	published	CO1	0	1	PZ224354.1	mitogenome	NCBI_and_repo	
+YPM-IZ-106943	published	ITS	0	1	PZ804196.1	ITS	NCBI_and_repo	
+YPM-IZ-106943	published	mitogenome	0	1	PZ224354.1	mitogenome	NCBI_and_repo	PZ224354
+YPM-IZ-116693	mexico_2026	16S	1	0			not_found_in_search	
+YPM-IZ-116693	mexico_2026	18S	1	0			not_found_in_search	
+YPM-IZ-116693	mexico_2026	CO1	1	0			not_found_in_search	
+YPM-IZ-116693	mexico_2026	ITS	1	0			not_found_in_search	
+YPM-IZ-116693	mexico_2026	mitogenome	1	0			not_found_in_search	
+YPM-IZ-116694	mexico_2026	16S	1	0			not_found_in_search	
+YPM-IZ-116694	mexico_2026	18S	1	0			not_found_in_search	
+YPM-IZ-116694	mexico_2026	CO1	1	0			not_found_in_search	
+YPM-IZ-116694	mexico_2026	ITS	1	0			not_found_in_search	
+YPM-IZ-116694	mexico_2026	mitogenome	1	0			not_found_in_search	
+YPM-IZ-116695	mexico_2026	16S	1	0			not_found_in_search	
+YPM-IZ-116695	mexico_2026	18S	1	0			not_found_in_search	
+YPM-IZ-116695	mexico_2026	CO1	1	0			not_found_in_search	
+YPM-IZ-116695	mexico_2026	ITS	1	0			not_found_in_search	
+YPM-IZ-116695	mexico_2026	mitogenome	1	0			not_found_in_search	
+YPM-IZ-116696	mexico_2026	16S	1	0			not_found_in_search	
+YPM-IZ-116696	mexico_2026	18S	1	0			not_found_in_search	
+YPM-IZ-116696	mexico_2026	CO1	1	0			not_found_in_search	
+YPM-IZ-116696	mexico_2026	ITS	1	0			not_found_in_search	
+YPM-IZ-116696	mexico_2026	mitogenome	1	0			not_found_in_search	
+YPM-IZ-116697	mexico_2026	16S	1	0			not_found_in_search	
+YPM-IZ-116697	mexico_2026	18S	1	0			not_found_in_search	
+YPM-IZ-116697	mexico_2026	CO1	1	0			not_found_in_search	
+YPM-IZ-116697	mexico_2026	ITS	1	0			not_found_in_search	
+YPM-IZ-116697	mexico_2026	mitogenome	1	0			not_found_in_search	

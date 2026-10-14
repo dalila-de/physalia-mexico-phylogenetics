@@ -1,0 +1,8 @@
+{
+  "sample": "CH887",
+  "gene": "16S",
+  "length": 553,
+  "ambiguous_bases": 0,
+  "basis": "bidirectional_overlap_only",
+  "translation_table4": []
+}

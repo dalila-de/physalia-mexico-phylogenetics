@@ -1,0 +1,35 @@
+Python 3.12.12
+9.14.5
+GetOrganelle v1.7.7.1
+Kraken version 2.1.3
+Copyright 2013-2023, Derrick Wood (dwood@cs.jhu.edu)
+samtools 1.16.1
+Using htslib 1.16
+Copyright (C) 2022 Genome Research Ltd.
+
+Samtools compilation details:
+    Features:       build=configure curses=yes 
+    CC:             gcc
+    CPPFLAGS:       -I/vast/palmer/apps/avx2/software/cURL/7.72.0-GCCcore-10.2.0/include -I/vast/palmer/apps/avx2/software/XZ/5.2.5-GCCcore-10.2.0/include -I/vast/palmer/apps/avx2/software/bzip2/1.0.8-GCCcore-10.2.0/include -I/vast/palmer/apps/avx2/software/zlib/1.2.11-GCCcore-10.2.0/include -I/vast/palmer/apps/avx2/software/ncurses/6.2-GCCcore-10.2.0/include -I/vast/palmer/apps/avx2/software/binutils/2.35-GCCcore-10.2.0/include
+    CFLAGS:         -O2 -ftree-vectorize -march=broadwell -fno-math-errno -fPIC
+    LDFLAGS:        -L/vast/palmer/apps/avx2/software/cURL/7.72.0-GCCcore-10.2.0/lib64 -L/vast/palmer/apps/avx2/software/cURL/7.72.0-GCCcore-10.2.0/lib -L/vast/palmer/apps/avx2/software/XZ/5.2.5-GCCcore-10.2.0/lib64 -L/vast/palmer/apps/avx2/software/XZ/5.2.5-GCCcore-10.2.0/lib -L/vast/palmer/apps/avx2/software/bzip2/1.0.8-GCCcore-10.2.0/lib64 -L/vast/palmer/apps/avx2/software/bzip2/1.0.8-GCCcore-10.2.0/lib -L/vast/palmer/apps/avx2/software/zlib/1.2.11-GCCcore-10.2.0/lib64 -L/vast/palmer/apps/avx2/software/zlib/1.2.11-GCCcore-10.2.0/lib -L/vast/palmer/apps/avx2/software/ncurses/6.2-GCCcore-10.2.0/lib64 -L/vast/palmer/apps/avx2/software/ncurses/6.2-GCCcore-10.2.0/lib -L/vast/palmer/apps/avx2/software/binutils/2.35-GCCcore-10.2.0/lib64 -L/vast/palmer/apps/avx2/software/binutils/2.35-GCCcore-10.2.0/lib -L/vast/palmer/apps/avx2/software/GCCcore/10.2.0/lib64 -L/vast/palmer/apps/avx2/software/GCCcore/10.2.0/lib
+    HTSDIR:         htslib-1.16
+    LIBS:           -lm -lpthread
+    CURSES_LIB:     -lncursesw
+
+HTSlib compilation details:
+    Features:       build=configure libcurl=yes S3=yes GCS=yes libdeflate=no lzma=yes bzip2=yes plugins=no htscodecs=1.3.0
+    CC:             gcc
+    CPPFLAGS:       -I/vast/palmer/apps/avx2/software/cURL/7.72.0-GCCcore-10.2.0/include -I/vast/palmer/apps/avx2/software/XZ/5.2.5-GCCcore-10.2.0/include -I/vast/palmer/apps/avx2/software/bzip2/1.0.8-GCCcore-10.2.0/include -I/vast/palmer/apps/avx2/software/zlib/1.2.11-GCCcore-10.2.0/include -I/vast/palmer/apps/avx2/software/ncurses/6.2-GCCcore-10.2.0/include -I/vast/palmer/apps/avx2/software/binutils/2.35-GCCcore-10.2.0/include
+    CFLAGS:         -O2 -ftree-vectorize -march=broadwell -fno-math-errno -fPIC
+    LDFLAGS:        -L/vast/palmer/apps/avx2/software/cURL/7.72.0-GCCcore-10.2.0/lib64 -L/vast/palmer/apps/avx2/software/cURL/7.72.0-GCCcore-10.2.0/lib -L/vast/palmer/apps/avx2/software/XZ/5.2.5-GCCcore-10.2.0/lib64 -L/vast/palmer/apps/avx2/software/XZ/5.2.5-GCCcore-10.2.0/lib -L/vast/palmer/apps/avx2/software/bzip2/1.0.8-GCCcore-10.2.0/lib64 -L/vast/palmer/apps/avx2/software/bzip2/1.0.8-GCCcore-10.2.0/lib -L/vast/palmer/apps/avx2/software/zlib/1.2.11-GCCcore-10.2.0/lib64 -L/vast/palmer/apps/avx2/software/zlib/1.2.11-GCCcore-10.2.0/lib -L/vast/palmer/apps/avx2/software/ncurses/6.2-GCCcore-10.2.0/lib64 -L/vast/palmer/apps/avx2/software/ncurses/6.2-GCCcore-10.2.0/lib -L/vast/palmer/apps/avx2/software/binutils/2.35-GCCcore-10.2.0/lib64 -L/vast/palmer/apps/avx2/software/binutils/2.35-GCCcore-10.2.0/lib -L/vast/palmer/apps/avx2/software/GCCcore/10.2.0/lib64 -L/vast/palmer/apps/avx2/software/GCCcore/10.2.0/lib -fvisibility=hidden 
+
+HTSlib URL scheme handlers present:
+    built-in:	 preload, data, file
+    S3 Multipart Upload:	 s3w, s3w+https, s3w+http
+    Amazon S3:	 s3+https, s3+http, s3
+    Google Cloud Storage:	 gs+http, gs+https, gs
+    libcurl:	 imaps, pop3, http, smb, gopher, ftps, imap, smtp, smtps, rtsp, ftp, telnet, smbs, https, tftp, pop3s, dict
+    crypt4gh-needed:	 crypt4gh
+    mem:	 mem
+FastQC v0.12.1

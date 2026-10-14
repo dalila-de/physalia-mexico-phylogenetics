@@ -1,0 +1,25 @@
+{
+  "job_id": "13348978",
+  "status": "completed",
+  "exit_code": 0,
+  "previous_attempt": {
+    "job_id": "13348920",
+    "status": "failed",
+    "reason": "matplotlib absent in orchestration environment; rerun with existing plotting Python"
+  },
+  "sample": "CH887",
+  "location": "Caribbean Sea",
+  "specimen_identity": "User confirmed both amplicons belong to one specimen; voucher ID not provided",
+  "coi": {
+    "length": 622,
+    "ambiguous_bases": 3,
+    "evidence": "forward only; reverse failed QC"
+  },
+  "16S": {
+    "length": 553,
+    "ambiguous_bases": 0,
+    "evidence": "bidirectional overlap; five low-Q insertion calls excluded"
+  },
+  "validation": "15 tests passed; all eight raw file hashes verified; original reference sequences unchanged; 57 COI and 60 16S tips verified against alignments and both ML/consensus trees; original 935-artifact validation passed; figure and trace previews inspected",
+  "source_snapshot": "Source in this repository; submitted script copies and source.patch retained locally under provenance/slurm-13348978"
+}

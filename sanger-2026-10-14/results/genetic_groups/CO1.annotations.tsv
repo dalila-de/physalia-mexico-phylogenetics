@@ -1,0 +1,58 @@
+tip	sample	location	region	plot_group	basis	collection_side	genetic_group	vagrant	E_component_whole	E_component_no_sc10
+ref__FM-16644	FM-16644	Canary Islands	Eastern North Atlantic	E	Prior genome-wide NGSadmix K2 dominant component; same assignment excluding scaffold10; vagrant flag from original population metadata	E	E	False	0.9999999258	0.999385053
+ref__OA-190531-1	OA-190531-1	New South Wales	SW Pacific	utriculus	Pinned Church tip_metadata.tsv; outside North Atlantic physalis E/W comparison	not_applicable	not_applicable	False		
+ref__WAM-Z97902	WAM-Z97902	Western Australia	E Indian	utriculus	Pinned Church tip_metadata.tsv; outside North Atlantic physalis E/W comparison	not_applicable	not_applicable	False		
+ref__YPM-IZ-104460	YPM-IZ-104460	Guam	NW Pacific	utriculus	Pinned Church tip_metadata.tsv; outside North Atlantic physalis E/W comparison	not_applicable	not_applicable	False		
+ref__YPM-IZ-106935	YPM-IZ-106935	Texas	Gulf of Mexico	W	Prior genome-wide NGSadmix K2 dominant component; same assignment excluding scaffold10; vagrant flag from original population metadata	W	W	False	1e-09	1e-09
+ref__YPM-IZ-106936	YPM-IZ-106936	Texas	Gulf of Mexico	W	Prior genome-wide NGSadmix K2 dominant component; same assignment excluding scaffold10; vagrant flag from original population metadata	W	W	False	1e-09	1e-09
+ref__YPM-IZ-106937	YPM-IZ-106937	Texas	Gulf of Mexico	W	Prior genome-wide NGSadmix K2 dominant component; same assignment excluding scaffold10; vagrant flag from original population metadata	W	W	False	1e-09	1e-09
+ref__YPM-IZ-106941	YPM-IZ-106941	Bermuda	Western North Atlantic	W	Prior genome-wide NGSadmix K2 dominant component; same assignment excluding scaffold10; vagrant flag from original population metadata	W	W	False	0.01183449565	1e-09
+ref__YPM-IZ-106943	YPM-IZ-106943	Bermuda	Western North Atlantic	W	Prior genome-wide NGSadmix K2 dominant component; same assignment excluding scaffold10; vagrant flag from original population metadata	W	W	False	1e-09	1e-09
+ref__YPM-IZ-106954	YPM-IZ-106954	Bermuda	Western North Atlantic	W	Prior genome-wide NGSadmix K2 dominant component; same assignment excluding scaffold10; vagrant flag from original population metadata	W	W	False	1e-09	1e-09
+ref__YPM-IZ-106958	YPM-IZ-106958	Texas	Gulf of Mexico	W	Prior genome-wide NGSadmix K2 dominant component; same assignment excluding scaffold10; vagrant flag from original population metadata	W	W	False	1e-09	1e-09
+ref__YPM-IZ-110251	YPM-IZ-110251	Florida	Western North Atlantic	W	Prior genome-wide NGSadmix K2 dominant component; same assignment excluding scaffold10; vagrant flag from original population metadata	W	W	False	1e-09	1e-09
+ref__YPM-IZ-110254	YPM-IZ-110254	Florida	Western North Atlantic	W	Prior genome-wide NGSadmix K2 dominant component; same assignment excluding scaffold10; vagrant flag from original population metadata	W	W	False	1e-09	1e-09
+ref__YPM-IZ-110264	YPM-IZ-110264	Hawai'i	Central Pacific	utriculus	Pinned Church tip_metadata.tsv; outside North Atlantic physalis E/W comparison	not_applicable	not_applicable	False		
+ref__YPM-IZ-110433	YPM-IZ-110433	Florida	Western North Atlantic	W	Prior genome-wide NGSadmix K2 dominant component; same assignment excluding scaffold10; vagrant flag from original population metadata	W	W	False	1e-09	1e-09
+ref__YPM-IZ-110434	YPM-IZ-110434	Florida	Western North Atlantic	W	Prior genome-wide NGSadmix K2 dominant component; same assignment excluding scaffold10; vagrant flag from original population metadata	W	W	False	1e-09	1e-09
+ref__YPM-IZ-110436	YPM-IZ-110436	Florida	Western North Atlantic	W	Prior genome-wide NGSadmix K2 dominant component; same assignment excluding scaffold10; vagrant flag from original population metadata	W	W	False	1e-09	1e-09
+ref__YPM-IZ-110631	YPM-IZ-110631	Rhode Island	Western North Atlantic	W	Prior genome-wide NGSadmix K2 dominant component; same assignment excluding scaffold10; vagrant flag from original population metadata	W	W	False	1e-09	1e-09
+ref__YPM-IZ-110633	YPM-IZ-110633	Rhode Island	Western North Atlantic	W	Prior genome-wide NGSadmix K2 dominant component; same assignment excluding scaffold10; vagrant flag from original population metadata	W	W	False	1e-09	1e-09
+ref__YPM-IZ-110667	YPM-IZ-110667	Northeast US	Western North Atlantic	W	Prior genome-wide NGSadmix K2 dominant component; same assignment excluding scaffold10; vagrant flag from original population metadata	W	W	False	1e-09	1e-09
+ref__YPM-IZ-110694	YPM-IZ-110694	Rhode Island	Western North Atlantic	W	Prior genome-wide NGSadmix K2 dominant component; same assignment excluding scaffold10; vagrant flag from original population metadata	W	W	False	1e-09	1e-09
+ref__YPM-IZ-110716	YPM-IZ-110716	Spain	Eastern North Atlantic	E	Prior genome-wide NGSadmix K2 dominant component; same assignment excluding scaffold10; vagrant flag from original population metadata	E	E	False	0.9698527532	0.9640615225
+ref__YPM-IZ-110726	YPM-IZ-110726	Spain	Eastern North Atlantic	E	Prior genome-wide NGSadmix K2 dominant component; same assignment excluding scaffold10; vagrant flag from original population metadata	E	E	False	0.998840065	0.999999999
+ref__YPM-IZ-110738	YPM-IZ-110738	Spain	Eastern North Atlantic	E	Prior genome-wide NGSadmix K2 dominant component; same assignment excluding scaffold10; vagrant flag from original population metadata	E	E	False	0.999999999	0.999999999
+ref__YPM-IZ-110830	YPM-IZ-110830	Uruguay	SW Atlantic	utriculus	Pinned Church tip_metadata.tsv; outside North Atlantic physalis E/W comparison	not_applicable	not_applicable	False		
+ref__YPM-IZ-110842	YPM-IZ-110842	Azores	Eastern North Atlantic	E	Prior genome-wide NGSadmix K2 dominant component; same assignment excluding scaffold10; vagrant flag from original population metadata	E	E	False	0.9730714726	0.9668741267
+ref__YPM-IZ-110843	YPM-IZ-110843	Azores	Eastern North Atlantic	E	Prior genome-wide NGSadmix K2 dominant component; same assignment excluding scaffold10; vagrant flag from original population metadata	E	E	False	0.999999999	0.999999999
+ref__YPM-IZ-110844	YPM-IZ-110844	Azores	Eastern North Atlantic	W	Prior genome-wide NGSadmix K2 dominant component; same assignment excluding scaffold10; vagrant flag from original population metadata	E	W	True	1e-09	1e-09
+ref__YPM-IZ-110845	YPM-IZ-110845	Azores	Eastern North Atlantic	E	Prior genome-wide NGSadmix K2 dominant component; same assignment excluding scaffold10; vagrant flag from original population metadata	E	E	False	0.999999999	0.999999999
+ref__YPM-IZ-110846	YPM-IZ-110846	Azores	Eastern North Atlantic	E	Prior genome-wide NGSadmix K2 dominant component; same assignment excluding scaffold10; vagrant flag from original population metadata	E	E	False	0.9982398019	0.9958221197
+ref__YPM-IZ-110847	YPM-IZ-110847	Azores	Eastern North Atlantic	E	Prior genome-wide NGSadmix K2 dominant component; same assignment excluding scaffold10; vagrant flag from original population metadata	E	E	False	0.9999537966	0.9999415118
+ref__YPM-IZ-110876	YPM-IZ-110876	Texas	Gulf of Mexico	W	Prior genome-wide NGSadmix K2 dominant component; same assignment excluding scaffold10; vagrant flag from original population metadata	W	W	False	1e-09	1e-09
+ref__YPM-IZ-110880	YPM-IZ-110880	Rhode Island	Western North Atlantic	W	Prior genome-wide NGSadmix K2 dominant component; same assignment excluding scaffold10; vagrant flag from original population metadata	W	W	False	1e-09	1e-09
+ref__YPM-IZ-110972	YPM-IZ-110972	Ireland	Eastern North Atlantic	E	Prior genome-wide NGSadmix K2 dominant component; same assignment excluding scaffold10; vagrant flag from original population metadata	E	E	False	0.999999999	0.999999999
+ref__YPM-IZ-111006	YPM-IZ-111006	South Africa	W Indian	utriculus	Pinned Church tip_metadata.tsv; outside North Atlantic physalis E/W comparison	not_applicable	not_applicable	False		
+ref__YPM-IZ-111012	YPM-IZ-111012	Bermuda	Western North Atlantic	E	Prior genome-wide NGSadmix K2 dominant component; same assignment excluding scaffold10; vagrant flag from original population metadata	W	E	True	0.9999989929	0.9999865752
+ref__YPM-IZ-111013	YPM-IZ-111013	Bermuda	Western North Atlantic	W	Prior genome-wide NGSadmix K2 dominant component; same assignment excluding scaffold10; vagrant flag from original population metadata	W	W	False	1e-09	1e-09
+ref__YPM-IZ-111014	YPM-IZ-111014	Bermuda	Western North Atlantic	W	Prior genome-wide NGSadmix K2 dominant component; same assignment excluding scaffold10; vagrant flag from original population metadata	W	W	False	1e-09	1e-09
+ref__YPM-IZ-111016	YPM-IZ-111016	Bermuda	Western North Atlantic	W	Prior genome-wide NGSadmix K2 dominant component; same assignment excluding scaffold10; vagrant flag from original population metadata	W	W	False	1e-09	1e-09
+ref__YPM-IZ-111017	YPM-IZ-111017	Bermuda	Western North Atlantic	W	Prior genome-wide NGSadmix K2 dominant component; same assignment excluding scaffold10; vagrant flag from original population metadata	W	W	False	1e-09	1e-09
+ref__YPM-IZ-111018	YPM-IZ-111018	Bermuda	Western North Atlantic	E	Prior genome-wide NGSadmix K2 dominant component; same assignment excluding scaffold10; vagrant flag from original population metadata	W	E	True	0.9472642514	0.9687939523
+ref__AY937377.1	AY937377.1			outgroup	Pinned Church species metadata; E/W not applicable	not_applicable	not_applicable	False		
+ref__GQ120038.1	GQ120038.1			outgroup	Pinned Church species metadata; E/W not applicable	not_applicable	not_applicable	False		
+ref__GQ120039.1	GQ120039.1			outgroup	Pinned Church species metadata; E/W not applicable	not_applicable	not_applicable	False		
+ref__GQ120040.1	GQ120040.1			outgroup	Pinned Church species metadata; E/W not applicable	not_applicable	not_applicable	False		
+ref__GQ120041.1	GQ120041.1			outgroup	Pinned Church species metadata; E/W not applicable	not_applicable	not_applicable	False		
+ref__KT809335.1	KT809335.1			outgroup	Pinned Church species metadata; E/W not applicable	not_applicable	not_applicable	False		
+ref__NC_080941.1	NC_080941.1			outgroup	Pinned Church species metadata; E/W not applicable	not_applicable	not_applicable	False		
+ref__NC_080942.1	NC_080942.1			outgroup	Pinned Church species metadata; E/W not applicable	not_applicable	not_applicable	False		
+ref__OQ957199.1	OQ957199.1			outgroup	Pinned Church species metadata; E/W not applicable	not_applicable	not_applicable	False		
+ref__OQ957206.1	OQ957206.1			outgroup	Pinned Church species metadata; E/W not applicable	not_applicable	not_applicable	False		
+local__YPM-IZ-116693	YPM-IZ-116693	Gulf of Mexico (Progreso)	unassigned	Mexico	Separate Mexico display category requested by user; no E/W assignment from these marker trees	unassigned	not_assigned_here	False		
+local__YPM-IZ-116694	YPM-IZ-116694	Gulf of Mexico (Progreso)	unassigned	Mexico	Separate Mexico display category requested by user; no E/W assignment from these marker trees	unassigned	not_assigned_here	False		
+local__YPM-IZ-116695	YPM-IZ-116695	Gulf of Mexico (Progreso)	unassigned	Mexico	Separate Mexico display category requested by user; no E/W assignment from these marker trees	unassigned	not_assigned_here	False		
+local__YPM-IZ-116696	YPM-IZ-116696	Gulf of Mexico (Progreso)	unassigned	Mexico	Separate Mexico display category requested by user; no E/W assignment from these marker trees	unassigned	not_assigned_here	False		
+local__YPM-IZ-116697	YPM-IZ-116697	Gulf of Mexico (Progreso)	unassigned	Mexico	Separate Mexico display category requested by user; no E/W assignment from these marker trees	unassigned	not_assigned_here	False		
+sanger__CH887	CH887	Caribbean Sea (Puerto Morelos)		Sanger	User identifies both amplicons as one Caribbean specimen; no genome-wide E/W assignment		unassigned	False		

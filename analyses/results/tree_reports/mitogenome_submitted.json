@@ -1,0 +1,50 @@
+{
+  "analysis": "mitogenome_submitted",
+  "tips": 48,
+  "local_tips": 5,
+  "rooting": "Rhizophysa_outgroup",
+  "model": "TPM3u+F+I+R3",
+  "interpretation": "Nearest-reference distances describe placement, not definitive species assignment.",
+  "specimens": [
+    {
+      "sample": "YPM-IZ-116696",
+      "local_tip": "local__YPM-IZ-116696__path1",
+      "nearest_reference_distance": 0.0029433875,
+      "nearest_reference_tips": "ref__YPM-IZ-111018_mtgenome_scaffold_1--3743432_",
+      "nearest_reference_species": "Physalia physalis",
+      "same_specimen_reference_distance": "not_available"
+    },
+    {
+      "sample": "YPM-IZ-116694",
+      "local_tip": "local__YPM-IZ-116694__path1",
+      "nearest_reference_distance": 0.003660413,
+      "nearest_reference_tips": "ref__YPM-IZ-110694_mtgenome_scaffold_1--6113849_",
+      "nearest_reference_species": "Physalia physalis",
+      "same_specimen_reference_distance": "not_available"
+    },
+    {
+      "sample": "YPM-IZ-116693",
+      "local_tip": "local__YPM-IZ-116693__path1",
+      "nearest_reference_distance": 0.0018484009,
+      "nearest_reference_tips": "ref__YPM-IZ-111017_mtgenome_scaffold_1--3305370_",
+      "nearest_reference_species": "Physalia physalis",
+      "same_specimen_reference_distance": "not_available"
+    },
+    {
+      "sample": "YPM-IZ-116697",
+      "local_tip": "local__YPM-IZ-116697__path1",
+      "nearest_reference_distance": 0.0012389582000000001,
+      "nearest_reference_tips": "ref__YPM-IZ-110633_mtgenome_scaffold_1--5829952_",
+      "nearest_reference_species": "Physalia physalis",
+      "same_specimen_reference_distance": "not_available"
+    },
+    {
+      "sample": "YPM-IZ-116695",
+      "local_tip": "local__YPM-IZ-116695__path1",
+      "nearest_reference_distance": 0.0027988008,
+      "nearest_reference_tips": "ref__YPM-IZ-110254_mtgenome_scaffold_1--5573165_",
+      "nearest_reference_species": "Physalia physalis",
+      "same_specimen_reference_distance": "not_available"
+    }
+  ]
+}

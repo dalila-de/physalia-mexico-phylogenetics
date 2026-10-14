@@ -1,0 +1,153 @@
+"""MITOS annotation -> longest markers -> MAFFT -> IQ-TREE -> annotated trees.
+
+This entry point consumes completed October QC outputs and never reruns QC.
+Four marker trees and one mitochondrial tree use published cohort references
+and five new Mexican specimens, with one sequence per specimen.
+"""
+import csv
+import shutil
+from pathlib import Path
+
+HERE = Path(workflow.basedir).resolve()
+ROOT = HERE.parent
+configfile: str(HERE / "config/config.yaml")
+config["iqtree"] = shutil.which(config["iqtree"]) or config["iqtree"]
+WORK = str(ROOT / config["scratch"])
+REFERENCE = str(ROOT / "references/church/phylogenetics")
+OUT = str(HERE / "results")
+INPUTS = str(HERE / "inputs")
+with open(ROOT / "illumina-qc-run/metadata/samples.tsv") as stream:
+    SAMPLES = [r["sample"] for r in csv.DictReader(stream, delimiter="\t") if r["cohort"] != "published"]
+GENES = ["16S", "18S", "CO1", "ITS", "mitogenome_submitted"]
+
+rule annotate_mitogenome_mitos:
+    input:
+        fasta=lambda w: sorted(str(p) for p in (ROOT / "illumina-qc-run/results" / config["qc_run"] / w.sample / "mitogenomes").glob("*.fasta")),
+        reference=str(Path(config["mitos_refdir"]) / config["mitos_refname"]),
+        tool=str(Path(config["mitos_env"]) / "bin/runmitos.py")
+    output:
+        fas=OUT + "/annotations/{sample}/result.fas"
+    params:
+        env=config["mitos_env"],
+        refdir=config["mitos_refdir"],
+        refname=config["mitos_refname"],
+        outdir=WORK + "/mitos/{sample}"
+    threads: 1
+    resources: mem_mb=8000
+    log: WORK + "/logs/mitos/{sample}.log"
+    shell:
+        "mkdir -p {params.outdir:q}; PATH={params.env:q}/bin:$PATH PYTHONNOUSERSITE=1 "
+        "{params.env:q}/bin/python {params.env:q}/bin/runmitos.py -i {input.fasta:q} "
+        "-R {params.refdir:q} -r {params.refname:q} --orih 0 --oril 0 --trna 0 --intron 0 "
+        "--linear -c 4 -o {params.outdir:q} > {log:q} 2>&1; "
+        "cp {params.outdir:q}/result.fas {output.fas:q}; "
+        "cp {params.outdir:q}/result.gff {params.outdir:q}/result.geneorder $(dirname {output.fas:q})/"
+
+rule prepare_tree_sequences:
+    input:
+        mitos=lambda w: expand(OUT + "/annotations/{sample}/result.fas", sample=SAMPLES) if w.gene in {"16S", "CO1"} else [],
+        qc=lambda w: sorted(str(p) for s in SAMPLES for p in (ROOT / "illumina-qc-run/results" / config["qc_run"] / s).glob("markers/*.fasta")) if not w.gene.startswith("mitogenome") else sorted(str(p) for s in SAMPLES for p in (ROOT / "illumina-qc-run/results" / config["qc_run"] / s).glob("mitogenomes/*.fasta")),
+        script=str(HERE / "scripts/prepare_tree_inputs.py"),
+        common=str(HERE / "scripts/common.py"),
+        configfile=str(HERE / "config/config.yaml"),
+        cohort=str(HERE / "inputs/cohort.tsv"),
+        metadata=REFERENCE + "/tip_metadata.tsv",
+        reference=lambda w: [REFERENCE + "/gene_trees/" + w.gene + ".all.fasta"] if not w.gene.startswith("mitogenome") else [REFERENCE + "/mitogenome_tree/" + ("submitted_rooted.aln.fa" if w.gene == "mitogenome_submitted" else "identification.aln.fa"), REFERENCE + "/mitogenome_tree/rhizophysa_outgroups.fasta"]
+    output:
+        fasta=INPUTS + "/{gene}.fasta",
+        tips=INPUTS + "/{gene}.tips.tsv",
+        base=INPUTS + "/{gene}.base.fasta",
+        addition=INPUTS + "/{gene}.add.fasta"
+    resources: mem_mb=2000
+    shell:
+        "python {input.script:q} {wildcards.gene:q}"
+
+rule align_sequences_mafft:
+    input:
+        fasta=INPUTS + "/{gene}.fasta",
+        base=INPUTS + "/{gene}.base.fasta",
+        addition=INPUTS + "/{gene}.add.fasta",
+        validator=str(HERE / "scripts/validate_alignment.py")
+    output:
+        OUT + "/alignments/{gene}.fasta"
+    params:
+        raw=WORK + "/alignments/{gene}.raw.fasta",
+        base=INPUTS + "/{gene}.base.fasta",
+        addition=INPUTS + "/{gene}.add.fasta"
+    threads: 8
+    resources: mem_mb=24000
+    log: WORK + "/logs/mafft/{gene}.log"
+    shell:
+        r"""
+        mkdir -p "$(dirname {params.raw:q})"
+        case {wildcards.gene:q} in
+            mitogenome*) mafft --add {params.addition:q} --adjustdirectionaccurately --thread {threads} {params.base:q} > {params.raw:q} 2> {log:q} ;;
+            *) mafft --auto --adjustdirectionaccurately --thread {threads} {input.fasta:q} > {params.raw:q} 2> {log:q} ;;
+        esac
+        python {input.validator:q} {params.raw:q} {input.fasta:q} {output:q}
+        """
+
+rule infer_phylogeny_iqtree:
+    input:
+        alignment=OUT + "/alignments/{gene}.fasta",
+        tool=config["iqtree"]
+    output:
+        tree=OUT + "/trees/{gene}.treefile",
+        report=OUT + "/trees/{gene}.iqtree"
+    params:
+        tool=config["iqtree"],
+        prefix=OUT + "/trees/{gene}",
+        seed=config["seed"],
+        runs=config["search_runs"]
+    threads: 8
+    resources: mem_mb=32000
+    log: WORK + "/logs/iqtree/{gene}.log"
+    shell:
+        "{params.tool:q} -s {input.alignment:q} -m MFP -B 1000 --runs {params.runs} "
+        "-nt {threads} -seed {params.seed} -pre {params.prefix:q} > {log:q} 2>&1"
+
+rule report_phylogeny:
+    input:
+        tree=OUT + "/trees/{gene}.treefile",
+        inference=OUT + "/trees/{gene}.iqtree",
+        alignment=OUT + "/alignments/{gene}.fasta",
+        tips=INPUTS + "/{gene}.tips.tsv",
+        script=str(HERE / "scripts/report_tree.py")
+    output:
+        figure=OUT + "/figures/{gene}.pdf",
+        report=OUT + "/tree_reports/{gene}.json",
+        rooted=OUT + "/figures/{gene}.rooted.nwk"
+    params:
+        python=config.get("plot_python", "python")
+    resources: mem_mb=4000
+    shell:
+        "{params.python:q} {input.script:q} {wildcards.gene:q}"
+
+rule plot_genetic_groups:
+    input:
+        report=OUT + "/tree_reports/{gene}.json",
+        tree=OUT + "/figures/{gene}.rooted.nwk",
+        tips=INPUTS + "/{gene}.tips.tsv",
+        annotation=INPUTS + "/genetic_annotations.tsv",
+        script=str(HERE / "scripts/plot_genetic_groups.py")
+    output:
+        pdf=OUT + "/genetic_groups/{gene}.pdf",
+        png=OUT + "/genetic_groups/{gene}.png",
+        table=OUT + "/genetic_groups/{gene}.annotations.tsv",
+        focal_pdf=OUT + "/genetic_groups/{gene}.focal.pdf",
+        focal_png=OUT + "/genetic_groups/{gene}.focal.png"
+    params:
+        python=config.get("plot_python", "python")
+    resources: mem_mb=2000
+    shell:
+        "{params.python:q} {input.script:q} {wildcards.gene:q}"
+
+rule plot_groups:
+    input:
+        expand(OUT + "/genetic_groups/{gene}.pdf", gene=GENES)
+
+rule all:
+    input:
+        expand(OUT + "/tree_reports/{gene}.json", gene=GENES),
+        expand(OUT + "/genetic_groups/{gene}.pdf", gene=GENES)
+    default_target: True

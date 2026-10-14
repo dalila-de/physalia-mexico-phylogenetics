@@ -1,0 +1,69 @@
+{
+  "YPM-IZ-116695_cnidaria_16S.fasta": [
+    552
+  ],
+  "YPM-IZ-116695_cnidaria_18S.fasta": [
+    1790
+  ],
+  "YPM-IZ-116695_cnidaria_28S-v2.fasta": [
+    419
+  ],
+  "YPM-IZ-116695_cnidaria_28S.fasta": [
+    3263
+  ],
+  "YPM-IZ-116695_cnidaria_CO1.fasta": [
+    688
+  ],
+  "YPM-IZ-116695_cnidaria_EF1A.fasta": [
+    914,
+    887,
+    887,
+    887,
+    887,
+    887,
+    887,
+    887,
+    887,
+    914,
+    887,
+    914,
+    887,
+    887,
+    887,
+    887,
+    887,
+    914,
+    914,
+    914
+  ],
+  "YPM-IZ-116695_cnidaria_ITS-v2.fasta": [
+    717
+  ],
+  "YPM-IZ-116695_cnidaria_ITS.fasta": [
+    863
+  ],
+  "YPM-IZ-116695_metazoa_18S-V3.fasta": [
+    155
+  ],
+  "YPM-IZ-116695_metazoa_18S-V5-V7L.fasta": [
+    261
+  ],
+  "YPM-IZ-116695_metazoa_18S-V5-V7S.fasta": [
+    142
+  ],
+  "YPM-IZ-116695_metazoa_18S-V7.fasta": [
+    172
+  ],
+  "YPM-IZ-116695_metazoa_18S-V7p-V8.fasta": [
+    203
+  ],
+  "YPM-IZ-116695_metazoa_18S-V9-v2.fasta": [
+    167
+  ],
+  "YPM-IZ-116695_metazoa_18S-V9.fasta": [
+    129
+  ],
+  "animal_mt.K105.scaffolds.graph1.1.path_sequence.fasta": [
+    15038
+  ]
+}

@@ -1,0 +1,6 @@
+sample	assembly_bp	gene_feature_records	gene_names	base_gene_names	annotation
+YPM-IZ-116693	15038	14	cox1_1;cox2;atp8;atp6;cox3;nad2;nad5;nad6;nad3;nad4l;nad1;nad4;cob;cox1_0	atp6;atp8;cob;cox1;cox2;cox3;nad1;nad2;nad3;nad4;nad4l;nad5;nad6	MITOS2 2.1.9; refseq89m; code4; linear; tRNA/origin/intron disabled
+YPM-IZ-116694	15038	14	cox1_1;cox2;atp8;atp6;cox3;nad2;nad5;nad6;nad3;nad4l;nad1;nad4;cob;cox1_0	atp6;atp8;cob;cox1;cox2;cox3;nad1;nad2;nad3;nad4;nad4l;nad5;nad6	MITOS2 2.1.9; refseq89m; code4; linear; tRNA/origin/intron disabled
+YPM-IZ-116695	15038	14	cox1_0;cob;nad4;nad1;nad4l;nad3;nad6;nad5;nad2;cox3;atp6;atp8;cox2;cox1_1	atp6;atp8;cob;cox1;cox2;cox3;nad1;nad2;nad3;nad4;nad4l;nad5;nad6	MITOS2 2.1.9; refseq89m; code4; linear; tRNA/origin/intron disabled
+YPM-IZ-116696	15038	14	cox1_1;cox2;atp8;atp6;cox3;nad2;nad5;nad6;nad3;nad4l;nad1;nad4;cob;cox1_0	atp6;atp8;cob;cox1;cox2;cox3;nad1;nad2;nad3;nad4;nad4l;nad5;nad6	MITOS2 2.1.9; refseq89m; code4; linear; tRNA/origin/intron disabled
+YPM-IZ-116697	15038	14	cox1_1;cox2;atp8;atp6;cox3;nad2;nad5;nad6;nad3;nad4l;nad1;nad4;cob;cox1_0	atp6;atp8;cob;cox1;cox2;cox3;nad1;nad2;nad3;nad4;nad4l;nad5;nad6	MITOS2 2.1.9; refseq89m; code4; linear; tRNA/origin/intron disabled

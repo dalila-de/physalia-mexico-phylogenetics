@@ -1,0 +1,22 @@
+{
+  "specimens": 40,
+  "sequencing_inputs": 42,
+  "fastq_files": 84,
+  "validated_prefix_pairs_per_input": 100,
+  "full_fastq_integrity_checked": false,
+  "compressed_input_bytes": 927670874906,
+  "reference_paths": [
+    "/gpfs/gibbs/data/genomes/Homo_sapiens/NCBI/GRCh38/Sequence/BWAIndex/genome.fa",
+    "/gpfs/gibbs/pi/dunn/sc2962/20241018_IlluminaQC/siph_mitochondrion_ncbi.fasta",
+    "/vast/palmer/home.mccleary/dd2233/bin/sharkmer/sharkmer/target/release/sharkmer",
+    "/vast/palmer/pi/dunn/dd2233/Illumina_QC_Pop_Gen/runs/libraries_2026_09_08/rego/rego.py",
+    "/gpfs/gibbs/data/genomes/Homo_sapiens/NCBI/GRCh38/Sequence/BWAIndex/genome.fa.amb",
+    "/gpfs/gibbs/data/genomes/Homo_sapiens/NCBI/GRCh38/Sequence/BWAIndex/genome.fa.ann",
+    "/gpfs/gibbs/data/genomes/Homo_sapiens/NCBI/GRCh38/Sequence/BWAIndex/genome.fa.bwt",
+    "/gpfs/gibbs/data/genomes/Homo_sapiens/NCBI/GRCh38/Sequence/BWAIndex/genome.fa.pac",
+    "/gpfs/gibbs/data/genomes/Homo_sapiens/NCBI/GRCh38/Sequence/BWAIndex/genome.fa.sa",
+    "/gpfs/gibbs/data/kraken2/standard/hash.k2d",
+    "/gpfs/gibbs/data/kraken2/standard/opts.k2d",
+    "/gpfs/gibbs/data/kraken2/standard/taxo.k2d"
+  ]
+}

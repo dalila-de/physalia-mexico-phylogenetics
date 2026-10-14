@@ -1,0 +1,19 @@
+run_id: phylogenetics-utriculus-2026-10-12
+scratch: work/analyses
+upstream_commit: d08f0edf4d819e21c85705e4965de71673808dec
+qc_run: cohort-2026-10-09
+mitos_env: envs/mitos
+mitos_refdir: resources/mitos
+mitos_refname: refseq89m
+iqtree: iqtree3
+seed: 20261012
+search_runs: 5
+reference_scope: published_cohort
+additional_reference_samples:
+- OA-190531-1
+- WAM-Z97902
+- YPM-IZ-104460
+- YPM-IZ-110264
+- YPM-IZ-110830
+- YPM-IZ-111006
+plot_python: python

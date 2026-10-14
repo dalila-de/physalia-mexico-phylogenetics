@@ -1,0 +1,24 @@
+{
+  "sample": "CH887",
+  "gene": "CO1",
+  "length": 622,
+  "ambiguous_bases": 3,
+  "basis": "forward_only; reverse_failed_quality",
+  "translation_table4": [
+    {
+      "frame_offset": 0,
+      "stops": 9,
+      "ambiguous_amino_acids": 2
+    },
+    {
+      "frame_offset": 1,
+      "stops": 0,
+      "ambiguous_amino_acids": 3
+    },
+    {
+      "frame_offset": 2,
+      "stops": 15,
+      "ambiguous_amino_acids": 3
+    }
+  ]
+}

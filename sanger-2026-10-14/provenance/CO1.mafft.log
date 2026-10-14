@@ -1,0 +1,83 @@
+nthread = 4
+nadd = 0
+inputfile = infile
+thresholdtorev = 0.000000
+reflim = 100
+mode = a
+generating a scoring matrix for nucleotide (dist=200) ... done
+
+Step 1/2
+0 / 57 (thread 0)   
+
+Step 2/2
+ 1 / 57 (4 threads)   
+makedirectionlist (nuc) Version 7.526
+alg=m, model=DNA200 (2), 1.53 (4.59), 0.37 (1.11), noshift, amax=0.0
+4 thread(s)
+
+directionfile = _direction
+inputfile = infile
+subalignment = 0
+subalignmentoffset = 0
+57 x 1569 - 524 d
+outputhat23=16
+treein = 0
+compacttree = 0
+stacksize: -1 kb
+generating a scoring matrix for nucleotide (dist=200) ... done
+All-to-all alignment.
+    0 / 57 (by thread   0)    10 / 57 (by thread   1)    20 / 57 (by thread   0)    30 / 57 (by thread   2)    40 / 57 (by thread   2)    50 / 57 (by thread   3) tbfast-pair (nuc) Version 7.526
+alg=L, model=DNA200 (2), 2.00 (6.00), -0.10 (-0.30), noshift, amax=0.0
+4 thread(s)
+
+outputhat23=16
+Loading 'hat3.seed' ... 
+done.
+Writing hat3 for iterative refinement
+generating a scoring matrix for nucleotide (dist=200) ... done
+Gap Penalty = -1.53, +0.00, +0.00
+tbutree = 1, compacttree = 0
+Constructing a UPGMA tree ... 
+    0 / 57   10 / 57   20 / 57   30 / 57   40 / 57   50 / 57
+done.
+
+Progressive alignment ... 
+STEP     1 /56 (thread    0) STEP     2 /56 (thread    1) STEP     3 /56 (thread    2) STEP     5 /56 (thread    2) STEP     4 /56 (thread    3) STEP     6 /56 (thread    1) STEP     7 /56 (thread    0) STEP     8 /56 (thread    2) STEP     9 /56 (thread    3) STEP    10 /56 (thread    1) STEP    11 /56 (thread    0) STEP    12 /56 (thread    2) STEP    13 /56 (thread    1) STEP    14 /56 (thread    0) STEP    15 /56 (thread    3) STEP    16 /56 (thread    2) STEP    17 /56 (thread    1) STEP    18 /56 (thread    0) STEP    19 /56 (thread    3) STEP    23 /56 (thread    3) STEP    20 /56 (thread    2) STEP    21 /56 (thread    1) STEP    22 /56 (thread    0) STEP    24 /56 (thread    3) STEP    25 /56 (thread    2) STEP    26 /56 (thread    1) STEP    27 /56 (thread    0) STEP    28 /56 (thread    3) STEP    29 /56 (thread    2) STEP    33 /56 (thread    2) STEP    30 /56 (thread    1) STEP    31 /56 (thread    0) STEP    32 /56 (thread    3) STEP    34 /56 (thread    2) STEP    38 /56 (thread    2) STEP    35 /56 (thread    1) STEP    36 /56 (thread    0) STEP    41 /56 (thread    0) STEP    37 /56 (thread    3) STEP    42 /56 (thread    0) STEP    39 /56 (thread    2) STEP    44 /56 (thread    0) STEP    40 /56 (thread    1) STEP    46 /56 (thread    0) STEP    45 /56 (thread    2) STEP    43 /56 (thread    3) STEP    48 /56 (thread    1) STEP    47 /56 (thread    0) STEP    51 /56 (thread    1) STEP    49 /56 (thread    2) STEP    52 /56 (thread    1) STEP    53 /56 (thread    1) STEP    50 /56 (thread    3) STEP    55 /56 (thread    2) STEP    54 /56 (thread    0) STEP    56 /56 (thread    1) 
+done.
+tbfast (nuc) Version 7.526
+alg=A, model=DNA200 (2), 1.53 (4.59), -0.00 (-0.00), noshift, amax=0.0
+4 thread(s)
+
+minimumweight = 0.000010
+autosubalignment = 0.000000
+nthread = 4
+randomseed = 0
+blosum 62 / kimura 200
+poffset = 0
+niter = 16
+sueff_global = 0.100000
+nadd = 16
+Loading 'hat3' ... done.
+generating a scoring matrix for nucleotide (dist=200) ... done
+
+    0 / 57   10 / 57   20 / 57   30 / 57   40 / 57   50 / 57
+Segment   1/  1    1-1570
+001-0000-0 (thread    1) identical     001-0001-0 (thread    4) identical     001-0002-1 (thread    2) identical     001-0002-1 (thread    3) identical     001-0004-0 (thread    1) identical     001-0005-1 (thread    3) identical     001-0006-0 (thread    1) identical     001-0007-1 (thread    4) identical     001-0008-0 (thread    1) identical     001-0009-1 (thread    3) identical     001-0010-0 (thread    2) identical     001-0011-1 (thread    4) identical     001-0012-0 (thread    1) identical     001-0013-1 (thread    3) identical     001-0014-0 (thread    2) identical     001-0015-1 (thread    4) identical     001-0016-0 (thread    1) identical     001-0017-1 (thread    3) identical     001-0018-0 (thread    2) identical     001-0019-1 (thread    4) identical     001-0020-0 (thread    1) identical     001-0021-1 (thread    3) identical     001-0022-1 (thread    4) identical     001-0023-0 (thread    2) identical     001-0024-1 (thread    3) identical     001-0025-0 (thread    1) identical     001-0026-1 (thread    2) identical     001-0027-0 (thread    4) identical     001-0028-0 (thread    3) identical     001-0029-1 (thread    1) identical     001-0030-0 (thread    2) identical     001-0031-1 (thread    4) identical     001-0032-1 (thread    1) identical     001-0033-0 (thread    3) identical     001-0034-1 (thread    4) identical     001-0035-0 (thread    2) identical     001-0036-1 (thread    3) identical     001-0037-0 (thread    1) identical     001-0038-1 (thread    2) identical     001-0039-0 (thread    4) identical     001-0040-0 (thread    3) identical     001-0041-1 (thread    1) identical     001-0042-1 (thread    4) identical     001-0043-0 (thread    2) identical     001-0044-1 (thread    1) identical     001-0045-0 (thread    4) identical     001-0046-0 (thread    3) identical     001-0047-0 (thread    1) identical     001-0048-1 (thread    2) identical     001-0049-1 (thread    4) identical     001-0050-0 (thread    3) identical     001-0051-1 (thread    4) identical     001-0052-1 (thread    1) identical     001-0053-0 (thread    2) identical     001-0054-0 (thread    3) identical     001-0055-1 (thread    4) identical     001-0056-0 (thread    1) identical     001-0057-1 (thread    4) identical     001-0058-1 (thread    2) identical     001-0059-0 (thread    3) identical     001-0060-1 (thread    4) identical     001-0061-1 (thread    3) identical     001-0062-0 (thread    1) identical     001-0063-0 (thread    4) identical     001-0064-0 (thread    2) identical     001-0065-1 (thread    3) identical     001-0066-1 (thread    4) identical     001-0067-0 (thread    1) identical     001-0068-1 (thread    3) identical     001-0069-0 (thread    2) identical     001-0070-1 (thread    1) identical     001-0071-0 (thread    4) identical     001-0072-1 (thread    2) identical     001-0073-0 (thread    3) identical     001-0074-1 (thread    4) identical     001-0075-0 (thread    1) identical     001-0076-1 (thread    3) identical     001-0077-0 (thread    2) identical     001-0078-1 (thread    1) identical     001-0078-0 (thread    3) identical     001-0080-0 (thread    4) identical     001-0081-1 (thread    3) identical     001-0082-0 (thread    1) identical     001-0083-0 (thread    4) identical     001-0084-1 (thread    2) identical     001-0085-0 (thread    1) identical     001-0086-1 (thread    3) identical     001-0087-1 (thread    4) identical     001-0088-0 (thread    2) identical     001-0089-1 (thread    1) identical     001-0090-1 (thread    4) identical     001-0091-0 (thread    3) identical     001-0092-0 (thread    2) identical     001-0093-1 (thread    1) identical     001-0094-1 (thread    3) identical     001-0095-0 (thread    4) identical     001-0096-1 (thread    1) identical     001-0097-0 (thread    2) identical     001-0098-1 (thread    4) identical     001-0099-0 (thread    3) identical     001-0100-1 (thread    2) identical     001-0101-0 (thread    1) identical     001-0102-0 (thread    4) identical     001-0103-1 (thread    1) identical     001-0104-0 (thread    2) identical     001-0105-1 (thread    3) identical     001-0106-0 (thread    4) identical     001-0107-1 (thread    1) identical     001-0108-0 (thread    2) identical     001-0109-1 (thread    4) identical     001-0110-1 (thread    3) identical     
+Converged.
+done
+dvtditr (nuc) Version 7.526
+alg=A, model=DNA200 (2), 1.53 (4.59), -0.00 (-0.00), noshift, amax=0.0
+4 thread(s)
+
+
+Strategy:
+ L-INS-i (Probably most accurate, very slow)
+ Iterative refinement method (<16) with LOCAL pairwise alignment information
+
+If unsure which option to use, try 'mafft --auto input > output'.
+For more information, see 'mafft --help', 'mafft --man' and the mafft page.
+
+The default gap scoring scheme has been changed in version 7.110 (2013 Oct).
+It tends to insert more gaps into gap-rich regions than previous versions.
+To disable this change, add the --leavegappyregion option.
+

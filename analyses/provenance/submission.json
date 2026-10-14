@@ -1,0 +1,10 @@
+{
+  "job_id": "13179436",
+  "source_commit": "f603813",
+  "status": "completed",
+  "run_id": "phylogenetics-utriculus-2026-10-12",
+  "scope": "Prior Atlantic and Mexico cohort plus six published utriculus specimens in all five trees; Rhizophysa retained",
+  "validation": "12 tests passed; Ruff, bash syntax, exact specimen counts, phylogenetics and QC all/pilot dry runs passed",
+  "elapsed": "00:02:46",
+  "exit_code": "0:0"
+}

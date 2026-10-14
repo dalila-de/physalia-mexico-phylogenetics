@@ -1,0 +1,407 @@
+IQ-TREE 3.0.1 built May  5 2025
+
+Input file name: /vast/palmer/pi/dunn/dd2233/physalia-illumina-qc/phylogenetics/results/alignments/ITS.fasta
+Type of analysis: ModelFinder + tree reconstruction + ultrafast bootstrap (1000 replicates)
+Random seed number: 20265012
+
+REFERENCES
+----------
+
+To cite IQ-TREE 3 please use:
+
+Thomas K.F. Wong, Nhan Ly-Trong, Huaiyan Ren, Hector Banos, Andrew J. Roger,
+Edward Susko, Chris Bielow, Nicola De Maio, Nick Goldman, Matthew W. Hahn,
+Gavin Huttley, Robert Lanfear, Bui Quang Minh (2025)
+IQ-TREE 3: Phylogenomic Inference Software using Complex Evolutionary Models.
+Submitted.
+
+Please also cite the following paper(s) for the feature(s) that you used:
+
+To cite ModelFinder please use: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+Since you used ultrafast bootstrap (UFBoot) please also cite: 
+
+Diep Thi Hoang, Olga Chernomor, Arndt von Haeseler, Bui Quang Minh,
+and Le Sy Vinh (2018) UFBoot2: Improving the ultrafast bootstrap
+approximation. Mol. Biol. Evol., 35:518–522.
+https://doi.org/10.1093/molbev/msx281
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 46 sequences with 877 nucleotide sites
+Number of constant sites: 855 (= 97.4914% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 855 (= 97.4914% of all sites)
+Number of parsimony informative sites: 14
+Number of distinct site patterns: 31
+
+ModelFinder
+-----------
+
+Best-fit model according to BIC: F81+I
+
+List of models sorted by BIC scores: 
+
+Model                  LogL         AIC      w-AIC        AICc     w-AICc         BIC      w-BIC
+F81+I             -1453.049    3014.099 -  0.00314    3021.325 -  0.00495    3272.030 +    0.238
+JC+I              -1453.049    3014.099 -  0.00314    3021.325 -  0.00495    3272.030 +    0.238
+JC+I              -1453.049    3014.099 -  0.00314    3021.325 -  0.00495    3272.030 +    0.238
+HKY+I             -1451.512    3013.024 -  0.00538    3020.527 -  0.00738    3275.731 -   0.0374
+K2P+I             -1451.512    3013.025 -  0.00538    3020.528 -  0.00738    3275.733 -   0.0374
+K2P+I             -1451.512    3013.025 -  0.00538    3020.528 -  0.00738    3275.733 -   0.0374
+TNe+I             -1448.333    3008.667 -   0.0475    3016.452 +   0.0566    3276.151 -   0.0303
+TNe+I             -1448.333    3008.667 -   0.0475    3016.452 +   0.0566    3276.151 -   0.0303
+TN+I              -1448.334    3008.668 -   0.0475    3016.453 +   0.0566    3276.152 -   0.0303
+F81+R2            -1453.077    3016.154 -  0.00113    3023.657 -  0.00154    3278.862 -  0.00781
+JC+R2             -1453.097    3016.194 -   0.0011    3023.697 -  0.00151    3278.901 -  0.00766
+JC+R2             -1453.097    3016.194 -   0.0011    3023.697 -  0.00151    3278.901 -  0.00766
+TPM3u+I           -1450.044    3012.089 -  0.00859    3019.874 -   0.0102    3279.573 -  0.00548
+TPM3+I            -1450.044    3012.089 -  0.00859    3019.874 -   0.0102    3279.573 -  0.00547
+TPM3+I            -1450.044    3012.089 -  0.00859    3019.874 -   0.0102    3279.573 -  0.00547
+TIM3e+I           -1446.812    3007.623 +   0.0801    3015.696 +   0.0826    3279.884 -  0.00469
+TIM3e+I           -1446.812    3007.623 +   0.0801    3015.696 +   0.0826    3279.884 -  0.00469
+TIM3+I            -1446.812    3007.623 +   0.0801    3015.697 +   0.0826    3279.884 -  0.00469
+K3Pu+I            -1450.962    3013.923 -  0.00343    3021.709 -  0.00409    3281.408 -  0.00219
+K3P+I             -1450.962    3013.924 -  0.00343    3021.709 -  0.00409    3281.408 -  0.00219
+K3P+I             -1450.962    3013.924 -  0.00343    3021.709 -  0.00409    3281.408 -  0.00219
+TIMe+I            -1447.792    3009.584 -   0.0301    3017.658 -    0.031    3281.845 -  0.00176
+TIMe+I            -1447.792    3009.584 -   0.0301    3017.658 -    0.031    3281.845 -  0.00176
+TIM+I             -1447.793    3009.585 -     0.03    3017.659 -    0.031    3281.846 -  0.00176
+TPM2u+I           -1451.287    3014.575 -  0.00248    3022.360 -  0.00295    3282.059 -  0.00158
+TPM2+I            -1451.289    3014.577 -  0.00248    3022.363 -  0.00295    3282.062 -  0.00158
+TPM2+I            -1451.289    3014.577 -  0.00248    3022.363 -  0.00295    3282.062 -  0.00158
+TIM2e+I           -1448.057    3010.115 -    0.023    3018.188 -   0.0238    3282.376 -  0.00135
+TIM2e+I           -1448.057    3010.115 -    0.023    3018.188 -   0.0238    3282.376 -  0.00135
+TIM2+I            -1448.058    3010.115 -    0.023    3018.189 -   0.0238    3282.376 -  0.00135
+HKY+R2            -1451.513    3015.027 -  0.00198    3022.812 -  0.00235    3282.511 -  0.00126
+K2P+R2            -1451.517    3015.034 -  0.00197    3022.819 -  0.00235    3282.518 -  0.00126
+K2P+R2            -1451.517    3015.034 -  0.00197    3022.819 -  0.00235    3282.518 -  0.00126
+TN+R2             -1448.343    3010.686 -   0.0173    3018.760 -   0.0179    3282.947 -  0.00101
+TNe+R2            -1448.356    3010.711 -   0.0171    3018.785 -   0.0176    3282.972 -    0.001
+TNe+R2            -1448.356    3010.711 -   0.0171    3018.785 -   0.0176    3282.972 -    0.001
+JC+I+R2           -1453.082    3018.163 - 0.000412    3025.949 - 0.000491    3285.648 - 0.000263
+TPM3+R2           -1450.045    3014.089 -  0.00316    3022.162 -  0.00326    3286.350 - 0.000185
+TPM3+R2           -1450.045    3014.089 -  0.00316    3022.162 -  0.00326    3286.350 - 0.000185
+TPM3u+R2          -1450.045    3014.089 -  0.00316    3022.163 -  0.00326    3286.350 - 0.000185
+TIM3+R2           -1446.814    3009.629 -   0.0294    3017.996 -   0.0262    3286.666 - 0.000158
+TIM3e+R2          -1446.818    3009.635 -   0.0293    3018.002 -   0.0261    3286.673 - 0.000157
+TIM3e+R2          -1446.818    3009.635 -   0.0293    3018.002 -   0.0261    3286.673 - 0.000157
+JC+I+G4           -1457.178    3024.355 - 1.86e-05    3031.858 - 2.56e-05    3287.063 - 0.000129
+K3Pu+R2           -1450.962    3015.923 -  0.00126    3023.997 -   0.0013    3288.184 - 7.39e-05
+K3P+R2            -1450.962    3015.924 -  0.00126    3023.998 -   0.0013    3288.185 - 7.39e-05
+K3P+R2            -1450.962    3015.924 -  0.00126    3023.998 -   0.0013    3288.185 - 7.39e-05
+F81+F+I           -1451.037    3016.074 -  0.00117    3024.148 -  0.00121    3288.335 - 6.85e-05
+TIM+R2            -1447.800    3011.601 -    0.011    3019.967 -  0.00976    3288.638 - 5.89e-05
+TIMe+R2           -1447.811    3011.622 -   0.0109    3019.988 -  0.00966    3288.659 - 5.83e-05
+TIMe+R2           -1447.811    3011.622 -   0.0109    3019.988 -  0.00966    3288.659 - 5.83e-05
+TPM2u+R2          -1451.287    3016.574 - 0.000912    3024.648 -  0.00094    3288.835 - 5.34e-05
+TPM2+R2           -1451.288    3016.576 - 0.000911    3024.650 - 0.000939    3288.837 - 5.33e-05
+TPM2+R2           -1451.288    3016.576 - 0.000911    3024.650 - 0.000939    3288.837 - 5.33e-05
+JC+R3             -1451.424    3016.848 - 0.000795    3024.921 -  0.00082    3289.109 - 4.65e-05
+TIM2+R2           -1448.060    3012.121 -  0.00845    3020.488 -  0.00753    3289.158 - 4.54e-05
+TIM2e+R2          -1448.064    3012.127 -  0.00843    3020.494 -   0.0075    3289.164 - 4.53e-05
+TIM2e+R2          -1448.064    3012.127 -  0.00843    3020.494 -   0.0075    3289.164 - 4.53e-05
+JC+G4             -1462.426    3032.852 - 2.66e-07    3040.078 - 4.19e-07    3290.783 - 2.01e-05
+HKY+F+I           -1449.517    3015.035 -  0.00197    3023.401 -  0.00175    3292.072 - 1.06e-05
+TVM+I             -1449.576    3015.152 -  0.00186    3023.519 -  0.00165    3292.189 - 9.97e-06
+TVMe+I            -1449.577    3015.153 -  0.00186    3023.520 -  0.00165    3292.191 - 9.97e-06
+TVMe+I            -1449.577    3015.153 -  0.00186    3023.520 -  0.00165    3292.191 - 9.97e-06
+SYM+I             -1446.297    3010.594 -   0.0181    3019.260 -   0.0139    3292.408 - 8.94e-06
+SYM+I             -1446.297    3010.594 -   0.0181    3019.260 -   0.0139    3292.408 - 8.94e-06
+GTR+I             -1446.297    3010.594 -   0.0181    3019.260 -   0.0139    3292.408 - 8.94e-06
+TN+F+I            -1446.531    3011.063 -   0.0143    3019.729 -    0.011    3292.877 - 7.07e-06
+F81+F+R2          -1451.050    3018.100 - 0.000425    3026.466 - 0.000379    3295.137 - 2.28e-06
+TPM3u+F+I         -1448.314    3014.627 -  0.00241    3023.293 -  0.00185    3296.441 - 1.19e-06
+JC+I+R3           -1452.097    3020.194 - 0.000149    3028.561 - 0.000133    3297.231 - 8.02e-07
+TIM3+F+I          -1445.325    3010.650 -   0.0176    3019.620 -   0.0116    3297.240 - 7.98e-07
+K3Pu+F+I          -1448.988    3015.977 -  0.00123    3024.643 - 0.000943    3297.791 - 6.06e-07
+TPM2u+F+I         -1449.261    3016.522 - 0.000936    3025.188 - 0.000718    3298.336 - 4.61e-07
+TIM+F+I           -1446.005    3012.011 -  0.00893    3020.981 -  0.00588    3298.601 - 4.04e-07
+HKY+F+R2          -1449.519    3017.038 - 0.000723    3025.704 - 0.000555    3298.852 - 3.57e-07
+TVM+R2            -1449.578    3017.156 - 0.000682    3025.822 - 0.000523    3298.970 - 3.36e-07
+TVMe+R2           -1449.582    3017.164 - 0.000679    3025.830 - 0.000521    3298.978 - 3.35e-07
+TVMe+R2           -1449.582    3017.164 - 0.000679    3025.830 - 0.000521    3298.978 - 3.35e-07
+TIM2+F+I          -1446.227    3012.454 -  0.00716    3021.425 -  0.00471    3299.045 - 3.24e-07
+GTR+R2            -1446.298    3012.596 -  0.00667    3021.566 -  0.00439    3299.186 - 3.02e-07
+SYM+R2            -1446.299    3012.598 -  0.00666    3021.568 -  0.00439    3299.188 - 3.01e-07
+SYM+R2            -1446.299    3012.598 -  0.00666    3021.568 -  0.00439    3299.188 - 3.01e-07
+TN+F+R2           -1446.540    3013.081 -  0.00523    3022.052 -  0.00344    3299.671 - 2.37e-07
+TPM3u+F+R2        -1448.313    3016.627 - 0.000888    3025.597 - 0.000585    3303.217 - 4.02e-08
+TIM3+F+R2         -1445.328    3012.656 -  0.00647    3021.937 -  0.00365    3304.023 - 2.69e-08
+K3Pu+F+R2         -1448.988    3017.977 - 0.000452    3026.947 - 0.000298    3304.567 - 2.05e-08
+TPM2u+F+R2        -1449.261    3018.521 - 0.000345    3027.492 - 0.000227    3305.111 - 1.56e-08
+TIM+F+R2          -1446.007    3014.015 -  0.00328    3023.296 -  0.00185    3305.382 - 1.36e-08
+TIM2+F+R2         -1446.232    3014.464 -  0.00262    3023.745 -  0.00148    3305.831 - 1.09e-08
+JC                -1474.261    3054.523 - 5.24e-12    3061.478 - 9.46e-12    3307.677 - 4.32e-09
+TVM+F+I           -1447.823    3017.646 - 0.000534    3026.927 - 0.000301    3309.013 - 2.22e-09
+GTR+F+I           -1444.788    3013.577 -  0.00408    3023.174 -  0.00197    3309.720 - 1.56e-09
+TVM+F+R2          -1447.823    3019.647 - 0.000196    3029.244 - 9.45e-05    3315.790 - 7.48e-11
+GTR+F+R2          -1444.792    3015.584 -   0.0015    3025.503 - 0.000613    3316.504 - 5.24e-11
+
+AIC, w-AIC   : Akaike information criterion scores and weights.
+AICc, w-AICc : Corrected AIC scores and weights.
+BIC, w-BIC   : Bayesian information criterion scores and weights.
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: F81+F+I
+
+Rate parameter R:
+
+  A-C: 1.0000
+  A-G: 1.0000
+  A-T: 1.0000
+  C-G: 1.0000
+  C-T: 1.0000
+  G-T: 1.0000
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.248
+  pi(C) = 0.2358
+  pi(G) = 0.2381
+  pi(T) = 0.2782
+
+Rate matrix Q:
+
+  A    -1.004    0.3148    0.3179    0.3715
+  C    0.3311    -1.021    0.3179    0.3715
+  G    0.3311    0.3148    -1.017    0.3715
+  T    0.3311    0.3148    0.3179   -0.9639
+
+Model of rate heterogeneity: Invar
+Proportion of invariable sites: 0.9542
+
+ Category  Relative_rate  Proportion
+  0         0              0.9542
+  1         21.81          0.04584
+
+MULTIPLE RUNS
+-------------
+
+Run     logL
+1	-1450.7549
+2	-1450.7550
+3	-1450.7549
+4	-1450.7646
+5	-1450.7549
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -1450.7549 (s.e. 0.0000)
+Unconstrained log-likelihood (without tree): -1425.6206
+Number of free parameters (#branches + #model parameters): 57
+Akaike information criterion (AIC) score: 3015.5099
+Corrected Akaike information criterion (AICc) score: 3023.5831
+Bayesian information criterion (BIC) score: 3287.7708
+
+Total tree length (sum of branch lengths): 0.0373
+Sum of internal branch lengths: 0.0204 (54.8216% of tree length)
+
+WARNING: 12 near-zero internal branches (<0.0011) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+NOTE: Tree is UNROOTED although outgroup taxon 'ref__FM-16644' is drawn at root
+Numbers in parentheses are  ultrafast bootstrap support (%)
+
++**ref__FM-16644
+|
+|                                     +-------ref__OA-190531-1
+|                     +---------------| (99)
+|                     |               |        +------ref__WAM-Z97902
+|                     |               |     +**| (44)
+|                     |               |     |  +--ref__YPM-IZ-104460
+|                     |               |  +--| (88)
+|                     |               |  |  +**ref__YPM-IZ-110830
+|                     |               +--| (84)
+|                     |                  |  +**ref__YPM-IZ-110264
+|                     |                  +--| (91)
+|                     |                     +----------ref__YPM-IZ-111006
+|                  +--| (75)
+|                  |  +**ref__YPM-IZ-110844
+|               +**| (46)
+|               |  |  +**ref__YPM-IZ-110434
+|               |  +**| (58)
+|               |     +**ref__YPM-IZ-110436
+|            +--| (55)
+|            |  |           +**ref__YPM-IZ-106935
+|            |  |        +**| (9)
+|            |  |        |  |  +--ref__YPM-IZ-106958
+|            |  |        |  +**| (41)
+|            |  |        |     +--ref__YPM-IZ-110251
+|            |  |     +**| (42)
+|            |  |     |  +**ref__YPM-IZ-106937
+|            |  |  +**| (55)
+|            |  |  |  +**ref__YPM-IZ-106941
+|            |  +--| (37)
+|            |     |     +**ref__YPM-IZ-110843
+|            |     |  +**| (70)
+|            |     |  |  +**local__YPM-IZ-116693
+|            |     +--| (62)
+|            |        +--ref__YPM-IZ-110845
+|     +------| (65)
+|     |      |  +**ref__YPM-IZ-110846
+|     |      +**| (78)
+|     |         +**ref__YPM-IZ-110876
+|  +--| (40)
+|  |  |  +**ref__YPM-IZ-110633
+|  |  +**| (76)
+|  |     +**ref__YPM-IZ-110726
++--| (32)
+|  |  +**ref__YPM-IZ-110631
+|  +**| (86)
+|     +**ref__YPM-IZ-111016
+|
+|        +**ref__YPM-IZ-106936
+|     +**| (88)
+|     |  +**ref__YPM-IZ-106943
+|  +--| (65)
+|  |  +-----------ref__YPM-IZ-110842
++--| (49)
+   +**ref__YPM-IZ-111012
+
+Tree in newick format:
+
+(ref__FM-16644:0.0000010000,(((((((ref__OA-190531-1:0.0024531930,(((ref__WAM-Z97902:0.0023745780,ref__YPM-IZ-104460:0.0011681282)44:0.0000010000,ref__YPM-IZ-110830:0.0000010000)88:0.0011798725,(ref__YPM-IZ-110264:0.0000010000,ref__YPM-IZ-111006:0.0036349170)91:0.0011797874)84:0.0011552818)99:0.0051161304,ref__YPM-IZ-110844:0.0000010000)75:0.0011792454,(ref__YPM-IZ-110434:0.0000010000,ref__YPM-IZ-110436:0.0000010000)58:0.0000010000)46:0.0000010000,((((ref__YPM-IZ-106935:0.0000010000,(ref__YPM-IZ-106958:0.0011762746,ref__YPM-IZ-110251:0.0011762499)41:0.0000010000)9:0.0000010000,ref__YPM-IZ-106937:0.0000010000)42:0.0000010000,ref__YPM-IZ-106941:0.0000010000)55:0.0000010000,((ref__YPM-IZ-110843:0.0000010000,local__YPM-IZ-116693:0.0000010000)70:0.0000010000,ref__YPM-IZ-110845:0.0011775478)62:0.0011775711)37:0.0011753413)55:0.0011752128,(ref__YPM-IZ-110846:0.0000010000,ref__YPM-IZ-110876:0.0000010000)78:0.0000010000)65:0.0023952153,(ref__YPM-IZ-110633:0.0000010000,ref__YPM-IZ-110726:0.0000010000)76:0.0000010000)40:0.0011760361,(ref__YPM-IZ-110631:0.0000010000,ref__YPM-IZ-111016:0.0000010000)86:0.0000010000)32:0.0011742669,(((ref__YPM-IZ-106936:0.0000010000,ref__YPM-IZ-106943:0.0000010000)88:0.0000010000,ref__YPM-IZ-110842:0.0036579757)65:0.0011760345,ref__YPM-IZ-111012:0.0000010000)49:0.0011743327);
+
+CONSENSUS TREE
+--------------
+
+Consensus tree is constructed from 1000 bootstrap trees
+Log-likelihood of consensus tree: -1450.940062
+Robinson-Foulds distance between ML tree and consensus tree: 6
+
+Branches with support >0.000000% are kept (extended consensus)
+Branch lengths are optimized by maximum likelihood on original alignment
+Numbers in parentheses are bootstrap supports (%)
+
++---ref__FM-16644
+|
+|                                           +-------ref__OA-190531-1
+|                         +-----------------| (99)
+|                         |                 |       +-------ref__WAM-Z97902
+|                         |                 |   +---| (88)
+|                         |                 |   |   |  +---ref__YPM-IZ-104460
+|                         |                 |   |   +--| (48)
+|                         |                 |   |      +--ref__YPM-IZ-110830
+|                         |                 +---| (84)
+|                         |                     |   +--ref__YPM-IZ-110264
+|                         |                     +---| (91)
+|                         |                         +-----------ref__YPM-IZ-111006
+|                     +---| (75)
+|                     |   +--ref__YPM-IZ-110844
+|                  +--| (46)
+|                  |  |           +**ref__YPM-IZ-110434
+|                  |  |        +**|
+|                  |  |        |  +**ref__YPM-IZ-110667
+|                  |  |     +**|
+|                  |  |     |  +**ref__YPM-IZ-111017
+|                  |  |  +--|
+|                  |  |  |  +**ref__YPM-IZ-110972
+|                  |  +--| (58)
+|                  |     +--ref__YPM-IZ-110436
+|              +---| (55)
+|              |   |                                             +**ref__YPM-IZ-106935
+|              |   |                                          +**|
+|              |   |                                          |  +**ref__YPM-IZ-110254
+|              |   |                                       +**|
+|              |   |                                       |  +**local__YPM-IZ-116696
+|              |   |                                    +**|
+|              |   |                                    |  +**ref__YPM-IZ-110694
+|              |   |                                 +**|
+|              |   |                                 |  +**local__YPM-IZ-116695
+|              |   |                              +**|
+|              |   |                              |  +**ref__YPM-IZ-106954
+|              |   |                           +**|
+|              |   |                           |  +**ref__YPM-IZ-110847
+|              |   |                        +**|
+|              |   |                        |  +**ref__YPM-IZ-111013
+|              |   |                     +**|
+|              |   |                     |  +**ref__YPM-IZ-110880
+|              |   |                  +**|
+|              |   |                  |  +**ref__YPM-IZ-110433
+|              |   |               +**|
+|              |   |               |  +**ref__YPM-IZ-110738
+|              |   |            +--|
+|              |   |            |  +**local__YPM-IZ-116694
+|              |   |         +--| (61)
+|              |   |         |  +--ref__YPM-IZ-106937
+|              |   |      +--| (42)
+|              |   |      |  |  +---ref__YPM-IZ-106958
+|              |   |      |  +--| (41)
+|              |   |      |     +---ref__YPM-IZ-110251
+|              |   |   +--| (55)
+|              |   |   |  +--ref__YPM-IZ-106941
+|              |   +---| (37)
+|              |       |      +--ref__YPM-IZ-110843
+|              |       |   +--| (70)
+|              |       |   |  +--local__YPM-IZ-116693
+|              |       +---| (62)
+|              |           +---ref__YPM-IZ-110845
+|      +-------| (65)
+|      |       |  +--ref__YPM-IZ-110846
+|      |       +--| (78)
+|      |          +--ref__YPM-IZ-110876
+|   +--| (40)
+|   |  |     +**ref__YPM-IZ-110633
+|   |  |  +--|
+|   |  |  |  +**ref__YPM-IZ-111018
+|   |  +--| (76)
+|   |     +--ref__YPM-IZ-110726
++---| (45)
+|   |                   +**ref__YPM-IZ-106936
+|   |                +**|
+|   |                |  +**ref__YPM-IZ-110716
+|   |             +**|
+|   |             |  +**local__YPM-IZ-116697
+|   |          +--|
+|   |          |  +**ref__YPM-IZ-111014
+|   |       +--| (88)
+|   |       |  +--ref__YPM-IZ-106943
+|   |   +---| (65)
+|   |   |   +-----------ref__YPM-IZ-110842
+|   +---| (49)
+|       +--ref__YPM-IZ-111012
+|
+|  +--ref__YPM-IZ-110631
++--| (86)
+   +--ref__YPM-IZ-111016
+
+
+Consensus tree in newick format: 
+
+(ref__FM-16644:0.0011750110,(((((((ref__OA-190531-1:0.0024576765,((ref__WAM-Z97902:0.0023806962,(ref__YPM-IZ-104460:0.0011710411,ref__YPM-IZ-110830:0.0000021134)48:0.0000021134)88:0.0011823580,(ref__YPM-IZ-110264:0.0000021134,ref__YPM-IZ-111006:0.0036419309)91:0.0011822959)84:0.0011569884)99:0.0051240121,ref__YPM-IZ-110844:0.0000021134)75:0.0011801969,((((ref__YPM-IZ-110434:0.0000000000,ref__YPM-IZ-110667:0.0000000000):0.0000000000,ref__YPM-IZ-111017:0.0000000000):0.0000000000,ref__YPM-IZ-110972:0.0000000000):0.0000021134,ref__YPM-IZ-110436:0.0000021134)58:0.0000021134)46:0.0000021134,(((((((((((((((ref__YPM-IZ-106935:0.0000000000,ref__YPM-IZ-110254:0.0000000000):0.0000000000,local__YPM-IZ-116696:0.0000000000):0.0000000000,ref__YPM-IZ-110694:0.0000000000):0.0000000000,local__YPM-IZ-116695:0.0000000000):0.0000000000,ref__YPM-IZ-106954:0.0000000000):0.0000000000,ref__YPM-IZ-110847:0.0000000000):0.0000000000,ref__YPM-IZ-111013:0.0000000000):0.0000000000,ref__YPM-IZ-110880:0.0000000000):0.0000000000,ref__YPM-IZ-110433:0.0000000000):0.0000000000,ref__YPM-IZ-110738:0.0000000000):0.0000000000,local__YPM-IZ-116694:0.0000000000):0.0000021134,ref__YPM-IZ-106937:0.0000021134)61:0.0000021134,(ref__YPM-IZ-106958:0.0011771083,ref__YPM-IZ-110251:0.0011770733)41:0.0000021134)42:0.0000021134,ref__YPM-IZ-106941:0.0000021134)55:0.0000021134,((ref__YPM-IZ-110843:0.0000021134,local__YPM-IZ-116693:0.0000021134)70:0.0000021134,ref__YPM-IZ-110845:0.0011784151)62:0.0011784741)37:0.0011762821)55:0.0011760107,(ref__YPM-IZ-110846:0.0000021134,ref__YPM-IZ-110876:0.0000021134)78:0.0000021134)65:0.0023968041,((ref__YPM-IZ-110633:0.0000000000,ref__YPM-IZ-111018:0.0000000000):0.0000021134,ref__YPM-IZ-110726:0.0000021134)76:0.0000021134)40:0.0000024593,((((((ref__YPM-IZ-106936:0.0000000000,ref__YPM-IZ-110716:0.0000000000):0.0000000000,local__YPM-IZ-116697:0.0000000000):0.0000000000,ref__YPM-IZ-111014:0.0000000000):0.0000021134,ref__YPM-IZ-106943:0.0000021134)88:0.0000021134,ref__YPM-IZ-110842:0.0036611335)65:0.0011767585,ref__YPM-IZ-111012:0.0000021134)49:0.0011767339)45:0.0011768079,(ref__YPM-IZ-110631:0.0000021134,ref__YPM-IZ-111016:0.0000021134)86:0.0000021134);
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t /vast/palmer/pi/dunn/dd2233/physalia-illumina-qc/phylogenetics/results/trees/ITS.treefile -m "F81+F{0.247979,0.235767,0.238078,0.278177}+I{0.954159}" --length 877
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s /vast/palmer/pi/dunn/dd2233/physalia-illumina-qc/phylogenetics/results/alignments/ITS.fasta --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s /vast/palmer/pi/dunn/dd2233/physalia-illumina-qc/phylogenetics/results/alignments/ITS.fasta --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Mon Oct 12 11:21:35 2026
+Total CPU time used: 236.417406 seconds (0h:3m:56s)
+Total wall-clock time used: 71.65842259 seconds (0h:1m:11s)
+

@@ -1,0 +1,13 @@
+name: physalia-trees
+channels: [conda-forge, bioconda]
+dependencies:
+  - python=3.12
+  - biopython=1.86
+  - matplotlib
+  - numpy
+  - pyyaml
+  - snakemake-minimal=9.14.5
+  - mafft=7.526
+  - iqtree=3.0.1
+  - graphviz
+  - pytest

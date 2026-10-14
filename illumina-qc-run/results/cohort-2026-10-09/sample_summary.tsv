@@ -1,0 +1,6 @@
+sample	cohort	location	region	selection	input_pairs	workflow_status	retained_pairs	forward_only_reads	reverse_only_reads	dropped_pairs	human_mapped_records	human_percent_reads	marker_files	mitogenome_status	mitogenome_files	getorganelle_error_lines	source_work_directory
+YPM-IZ-116693	mexico_2026	Mexico	unassigned	user-approved Mexico IDs	10000000	complete	9993871	10	16	6103	0	0.0	15	paths_recovered	1	0	/vast/palmer/scratch/dunn/dd2233/physalia-illumina-qc/cohort-2026-10-09
+YPM-IZ-116694	mexico_2026	Mexico	unassigned	user-approved Mexico IDs	10000000	complete	9993390	5	10	6595	0	0.0	15	paths_recovered	1	0	/vast/palmer/scratch/dunn/dd2233/physalia-illumina-qc/cohort-2026-10-09
+YPM-IZ-116695	mexico_2026	Mexico	unassigned	user-approved Mexico IDs	10000000	complete	9991011	10	22	8957	0	0.0	15	paths_recovered	1	0	/vast/palmer/scratch/dunn/dd2233/physalia-illumina-qc/cohort-2026-10-09
+YPM-IZ-116696	mexico_2026	Mexico	unassigned	user-approved Mexico IDs	10000000	complete	9988942	14	31	11013	0	0.0	16	paths_recovered	1	0	/vast/palmer/scratch/dunn/dd2233/physalia-illumina-qc/cohort-2026-10-09
+YPM-IZ-116697	mexico_2026	Mexico	unassigned	user-approved Mexico IDs	10000000	complete	9989002	13	27	10958	0	0.0	16	paths_recovered	1	0	/vast/palmer/scratch/dunn/dd2233/physalia-illumina-qc/cohort-2026-10-09

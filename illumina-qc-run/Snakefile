@@ -1,0 +1,45 @@
+"""QC and marker recovery for the five Mexican specimens.
+
+Prepare paired reads, assess quality and contamination, recover markers and
+mitogenomes, then retain compact per-specimen products and a cohort summary.
+"""
+
+import csv
+from pathlib import Path
+
+configfile: str(Path(workflow.basedir) / "config/config.yaml")
+REPO = Path(workflow.basedir).resolve()
+WORK = str(Path(config["scratch"]) / config["run_id"])
+RESULTS = str(REPO / "results" / config["run_id"])
+
+with open(REPO / config["samples"]) as handle:
+    SAMPLE_ROWS = list(csv.DictReader(handle, delimiter="\t"))
+SAMPLES = [row["sample"] for row in SAMPLE_ROWS]
+if len(SAMPLES) != len(set(SAMPLES)):
+    raise ValueError("Duplicate specimen IDs in sample manifest")
+with open(REPO / config["reads"]) as handle:
+    READ_ROWS = list(csv.DictReader(handle, delimiter="\t"))
+READS = {s: [r for r in READ_ROWS if r["sample"] == s] for s in SAMPLES}
+if any(not rows for rows in READS.values()):
+    raise ValueError("Specimen without reads")
+if set(r["sample"] for r in READ_ROWS) != set(SAMPLES):
+    raise ValueError("Read and specimen manifests have different scope")
+if not set(config["pilot"]).issubset(SAMPLES):
+    raise ValueError("Pilot IDs absent from sample manifest")
+
+wildcard_constraints:
+    sample = "[A-Za-z0-9-]+"
+
+include: "workflow/rules/reads.smk"
+include: "workflow/rules/quality.smk"
+include: "workflow/rules/markers.smk"
+include: "workflow/rules/reports.smk"
+
+rule pilot:
+    input:
+        expand(RESULTS + "/{sample}/summary.json", sample=config["pilot"])
+
+rule all:
+    input:
+        RESULTS + "/sample_summary.tsv"
+    default_target: True

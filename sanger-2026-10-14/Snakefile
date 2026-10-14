@@ -1,0 +1,65 @@
+"""Trace QC -> marker-specific inputs -> alignment -> inference -> rooted figures."""
+from pathlib import Path
+HERE=Path(workflow.basedir).resolve()
+REPO=HERE.parent
+GENES=['CO1','16S']
+PYTHON=config.get('analysis_python', 'python')
+rule process_sanger:
+    input:
+        raw=sorted(str(p) for p in (HERE/'raw').iterdir()),
+        samples=str(HERE/'config/samples.tsv'),
+        localities=str(HERE/'config/localities.tsv'),
+        script=str(HERE/'scripts/process_sanger.py'),
+        references=expand(str(REPO/'analyses/inputs/{gene}.fasta'),gene=GENES),
+        tips=expand(str(REPO/'analyses/inputs/{gene}.tips.tsv'),gene=GENES),
+        annotations=str(REPO/'analyses/inputs/genetic_annotations.tsv')
+    output:
+        fasta=expand(str(HERE/'inputs/{gene}.fasta'),gene=GENES),
+        tips=expand(str(HERE/'inputs/{gene}.tips.tsv'),gene=GENES),
+        annotations=str(HERE/'inputs/genetic_annotations.tsv'),
+        qc=str(HERE/'results/qc/read_qc.json')
+    shell: '{PYTHON:q} {input.script:q}'
+rule align:
+    input:
+        fasta=str(HERE/'inputs/{gene}.fasta'),
+        validator=str(REPO/'analyses/scripts/validate_alignment.py')
+    output: str(HERE/'results/alignments/{gene}.fasta')
+    threads: 4
+    params: raw=str(REPO/'work/sanger-2026-10-14/{gene}.raw.fasta')
+    log: str(HERE/'provenance/{gene}.mafft.log')
+    shell:
+        'mkdir -p '+str(REPO/'work/sanger-2026-10-14')+'; '
+        'mafft --auto --adjustdirectionaccurately --thread {threads} {input.fasta:q} > {params.raw:q} 2> {log:q}; '
+        '{PYTHON:q} {input.validator:q} {params.raw:q} {input.fasta:q} {output:q}'
+rule infer:
+    input: str(HERE/'results/alignments/{gene}.fasta')
+    output:
+        tree=str(HERE/'results/trees/{gene}.treefile'),
+        consensus=str(HERE/'results/trees/{gene}.contree'),
+        report=str(HERE/'results/trees/{gene}.iqtree')
+    threads: 4
+    params: prefix=str(HERE/'results/trees/{gene}')
+    log: str(HERE/'provenance/{gene}.iqtree.log')
+    shell: 'iqtree3 -s {input:q} -m MFP -B 1000 --runs 5 -nt {threads} -seed 20261012 -pre {params.prefix:q} > {log:q} 2>&1'
+rule root_and_report:
+    input:
+        trees=expand(str(HERE/'results/trees/{gene}.treefile'),gene=GENES),
+        consensus=expand(str(HERE/'results/trees/{gene}.contree'),gene=GENES),
+        tips=rules.process_sanger.output.tips,
+        alignments=expand(str(HERE/'results/alignments/{gene}.fasta'),gene=GENES),
+        script=str(HERE/'scripts/report_sanger.py')
+    output:
+        trees=expand(str(HERE/'results/figures/{gene}.rooted.nwk'),gene=GENES),
+        report=str(HERE/'results/tree_summary.json')
+    shell: '{PYTHON:q} {input.script:q}'
+rule plot:
+    input:
+        tree=str(HERE/'results/figures/{gene}.rooted.nwk'),
+        tips=str(HERE/'inputs/{gene}.tips.tsv'),
+        annotation=rules.process_sanger.output.annotations,
+        script=str(REPO/'analyses/scripts/plot_genetic_groups.py')
+    output: expand(str(HERE/'results/genetic_groups/{{gene}}{view}.{ext}'),view=['','.focal'],ext=['pdf','png','svg'])
+    shell: '{PYTHON:q} {input.script:q} {wildcards.gene:q} --analysis-root '+str(HERE)
+rule all:
+    input: expand(str(HERE/'results/genetic_groups/{gene}.pdf'),gene=GENES),rules.root_and_report.output.report
+    default_target: True

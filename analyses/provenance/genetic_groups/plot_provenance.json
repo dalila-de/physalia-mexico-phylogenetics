@@ -1,0 +1,17 @@
+{
+  "inference_job": "13179436",
+  "annotation_source": "Population_Paper_Phase1/admixture_likelihood_v1/results",
+  "assignment": "E if E_component_whole > 0.5, else W; verify agrees with no_sc10; original V flag retained; Mexico separate by user instruction",
+  "files": {
+    "phylogenetics/inputs/genetic_annotations.tsv": "6e634573b62bc4f8d119b67fabc2bcc26eda5b55ca18556a6cb421a212b6521e",
+    "phylogenetics/scripts/plot_genetic_groups.py": "7cd07d3a29be81dca4a4a3d92df769754180a31cbe47503a6c0c08a778988756",
+    "phylogenetics/provenance/genetic_groups/no_sc10.K2.ancestry.tsv": "6710f44dc060767cdf77e5af57704c0c08f964ff5d24327b2bd23ba76ebdf67f",
+    "phylogenetics/provenance/genetic_groups/sc10_exclusion_comparison.tsv": "58a35e192b186da873a56b3e913b9483da872121ba6e82efc106022698f8f859",
+    "phylogenetics/provenance/genetic_groups/whole.K2.ancestry.tsv": "24fae8db8f3874dc9c6d720efe48806ee1275e3f11edbac0006ce153e214f201",
+    "phylogenetics/results/figures/16S.rooted.nwk": "ff602874901da3ff2c9871db60d7f8d32064db53aa036b63b2997ff058b4e2f6",
+    "phylogenetics/results/figures/18S.rooted.nwk": "bd3d66314d7523c91ac020e3d9bb7cbe5478e6491784bc70bc8c364622e63e45",
+    "phylogenetics/results/figures/CO1.rooted.nwk": "1fd1377dd19e53565ef8e40cfa7646a1c9961dfd3cc0bab44841c0f798e416ba",
+    "phylogenetics/results/figures/ITS.rooted.nwk": "794828381a86ac4c33be9e7297ef872996c40eea23c64d6952f15fb81a463eaa",
+    "phylogenetics/results/figures/mitogenome_submitted.rooted.nwk": "681ed084a9bba9f97785f96fb8afdd72f265e539e86cc8d7b7670dcaa560c2bb"
+  }
+}

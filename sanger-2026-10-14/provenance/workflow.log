@@ -1,0 +1,154 @@
+Assuming unrestricted shared filesystem usage.
+host: r813u15n09.mccleary.ycrc.yale.edu
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 8
+Rules claiming more threads will be scaled down.
+Job stats:
+job                count
+---------------  -------
+align                  2
+all                    1
+infer                  2
+plot                   2
+process_sanger         1
+root_and_report        1
+total                  9
+
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Oct 14 12:45:34 2026]
+localrule process_sanger:
+    input: /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/sanger-2026-10-14/raw/CH887-D01_M13F_B03.ab1, /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/sanger-2026-10-14/raw/CH887-D01_M13F_B03.seq, /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/sanger-2026-10-14/raw/CH887-D01_M13R_B03.ab1, /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/sanger-2026-10-14/raw/CH887-D01_M13R_B03.seq, /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/sanger-2026-10-14/raw/CH887A-D01_M13F_D05.ab1, /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/sanger-2026-10-14/raw/CH887A-D01_M13F_D05.seq, /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/sanger-2026-10-14/raw/CH887A-D01_M13R_D05.ab1, /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/sanger-2026-10-14/raw/CH887A-D01_M13R_D05.seq, /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/sanger-2026-10-14/config/samples.tsv, /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/sanger-2026-10-14/scripts/process_sanger.py, /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/analyses/inputs/CO1.fasta, /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/analyses/inputs/16S.fasta, /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/analyses/inputs/CO1.tips.tsv, /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/analyses/inputs/16S.tips.tsv, /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/analyses/inputs/genetic_annotations.tsv
+    output: /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/sanger-2026-10-14/inputs/CO1.fasta, /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/sanger-2026-10-14/inputs/16S.fasta, /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/sanger-2026-10-14/inputs/CO1.tips.tsv, /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/sanger-2026-10-14/inputs/16S.tips.tsv, /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/sanger-2026-10-14/inputs/genetic_annotations.tsv, /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/sanger-2026-10-14/results/qc/read_qc.json
+    jobid: 5
+    reason: Missing output files: /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/sanger-2026-10-14/inputs/CO1.tips.tsv, /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/sanger-2026-10-14/inputs/CO1.fasta, /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/sanger-2026-10-14/inputs/16S.fasta, /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/sanger-2026-10-14/inputs/16S.tips.tsv, /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/sanger-2026-10-14/inputs/genetic_annotations.tsv; Code has changed since last execution
+    resources: tmpdir=/tmp
+Shell command: /vast/palmer/pi/dunn/dd2233/Physalia_Phylogenetics_2026/software/plot_env/bin/python /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/sanger-2026-10-14/scripts/process_sanger.py
+[Wed Oct 14 12:45:46 2026]
+Finished jobid: 5 (Rule: process_sanger)
+1 of 9 steps (11%) done
+Select jobs to execute...
+Failed to solve scheduling problem with ILP solver, falling back to greedy scheduler. You likely have to fix your ILP solver installation. Error message: PULP_CBC_CMD: Not Available (check permissions on cbc)
+Execute 2 jobs...
+
+[Wed Oct 14 12:45:46 2026]
+localrule align:
+    input: /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/sanger-2026-10-14/inputs/CO1.fasta, /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/analyses/scripts/validate_alignment.py
+    output: /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/sanger-2026-10-14/results/alignments/CO1.fasta
+    log: /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/sanger-2026-10-14/provenance/CO1.mafft.log
+    jobid: 4
+    reason: Missing output files: /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/sanger-2026-10-14/results/alignments/CO1.fasta; Input files updated by another job: /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/sanger-2026-10-14/inputs/CO1.fasta
+    wildcards: gene=CO1
+    threads: 4
+    resources: tmpdir=/tmp
+Shell command: mkdir -p /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/work/sanger-2026-10-14; mafft --auto --adjustdirectionaccurately --thread 4 /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/sanger-2026-10-14/inputs/CO1.fasta > /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/work/sanger-2026-10-14/CO1.raw.fasta 2> /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/sanger-2026-10-14/provenance/CO1.mafft.log; /vast/palmer/pi/dunn/dd2233/Physalia_Phylogenetics_2026/software/plot_env/bin/python /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/analyses/scripts/validate_alignment.py /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/work/sanger-2026-10-14/CO1.raw.fasta /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/sanger-2026-10-14/inputs/CO1.fasta /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/sanger-2026-10-14/results/alignments/CO1.fasta
+
+[Wed Oct 14 12:45:46 2026]
+localrule align:
+    input: /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/sanger-2026-10-14/inputs/16S.fasta, /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/analyses/scripts/validate_alignment.py
+    output: /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/sanger-2026-10-14/results/alignments/16S.fasta
+    log: /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/sanger-2026-10-14/provenance/16S.mafft.log
+    jobid: 7
+    reason: Missing output files: /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/sanger-2026-10-14/results/alignments/16S.fasta; Input files updated by another job: /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/sanger-2026-10-14/inputs/16S.fasta
+    wildcards: gene=16S
+    threads: 4
+    resources: tmpdir=/tmp
+Shell command: mkdir -p /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/work/sanger-2026-10-14; mafft --auto --adjustdirectionaccurately --thread 4 /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/sanger-2026-10-14/inputs/16S.fasta > /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/work/sanger-2026-10-14/16S.raw.fasta 2> /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/sanger-2026-10-14/provenance/16S.mafft.log; /vast/palmer/pi/dunn/dd2233/Physalia_Phylogenetics_2026/software/plot_env/bin/python /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/analyses/scripts/validate_alignment.py /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/work/sanger-2026-10-14/16S.raw.fasta /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/sanger-2026-10-14/inputs/16S.fasta /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/sanger-2026-10-14/results/alignments/16S.fasta
+[Wed Oct 14 12:46:00 2026]
+Finished jobid: 4 (Rule: align)
+2 of 9 steps (22%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Oct 14 12:46:00 2026]
+localrule infer:
+    input: /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/sanger-2026-10-14/results/alignments/CO1.fasta
+    output: /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/sanger-2026-10-14/results/trees/CO1.treefile, /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/sanger-2026-10-14/results/trees/CO1.contree, /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/sanger-2026-10-14/results/trees/CO1.iqtree
+    log: /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/sanger-2026-10-14/provenance/CO1.iqtree.log
+    jobid: 3
+    reason: Missing output files: /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/sanger-2026-10-14/results/trees/CO1.treefile, /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/sanger-2026-10-14/results/trees/CO1.contree; Input files updated by another job: /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/sanger-2026-10-14/results/alignments/CO1.fasta
+    wildcards: gene=CO1
+    threads: 4
+    resources: tmpdir=/tmp
+Shell command: iqtree3 -s /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/sanger-2026-10-14/results/alignments/CO1.fasta -m MFP -B 1000 --runs 5 -nt 4 -seed 20261012 -pre /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/sanger-2026-10-14/results/trees/CO1 > /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/sanger-2026-10-14/provenance/CO1.iqtree.log 2>&1
+[Wed Oct 14 12:46:02 2026]
+Finished jobid: 7 (Rule: align)
+3 of 9 steps (33%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Oct 14 12:46:02 2026]
+localrule infer:
+    input: /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/sanger-2026-10-14/results/alignments/16S.fasta
+    output: /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/sanger-2026-10-14/results/trees/16S.treefile, /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/sanger-2026-10-14/results/trees/16S.contree, /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/sanger-2026-10-14/results/trees/16S.iqtree
+    log: /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/sanger-2026-10-14/provenance/16S.iqtree.log
+    jobid: 6
+    reason: Missing output files: /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/sanger-2026-10-14/results/trees/16S.treefile, /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/sanger-2026-10-14/results/trees/16S.contree; Input files updated by another job: /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/sanger-2026-10-14/results/alignments/16S.fasta
+    wildcards: gene=16S
+    threads: 4
+    resources: tmpdir=/tmp
+Shell command: iqtree3 -s /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/sanger-2026-10-14/results/alignments/16S.fasta -m MFP -B 1000 --runs 5 -nt 4 -seed 20261012 -pre /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/sanger-2026-10-14/results/trees/16S > /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/sanger-2026-10-14/provenance/16S.iqtree.log 2>&1
+[Wed Oct 14 12:46:55 2026]
+Finished jobid: 3 (Rule: infer)
+4 of 9 steps (44%) done
+[Wed Oct 14 12:47:37 2026]
+Finished jobid: 6 (Rule: infer)
+5 of 9 steps (56%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Oct 14 12:47:37 2026]
+localrule root_and_report:
+    input: /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/sanger-2026-10-14/results/trees/CO1.treefile, /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/sanger-2026-10-14/results/trees/16S.treefile, /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/sanger-2026-10-14/results/trees/CO1.contree, /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/sanger-2026-10-14/results/trees/16S.contree, /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/sanger-2026-10-14/inputs/CO1.tips.tsv, /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/sanger-2026-10-14/inputs/16S.tips.tsv, /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/sanger-2026-10-14/results/alignments/CO1.fasta, /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/sanger-2026-10-14/results/alignments/16S.fasta, /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/sanger-2026-10-14/scripts/report_sanger.py
+    output: /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/sanger-2026-10-14/results/figures/CO1.rooted.nwk, /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/sanger-2026-10-14/results/figures/16S.rooted.nwk, /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/sanger-2026-10-14/results/tree_summary.json
+    jobid: 2
+    reason: Missing output files: /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/sanger-2026-10-14/results/figures/CO1.rooted.nwk, /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/sanger-2026-10-14/results/figures/16S.rooted.nwk, /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/sanger-2026-10-14/results/tree_summary.json; Input files updated by another job: /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/sanger-2026-10-14/results/trees/16S.contree, /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/sanger-2026-10-14/results/trees/CO1.contree, /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/sanger-2026-10-14/inputs/CO1.tips.tsv, /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/sanger-2026-10-14/results/trees/CO1.treefile, /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/sanger-2026-10-14/results/trees/16S.treefile, /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/sanger-2026-10-14/inputs/16S.tips.tsv, /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/sanger-2026-10-14/results/alignments/16S.fasta, /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/sanger-2026-10-14/results/alignments/CO1.fasta
+    resources: tmpdir=/tmp
+Shell command: /vast/palmer/pi/dunn/dd2233/Physalia_Phylogenetics_2026/software/plot_env/bin/python /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/sanger-2026-10-14/scripts/report_sanger.py
+[Wed Oct 14 12:47:37 2026]
+Finished jobid: 2 (Rule: root_and_report)
+6 of 9 steps (67%) done
+Select jobs to execute...
+Execute 2 jobs...
+
+[Wed Oct 14 12:47:37 2026]
+localrule plot:
+    input: /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/sanger-2026-10-14/results/figures/16S.rooted.nwk, /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/sanger-2026-10-14/inputs/16S.tips.tsv, /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/sanger-2026-10-14/inputs/genetic_annotations.tsv, /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/analyses/scripts/plot_genetic_groups.py
+    output: /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/sanger-2026-10-14/results/genetic_groups/16S.pdf, /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/sanger-2026-10-14/results/genetic_groups/16S.png, /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/sanger-2026-10-14/results/genetic_groups/16S.svg, /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/sanger-2026-10-14/results/genetic_groups/16S.focal.pdf, /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/sanger-2026-10-14/results/genetic_groups/16S.focal.png, /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/sanger-2026-10-14/results/genetic_groups/16S.focal.svg
+    jobid: 8
+    reason: Missing output files: /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/sanger-2026-10-14/results/genetic_groups/16S.pdf; Input files updated by another job: /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/sanger-2026-10-14/results/figures/16S.rooted.nwk, /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/sanger-2026-10-14/inputs/16S.tips.tsv, /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/sanger-2026-10-14/inputs/genetic_annotations.tsv
+    wildcards: gene=16S
+    resources: tmpdir=/tmp
+Shell command: /vast/palmer/pi/dunn/dd2233/Physalia_Phylogenetics_2026/software/plot_env/bin/python /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/analyses/scripts/plot_genetic_groups.py 16S --analysis-root /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/sanger-2026-10-14
+
+[Wed Oct 14 12:47:37 2026]
+localrule plot:
+    input: /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/sanger-2026-10-14/results/figures/CO1.rooted.nwk, /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/sanger-2026-10-14/inputs/CO1.tips.tsv, /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/sanger-2026-10-14/inputs/genetic_annotations.tsv, /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/analyses/scripts/plot_genetic_groups.py
+    output: /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/sanger-2026-10-14/results/genetic_groups/CO1.pdf, /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/sanger-2026-10-14/results/genetic_groups/CO1.png, /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/sanger-2026-10-14/results/genetic_groups/CO1.svg, /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/sanger-2026-10-14/results/genetic_groups/CO1.focal.pdf, /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/sanger-2026-10-14/results/genetic_groups/CO1.focal.png, /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/sanger-2026-10-14/results/genetic_groups/CO1.focal.svg
+    jobid: 1
+    reason: Missing output files: /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/sanger-2026-10-14/results/genetic_groups/CO1.pdf; Input files updated by another job: /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/sanger-2026-10-14/results/figures/CO1.rooted.nwk, /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/sanger-2026-10-14/inputs/genetic_annotations.tsv, /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/sanger-2026-10-14/inputs/CO1.tips.tsv
+    wildcards: gene=CO1
+    resources: tmpdir=/tmp
+Shell command: /vast/palmer/pi/dunn/dd2233/Physalia_Phylogenetics_2026/software/plot_env/bin/python /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/analyses/scripts/plot_genetic_groups.py CO1 --analysis-root /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/sanger-2026-10-14
+[Wed Oct 14 12:47:40 2026]
+Finished jobid: 1 (Rule: plot)
+7 of 9 steps (78%) done
+[Wed Oct 14 12:47:40 2026]
+Finished jobid: 8 (Rule: plot)
+8 of 9 steps (89%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Oct 14 12:47:40 2026]
+localrule all:
+    input: /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/sanger-2026-10-14/results/genetic_groups/CO1.pdf, /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/sanger-2026-10-14/results/genetic_groups/16S.pdf, /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/sanger-2026-10-14/results/tree_summary.json
+    jobid: 0
+    reason: Input files updated by another job: /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/sanger-2026-10-14/results/genetic_groups/16S.pdf, /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/sanger-2026-10-14/results/tree_summary.json, /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/sanger-2026-10-14/results/genetic_groups/CO1.pdf
+    resources: tmpdir=/tmp
+Shell command: None
+[Wed Oct 14 12:47:40 2026]
+Finished jobid: 0 (Rule: all)
+9 of 9 steps (100%) done
+Complete log(s): /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/.snakemake/log/2026-10-14T124534.135477.snakemake.log

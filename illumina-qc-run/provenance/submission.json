@@ -1,0 +1,15 @@
+{
+  "job_id": "12605666",
+  "submitted_utc": "2026-10-09T18:25:22.307372+00:00",
+  "source_commit": "78572b6",
+  "command": "sbatch --parsable batch.sh",
+  "scope": "40 specimens; three-specimen pilot then remaining cohort",
+  "slurm_log": "/vast/palmer/scratch/dunn/dd2233/physalia-illumina-qc/logs/slurm-12605666.out",
+  "run_records": "provenance/slurm-12605666",
+  "status": "completed",
+  "node": "r814u03n06",
+  "exit_code": 0,
+  "elapsed": "14:04:03",
+  "completed_local": "2026-10-10 04:29 America/New_York",
+  "verified_specimens": 40
+}

@@ -1,0 +1,13 @@
+name: /vast/palmer/pi/dunn/dd2233/.conda/envs/IlluminaQC
+channels:
+  - conda-forge
+  - bioconda
+  - r
+  - defaults
+dependencies:
+  - getorganelle
+  - python=3.12
+  - snakemake
+  - snakemake-executor-plugin-slurm
+  - biopython
+prefix: /vast/palmer/pi/dunn/dd2233/.conda/envs/IlluminaQC

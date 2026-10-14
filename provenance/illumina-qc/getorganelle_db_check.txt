@@ -1,0 +1,12 @@
+
+Python 3.12.12 | packaged by conda-forge | (main, Oct 22 2025, 23:25:55) [GCC 14.3.0]
+DEPENDENCIES: Bowtie2 2.5.4; Blast 2.17.0
+WORKING DIR: /vast/palmer/pi/dunn/dd2233/physalia-illumina-qc
+/vast/palmer/pi/dunn/dd2233/.conda/envs/IlluminaQC/bin/get_organelle_config.py --check --use-version 0.0.1 --config-dir /vast/palmer/pi/dunn/dd2233/Illumina_QC_Pop_Gen/runs/libraries_2026_09_08/getorganelle_db
+
+Checking existing database(s) .. 
+animal_mt Seed Database:	0.0.1
+animal_mt Label Database:	0.0.1
+
+
+Total cost: 1.04 s

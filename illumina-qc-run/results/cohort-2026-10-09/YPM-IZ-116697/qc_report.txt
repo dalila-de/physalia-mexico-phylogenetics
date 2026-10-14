@@ -1,0 +1,95 @@
+## ILLUMINA QC SUMMARY ##
+ID: YPM-IZ-116697
+Requested maximum read pairs: 10000000
+
+### FastQC Results ###
+**R1 Reads:**
+PASS	Basic Statistics	YPM-IZ-116697.R1.trimmed.fastq
+PASS	Per base sequence quality	YPM-IZ-116697.R1.trimmed.fastq
+PASS	Per tile sequence quality	YPM-IZ-116697.R1.trimmed.fastq
+PASS	Per sequence quality scores	YPM-IZ-116697.R1.trimmed.fastq
+PASS	Per base sequence content	YPM-IZ-116697.R1.trimmed.fastq
+WARN	Per sequence GC content	YPM-IZ-116697.R1.trimmed.fastq
+PASS	Per base N content	YPM-IZ-116697.R1.trimmed.fastq
+WARN	Sequence Length Distribution	YPM-IZ-116697.R1.trimmed.fastq
+PASS	Sequence Duplication Levels	YPM-IZ-116697.R1.trimmed.fastq
+PASS	Overrepresented sequences	YPM-IZ-116697.R1.trimmed.fastq
+PASS	Adapter Content	YPM-IZ-116697.R1.trimmed.fastq
+**R2 Reads:**
+PASS	Basic Statistics	YPM-IZ-116697.R2.trimmed.fastq
+PASS	Per base sequence quality	YPM-IZ-116697.R2.trimmed.fastq
+PASS	Per tile sequence quality	YPM-IZ-116697.R2.trimmed.fastq
+PASS	Per sequence quality scores	YPM-IZ-116697.R2.trimmed.fastq
+PASS	Per base sequence content	YPM-IZ-116697.R2.trimmed.fastq
+WARN	Per sequence GC content	YPM-IZ-116697.R2.trimmed.fastq
+PASS	Per base N content	YPM-IZ-116697.R2.trimmed.fastq
+WARN	Sequence Length Distribution	YPM-IZ-116697.R2.trimmed.fastq
+PASS	Sequence Duplication Levels	YPM-IZ-116697.R2.trimmed.fastq
+WARN	Overrepresented sequences	YPM-IZ-116697.R2.trimmed.fastq
+PASS	Adapter Content	YPM-IZ-116697.R2.trimmed.fastq
+
+### Kraken2 Results ###
+Unclassified read pairs: 94.01%
+Bacterial read pairs: 1.72%
+
+### Human Contamination Results ###
+Read pairs surviving trimming: 9989002
+Read records passing human-mapping filters: 0
+Percent reads human: 0.00000%
+
+### GetOrganelle Results ###
+Assembly: getorganelle/YPM-IZ-116697_mtgenome/animal_mt.K105.scaffolds.graph1.1.path_sequence.fasta
+    scaffold_1--42731+: 15038 bp
+Errors from GetOrganelle:
+    None recorded
+Input R1 reads used by GetOrganelle: 9989002
+Extended paired R1 reads: 45426
+Paired R1 recruitment: 0.45476%
+Read recruitment is not a direct estimate of mitochondrial DNA abundance.
+
+### Sharkmer Results ###
+shark_results/YPM-IZ-116697/YPM-IZ-116697_bacteria_16S-V2f-V3r.fasta
+    YPM-IZ-116697: 210 bp
+shark_results/YPM-IZ-116697/YPM-IZ-116697_cnidaria_16S.fasta
+    YPM-IZ-116697: 552 bp
+shark_results/YPM-IZ-116697/YPM-IZ-116697_cnidaria_18S.fasta
+    YPM-IZ-116697: 1790 bp
+shark_results/YPM-IZ-116697/YPM-IZ-116697_cnidaria_28S-v2.fasta
+    YPM-IZ-116697: 419 bp
+shark_results/YPM-IZ-116697/YPM-IZ-116697_cnidaria_28S.fasta
+    YPM-IZ-116697: 3263 bp
+shark_results/YPM-IZ-116697/YPM-IZ-116697_cnidaria_CO1.fasta
+    YPM-IZ-116697: 688 bp
+shark_results/YPM-IZ-116697/YPM-IZ-116697_cnidaria_EF1A.fasta
+    YPM-IZ-116697: 896 bp
+    YPM-IZ-116697: 923 bp
+    YPM-IZ-116697: 923 bp
+    YPM-IZ-116697: 923 bp
+    YPM-IZ-116697: 923 bp
+shark_results/YPM-IZ-116697/YPM-IZ-116697_cnidaria_ITS-v2.fasta
+    YPM-IZ-116697: 717 bp
+shark_results/YPM-IZ-116697/YPM-IZ-116697_cnidaria_ITS.fasta
+    YPM-IZ-116697: 863 bp
+shark_results/YPM-IZ-116697/YPM-IZ-116697_metazoa_18S-V3.fasta
+    YPM-IZ-116697: 155 bp
+shark_results/YPM-IZ-116697/YPM-IZ-116697_metazoa_18S-V5-V7L.fasta
+    YPM-IZ-116697: 261 bp
+shark_results/YPM-IZ-116697/YPM-IZ-116697_metazoa_18S-V5-V7S.fasta
+    YPM-IZ-116697: 142 bp
+shark_results/YPM-IZ-116697/YPM-IZ-116697_metazoa_18S-V7.fasta
+    YPM-IZ-116697: 172 bp
+shark_results/YPM-IZ-116697/YPM-IZ-116697_metazoa_18S-V7p-V8.fasta
+    YPM-IZ-116697: 203 bp
+shark_results/YPM-IZ-116697/YPM-IZ-116697_metazoa_18S-V9-v2.fasta
+    YPM-IZ-116697: 167 bp
+shark_results/YPM-IZ-116697/YPM-IZ-116697_metazoa_18S-V9.fasta
+    YPM-IZ-116697: 129 bp
+
+### Rego Results ###
+16sF: 0
+16sR: 12
+co1F: 8
+co1R: 4
+18sF: 1
+18sR: 0
+ITSfullF: 50

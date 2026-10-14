@@ -1,0 +1,6 @@
+sample	unit	R1	R2
+YPM-IZ-116693	run1	/gpfs/ycga/work/dunn/sequences/illumina/physalia_mexico_2026/YPM-IZ-116693/YPM-IZ-116693_131_062_S141_L006_R1_001.fastq.gz	/gpfs/ycga/work/dunn/sequences/illumina/physalia_mexico_2026/YPM-IZ-116693/YPM-IZ-116693_131_062_S141_L006_R2_001.fastq.gz
+YPM-IZ-116694	run1	/gpfs/ycga/work/dunn/sequences/illumina/physalia_mexico_2026/YPM-IZ-116694/YPM-IZ-116694_119_074_S142_L006_R1_001.fastq.gz	/gpfs/ycga/work/dunn/sequences/illumina/physalia_mexico_2026/YPM-IZ-116694/YPM-IZ-116694_119_074_S142_L006_R2_001.fastq.gz
+YPM-IZ-116695	run1	/gpfs/ycga/work/dunn/sequences/illumina/physalia_mexico_2026/YPM-IZ-116695/YPM-IZ-116695_107_086_S143_L006_R1_001.fastq.gz	/gpfs/ycga/work/dunn/sequences/illumina/physalia_mexico_2026/YPM-IZ-116695/YPM-IZ-116695_107_086_S143_L006_R2_001.fastq.gz
+YPM-IZ-116696	run1	/gpfs/ycga/work/dunn/sequences/illumina/physalia_mexico_2026/YPM-IZ-116696/YPM-IZ-116696_180_013_S144_L006_R1_001.fastq.gz	/gpfs/ycga/work/dunn/sequences/illumina/physalia_mexico_2026/YPM-IZ-116696/YPM-IZ-116696_180_013_S144_L006_R2_001.fastq.gz
+YPM-IZ-116697	run1	/gpfs/ycga/work/dunn/sequences/illumina/physalia_mexico_2026/YPM-IZ-116697/YPM-IZ-116697_168_025_S145_L006_R1_001.fastq.gz	/gpfs/ycga/work/dunn/sequences/illumina/physalia_mexico_2026/YPM-IZ-116697/YPM-IZ-116697_168_025_S145_L006_R2_001.fastq.gz

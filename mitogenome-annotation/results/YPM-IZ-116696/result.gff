@@ -1,0 +1,37 @@
+##gff-version 3
+#!gff-spec-version 1.21
+scaffold_1--46523+	mitos	region	1	15038	.	+	.	ID=scaffold_1--46523+:1..15038;Is_circular=False;Name=scaffold_1--46523+;genome=mitochondrion;mol_type=genomic DNA
+scaffold_1--46523+	mitos	gene	39	104	.	-	.	ID=gene_cox1_1;Name=cox1_1;gene_id=cox1_1
+scaffold_1--46523+	mitos	exon	39	104	862.1	-	0	Parent=transcript_cox1_1;Name=cox1_1
+scaffold_1--46523+	mitfi	ncRNA_gene	114	1700	.	-	.	ID=gene_rrnL;Name=rrnL;gene_id=rrnL
+scaffold_1--46523+	mitfi	rRNA	114	1700	.	-	.	ID=transcript_rrnL;Name=rrnL;Parent=gene_rrnL;gene_id=rrnL
+scaffold_1--46523+	mitfi	exon	114	1700	0.0	-	.	Parent=transcript_rrnL;Name=rrnL
+scaffold_1--46523+	mitos	gene	1911	2645	.	+	.	ID=gene_cox2;Name=cox2;gene_id=cox2
+scaffold_1--46523+	mitos	exon	1911	2645	427687643.4	+	0	Parent=transcript_cox2;Name=cox2
+scaffold_1--46523+	mitos	gene	2734	2934	.	+	.	ID=gene_atp8;Name=atp8;gene_id=atp8
+scaffold_1--46523+	mitos	exon	2734	2934	1743.2	+	0	Parent=transcript_atp8;Name=atp8
+scaffold_1--46523+	mitos	gene	2934	3638	.	+	.	ID=gene_atp6;Name=atp6;gene_id=atp6
+scaffold_1--46523+	mitos	exon	2934	3638	93979866.3	+	0	Parent=transcript_atp6;Name=atp6
+scaffold_1--46523+	mitos	gene	3639	4424	.	+	.	ID=gene_cox3;Name=cox3;gene_id=cox3
+scaffold_1--46523+	mitos	exon	3639	4424	579112615.1	+	0	Parent=transcript_cox3;Name=cox3
+scaffold_1--46523+	mitos	gene	4643	5869	.	+	.	ID=gene_nad2;Name=nad2;gene_id=nad2
+scaffold_1--46523+	mitos	exon	4643	5869	160801899.6	+	0	Parent=transcript_nad2;Name=nad2
+scaffold_1--46523+	mitos	gene	5869	7698	.	+	.	ID=gene_nad5;Name=nad5;gene_id=nad5
+scaffold_1--46523+	mitos	exon	5869	7698	1022368004.4	+	0	Parent=transcript_nad5;Name=nad5
+scaffold_1--46523+	mitfi	ncRNA_gene	7703	8615	.	+	.	ID=gene_rrnS;Name=rrnS;gene_id=rrnS
+scaffold_1--46523+	mitfi	rRNA	7703	8615	.	+	.	ID=transcript_rrnS;Name=rrnS;Parent=gene_rrnS;gene_id=rrnS
+scaffold_1--46523+	mitfi	exon	7703	8615	0.0	+	.	Parent=transcript_rrnS;Name=rrnS
+scaffold_1--46523+	mitos	gene	8623	9183	.	+	.	ID=gene_nad6;Name=nad6;gene_id=nad6
+scaffold_1--46523+	mitos	exon	8623	9183	2368357.6	+	0	Parent=transcript_nad6;Name=nad6
+scaffold_1--46523+	mitos	gene	9174	9530	.	+	.	ID=gene_nad3;Name=nad3;gene_id=nad3
+scaffold_1--46523+	mitos	exon	9174	9530	45970331.3	+	0	Parent=transcript_nad3;Name=nad3
+scaffold_1--46523+	mitos	gene	9533	9829	.	+	.	ID=gene_nad4l;Name=nad4l;gene_id=nad4l
+scaffold_1--46523+	mitos	exon	9533	9829	2852754.4	+	0	Parent=transcript_nad4l;Name=nad4l
+scaffold_1--46523+	mitos	gene	9829	10818	.	+	.	ID=gene_nad1;Name=nad1;gene_id=nad1
+scaffold_1--46523+	mitos	exon	9829	10818	662298232.5	+	0	Parent=transcript_nad1;Name=nad1
+scaffold_1--46523+	mitos	gene	10809	12266	.	+	.	ID=gene_nad4;Name=nad4;gene_id=nad4
+scaffold_1--46523+	mitos	exon	10809	12266	510304441.8	+	0	Parent=transcript_nad4;Name=nad4
+scaffold_1--46523+	mitos	gene	12290	13429	.	+	.	ID=gene_cob;Name=cob;gene_id=cob
+scaffold_1--46523+	mitos	exon	12290	13429	1311800701.7	+	0	Parent=transcript_cob;Name=cob
+scaffold_1--46523+	mitos	gene	13444	15009	.	+	.	ID=gene_cox1_0;Name=cox1_0;gene_id=cox1_0
+scaffold_1--46523+	mitos	exon	13444	15009	2444154595.8	+	0	Parent=transcript_cox1_0;Name=cox1_0

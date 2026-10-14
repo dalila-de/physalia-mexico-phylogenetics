@@ -1,0 +1,412 @@
+IQ-TREE 3.0.1 built May  5 2025
+
+Input file name: /vast/palmer/pi/dunn/dd2233/physalia-illumina-qc/phylogenetics/results/alignments/mitogenome_submitted.fasta
+Type of analysis: ModelFinder + tree reconstruction + ultrafast bootstrap (1000 replicates)
+Random seed number: 20265012
+
+REFERENCES
+----------
+
+To cite IQ-TREE 3 please use:
+
+Thomas K.F. Wong, Nhan Ly-Trong, Huaiyan Ren, Hector Banos, Andrew J. Roger,
+Edward Susko, Chris Bielow, Nicola De Maio, Nick Goldman, Matthew W. Hahn,
+Gavin Huttley, Robert Lanfear, Bui Quang Minh (2025)
+IQ-TREE 3: Phylogenomic Inference Software using Complex Evolutionary Models.
+Submitted.
+
+Please also cite the following paper(s) for the feature(s) that you used:
+
+To cite ModelFinder please use: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+Since you used ultrafast bootstrap (UFBoot) please also cite: 
+
+Diep Thi Hoang, Olga Chernomor, Arndt von Haeseler, Bui Quang Minh,
+and Le Sy Vinh (2018) UFBoot2: Improving the ultrafast bootstrap
+approximation. Mol. Biol. Evol., 35:518–522.
+https://doi.org/10.1093/molbev/msx281
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 48 sequences with 16134 nucleotide sites
+Number of constant sites: 9931 (= 61.5532% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 9931 (= 61.5532% of all sites)
+Number of parsimony informative sites: 4458
+Number of distinct site patterns: 1513
+
+ModelFinder
+-----------
+
+Best-fit model according to BIC: TPM3u+F+I+R3
+
+List of models sorted by BIC scores: 
+
+Model                  LogL         AIC      w-AIC        AICc     w-AICc         BIC      w-BIC
+TPM3u+F+I+R3     -60812.835  121831.670 +     0.21  121833.006 +    0.213  122623.604 +    0.904
+TIM3+F+I+R3      -60810.951  121829.903 +    0.507  121831.265 +    0.509  122629.526 -   0.0468
+TPM2u+F+I+R3     -60815.921  121837.842 -  0.00958  121839.179 -  0.00973  122629.777 -   0.0413
+K3Pu+F+I+R3      -60817.956  121841.912 -  0.00125  121843.248 -  0.00127  122633.846 -   0.0054
+TIM2+F+I+R3      -60814.271  121836.542 -   0.0183  121837.904 -   0.0184  122636.165 -  0.00169
+TIM+F+I+R3       -60816.165  121840.331 -  0.00276  121841.693 -  0.00277  122639.954 - 0.000255
+TVM+F+I+R3       -60811.672  121833.344 +   0.0908  121834.733 +   0.0898  122640.656 - 0.000179
+HKY+F+I+R3       -60828.707  121861.414 - 7.29e-08  121862.724 -  7.5e-08  122645.659 - 1.47e-05
+GTR+F+I+R3       -60810.103  121832.206 +     0.16  121833.622 +    0.157  122647.207 - 6.78e-06
+TN+F+I+R3        -60827.016  121860.032 - 1.45e-07  121861.369 - 1.48e-07  122651.967 - 6.27e-07
+GTR+I+R3         -62927.190  126060.380 -        0  126061.717 -        0  126852.315 -        0
+SYM+I+R3         -62927.244  126060.488 -        0  126061.825 -        0  126852.423 -        0
+SYM+I+R3         -62927.244  126060.488 -        0  126061.825 -        0  126852.423 -        0
+TVM+I+R3         -62938.210  126080.420 -        0  126081.731 -        0  126864.666 -        0
+TVMe+I+R3        -62938.402  126080.804 -        0  126082.115 -        0  126865.050 -        0
+TVMe+I+R3        -62938.402  126080.804 -        0  126082.115 -        0  126865.050 -        0
+TIM+I+R3         -63066.489  126334.977 -        0  126336.262 -        0  127111.534 -        0
+TIM2+I+R3        -63066.528  126335.056 -        0  126336.341 -        0  127111.613 -        0
+TIMe+I+R3        -63066.579  126335.157 -        0  126336.442 -        0  127111.714 -        0
+TIMe+I+R3        -63066.579  126335.157 -        0  126336.442 -        0  127111.714 -        0
+TIM2e+I+R3       -63066.718  126335.435 -        0  126336.721 -        0  127111.993 -        0
+TIM2e+I+R3       -63066.718  126335.435 -        0  126336.721 -        0  127111.993 -        0
+K3Pu+I+R3        -63079.075  126358.151 -        0  126359.411 -        0  127127.019 -        0
+K3P+I+R3         -63079.159  126358.317 -        0  126359.577 -        0  127127.186 -        0
+K3P+I+R3         -63079.159  126358.317 -        0  126359.577 -        0  127127.186 -        0
+TPM2u+I+R3       -63080.454  126360.907 -        0  126362.167 -        0  127129.776 -        0
+TPM2+I+R3        -63080.550  126361.099 -        0  126362.359 -        0  127129.968 -        0
+TPM2+I+R3        -63080.550  126361.099 -        0  126362.359 -        0  127129.968 -        0
+TIM3+I+R3        -63105.280  126412.561 -        0  126413.846 -        0  127189.118 -        0
+TIM3e+I+R3       -63105.738  126413.476 -        0  126414.761 -        0  127190.033 -        0
+TIM3e+I+R3       -63105.738  126413.476 -        0  126414.761 -        0  127190.033 -        0
+TPM3u+I+R3       -63116.569  126433.138 -        0  126434.398 -        0  127202.006 -        0
+TPM3+I+R3        -63116.667  126433.335 -        0  126434.595 -        0  127202.203 -        0
+TPM3+I+R3        -63116.667  126433.335 -        0  126434.595 -        0  127202.203 -        0
+TN+I+R3          -63192.530  126585.060 -        0  126586.320 -        0  127353.928 -        0
+TNe+I+R3         -63192.851  126585.702 -        0  126586.962 -        0  127354.570 -        0
+TNe+I+R3         -63192.851  126585.702 -        0  126586.962 -        0  127354.570 -        0
+HKY+I+R3         -63205.213  126608.425 -        0  126609.660 -        0  127369.605 -        0
+K2P+I+R3         -63205.307  126608.613 -        0  126609.848 -        0  127369.793 -        0
+K2P+I+R3         -63205.307  126608.613 -        0  126609.848 -        0  127369.793 -        0
+F81+F+I+R3       -63815.985  127833.970 -        0  127835.255 -        0  128610.527 -        0
+F81+I+R3         -65358.133  130912.265 -        0  130913.475 -        0  131665.756 -        0
+JC+I+R3          -65358.267  130912.533 -        0  130913.743 -        0  131666.024 -        0
+JC+I+R3          -65358.267  130912.533 -        0  130913.743 -        0  131666.024 -        0
+JC+I+R4          -65357.962  130915.924 -        0  130917.184 -        0  131684.793 -        0
+JC+I+R2          -65385.054  130962.108 -        0  130963.269 -        0  131700.221 -        0
+JC+G4            -65407.615  131003.229 -        0  131004.343 -        0  131725.966 -        0
+JC+R2            -65405.486  131000.972 -        0  131002.110 -        0  131731.397 -        0
+JC+I+G4          -65406.355  131002.710 -        0  131003.847 -        0  131733.135 -        0
+JC+R3            -65401.131  130996.261 -        0  130997.447 -        0  131742.064 -        0
+JC+I             -65475.556  131139.112 -        0  131140.226 -        0  131861.848 -        0
+JC               -66386.569  132959.138 -        0  132960.228 -        0  133674.186 -        0
+
+AIC, w-AIC   : Akaike information criterion scores and weights.
+AICc, w-AICc : Corrected AIC scores and weights.
+BIC, w-BIC   : Bayesian information criterion scores and weights.
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: TPM3u+F+I+R3
+
+Rate parameter R:
+
+  A-C: 1.2651
+  A-G: 19.3286
+  A-T: 1.0000
+  C-G: 1.2651
+  C-T: 19.3286
+  G-T: 1.0000
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.291
+  pi(C) = 0.1631
+  pi(G) = 0.1716
+  pi(T) = 0.3743
+
+Rate matrix Q:
+
+  A   -0.8072   0.04275    0.6869   0.07754
+  C   0.07627     -1.62   0.04496     1.499
+  G     1.165   0.04275    -1.285   0.07754
+  T   0.06028    0.6531   0.03554   -0.7489
+
+Model of rate heterogeneity: Invar+FreeRate with 3 categories
+Proportion of invariable sites: 0.4698
+Site proportion and rates:  (0.1665,0.1893) (0.106,2.138) (0.2577,2.879)
+
+ Category  Relative_rate  Proportion
+  0         0              0.4698
+  1         0.1893         0.1665
+  2         2.138          0.106
+  3         2.879          0.2577
+
+MULTIPLE RUNS
+-------------
+
+Run     logL
+1	-60843.1490
+2	-60843.4762
+3	-60843.6115
+4	-60843.4533
+5	-60843.5511
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -60843.1490 (s.e. 0.0000)
+Unconstrained log-likelihood (without tree): -65665.7152
+Number of free parameters (#branches + #model parameters): 103
+Akaike information criterion (AIC) score: 121892.2979
+Corrected Akaike information criterion (AICc) score: 121893.6344
+Bayesian information criterion (BIC) score: 122684.2324
+
+Total tree length (sum of branch lengths): 3.1162
+Sum of internal branch lengths: 2.3749 (76.2141% of tree length)
+
+WARNING: 10 near-zero internal branches (<0.0001) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+NOTE: Tree is UNROOTED although outgroup taxon 'ref__FM-16644_mtgenome_scaffold_1--2070701_' is drawn at root
+Numbers in parentheses are  ultrafast bootstrap support (%)
+
++--ref__FM-16644_mtgenome_scaffold_1--2070701_
+|
+|                 +--ref__OA-190531-1_mtgenome_scaffold_1--6916990_
+|              +--| (95)
+|              |  +--ref__YPM-IZ-110264_mtgenome_scaffold_1--595_
+|           +--| (51)
+|           |  |  +--ref__YPM-IZ-110830_mtgenome_scaffold_1--14148106_
+|           |  +--| (51)
+|           |     +--ref__YPM-IZ-111006_mtgenome_scaffold_1--8287079_
+|        +--| (92)
+|        |  +--ref__YPM-IZ-104460_mtgenome_scaffold_1--1384602_785451_3532419_
+|     +--| (98)
+|     |  +--ref__WAM-Z97902_mtgenome_scaffold_1--3572698_
+|  +--| (99)
+|  |  |                                                       +--ref__KT809335.1
+|  |  |                                         +-------------| (100)
+|  |  |                                         |             +--ref__OQ957206.1
+|  |  +-----------------------------------------| (100)
+|  |                                            +--------------ref__OQ957199.1
++--| (77)
+|  |              +--ref__YPM-IZ-106936_mtgenome_scaffold_1--797_
+|  |           +--| (94)
+|  |           |  +--ref__YPM-IZ-110876_mtgenome_scaffold_1--26693_
+|  |        +--| (79)
+|  |        |  +--ref__YPM-IZ-106937_mtgenome_scaffold_1--5264988_
+|  |     +**| (86)
+|  |     |  |  +--ref__YPM-IZ-111012_mtgenome_scaffold_1--1607_
+|  |     |  +--| (100)
+|  |     |     +--ref__YPM-IZ-111013_mtgenome_scaffold_1--3855739_
+|  |  +--| (93)
+|  |  |  +--ref__YPM-IZ-110251_mtgenome_scaffold_1--5878756_
+|  +--| (72)
+|     |        +--ref__YPM-IZ-110434_mtgenome_scaffold_1--19_
+|     |     +--| (99)
+|     |     |  |  +--ref__YPM-IZ-110843_mtgenome_scaffold_1--3633236_
+|     |     |  +--| (98)
+|     |     |     |  +--ref__YPM-IZ-111018_mtgenome_scaffold_1--3743432_
+|     |     |     +--| (100)
+|     |     |        +--local__YPM-IZ-116696__path1
+|     |  +--| (100)
+|     |  |  |     +--ref__YPM-IZ-110738_mtgenome_scaffold_1--28195_
+|     |  |  |  +**| (99)
+|     |  |  |  |  +--ref__YPM-IZ-110847_mtgenome_scaffold_1--4169614_
+|     |  |  +--| (100)
+|     |  |     +--ref__YPM-IZ-110842_mtgenome_scaffold_1--4182747_
+|     +--| (90)
+|        |     +--ref__YPM-IZ-110667_mtgenome_scaffold_1--1220096_
+|        |  +--| (100)
+|        |  |  +--ref__YPM-IZ-110694_mtgenome_scaffold_1--6113849_
+|        +--| (86)
+|           +--local__YPM-IZ-116694__path1
+|
+|              +--ref__YPM-IZ-106935_mtgenome_scaffold_1--4052902_
+|           +--| (75)
+|           |  |  +--ref__YPM-IZ-106958_mtgenome_scaffold_1--4444372_
+|           |  +--| (98)
+|           |     +--ref__YPM-IZ-110433_mtgenome_scaffold_1--276053_235414_197950_245733_275821_
+|        +--| (99)
+|        |  |        +--ref__YPM-IZ-106954_mtgenome_scaffold_1--5859380_4732710_
+|        |  |     +--| (100)
+|        |  |     |  +--ref__YPM-IZ-110631_mtgenome_scaffold_1--171174_
+|        |  |  +**| (43)
+|        |  |  |  |  +--ref__YPM-IZ-111017_mtgenome_scaffold_1--3305370_
+|        |  |  |  +--| (97)
+|        |  |  |     +--local__YPM-IZ-116693__path1
+|        |  +**| (62)
+|        |     |  +--ref__YPM-IZ-110844_mtgenome_scaffold_1--4968002_
+|        |     +**| (40)
+|        |        +--ref__YPM-IZ-110845_mtgenome_scaffold_1--3569_3561_
+|     +**| (57)
+|     |  |              +--ref__YPM-IZ-106941_mtgenome_scaffold_1--5624014_
+|     |  |           +**| (81)
+|     |  |           |  +--ref__YPM-IZ-110633_mtgenome_scaffold_1--5829952_
+|     |  |        +--| (95)
+|     |  |        |  +--ref__YPM-IZ-110846_mtgenome_scaffold_1--4922341_
+|     |  |     +--| (100)
+|     |  |     |  +--local__YPM-IZ-116697__path1
+|     |  |  +--| (87)
+|     |  |  |  |  +--ref__YPM-IZ-106943_mtgenome_scaffold_1--8748509_
+|     |  |  |  +--| (100)
+|     |  |  |     |  +--ref__YPM-IZ-110436_mtgenome_scaffold_1--15_
+|     |  |  |     +**| (73)
+|     |  |  |        +--ref__YPM-IZ-111016_mtgenome_scaffold_1--25_
+|     |  +--| (85)
+|     |     +--ref__YPM-IZ-110726_mtgenome_scaffold_1--42859_
+|  +**| (70)
+|  |  |     +--ref__YPM-IZ-110254_mtgenome_scaffold_1--5573165_
+|  |  |  +--| (71)
+|  |  |  |  +--ref__YPM-IZ-110716_mtgenome_scaffold_1--3051232_
+|  |  +--| (100)
+|  |     |  +--ref__YPM-IZ-110880_mtgenome_scaffold_1--5613327_
+|  |     +**| (66)
+|  |        +--local__YPM-IZ-116695__path1
++--| (71)
+   +--ref__YPM-IZ-111014_mtgenome_scaffold_1--49_
+
+Tree in newick format:
+
+(ref__FM-16644_mtgenome_scaffold_1--2070701_:0.0019889728,((((((ref__OA-190531-1_mtgenome_scaffold_1--6916990_:0.0024832621,ref__YPM-IZ-110264_mtgenome_scaffold_1--595_:0.0024143596)95:0.0003386111,(ref__YPM-IZ-110830_mtgenome_scaffold_1--14148106_:0.0038804476,ref__YPM-IZ-111006_mtgenome_scaffold_1--8287079_:0.0031345136)51:0.0001037654)51:0.0001174044,ref__YPM-IZ-104460_mtgenome_scaffold_1--1384602_785451_3532419_:0.0027912462)92:0.0020148157,ref__WAM-Z97902_mtgenome_scaffold_1--3572698_:0.0036252131)98:0.0832991911,((ref__KT809335.1:0.0356825914,ref__OQ957206.1:0.0458995074)100:0.5623064303,ref__OQ957199.1:0.5895609665)100:1.6343272180)99:0.0802066092,(((((ref__YPM-IZ-106936_mtgenome_scaffold_1--797_:0.0015123142,ref__YPM-IZ-110876_mtgenome_scaffold_1--26693_:0.0012382833)94:0.0013776533,ref__YPM-IZ-106937_mtgenome_scaffold_1--5264988_:0.0022745986)79:0.0001283783,(ref__YPM-IZ-111012_mtgenome_scaffold_1--1607_:0.0022701053,ref__YPM-IZ-111013_mtgenome_scaffold_1--3855739_:0.0026219816)100:0.0007410261)86:0.0000596424,ref__YPM-IZ-110251_mtgenome_scaffold_1--5878756_:0.0024795306)93:0.0016956046,(((ref__YPM-IZ-110434_mtgenome_scaffold_1--19_:0.0019208721,(ref__YPM-IZ-110843_mtgenome_scaffold_1--3633236_:0.0013726631,(ref__YPM-IZ-111018_mtgenome_scaffold_1--3743432_:0.0012996721,local__YPM-IZ-116696__path1:0.0016437154)100:0.0004044166)98:0.0000660880)99:0.0002739841,((ref__YPM-IZ-110738_mtgenome_scaffold_1--28195_:0.0021271352,ref__YPM-IZ-110847_mtgenome_scaffold_1--4169614_:0.0010987547)99:0.0000610702,ref__YPM-IZ-110842_mtgenome_scaffold_1--4182747_:0.0015715666)100:0.0002687302)100:0.0003679622,((ref__YPM-IZ-110667_mtgenome_scaffold_1--1220096_:0.0004775270,ref__YPM-IZ-110694_mtgenome_scaffold_1--6113849_:0.0003826571)100:0.0010996541,local__YPM-IZ-116694__path1:0.0021781018)86:0.0002532787)90:0.0006328388)72:0.0004512465)77:0.0010439072,(((((ref__YPM-IZ-106935_mtgenome_scaffold_1--4052902_:0.0009554522,(ref__YPM-IZ-106958_mtgenome_scaffold_1--4444372_:0.0017132212,ref__YPM-IZ-110433_mtgenome_scaffold_1--276053_235414_197950_245733_275821_:0.0008212218)98:0.0001343686)75:0.0000679755,(((ref__YPM-IZ-106954_mtgenome_scaffold_1--5859380_4732710_:0.0003411233,ref__YPM-IZ-110631_mtgenome_scaffold_1--171174_:0.0003410711)100:0.0008884763,(ref__YPM-IZ-111017_mtgenome_scaffold_1--3305370_:0.0010270320,local__YPM-IZ-116693__path1:0.0008213689)97:0.0000667920)43:0.0000026032,(ref__YPM-IZ-110844_mtgenome_scaffold_1--4968002_:0.0013668146,ref__YPM-IZ-110845_mtgenome_scaffold_1--3569_3561_:0.0009551505)40:0.0000027213)62:0.0000030484)99:0.0003405381,(((((ref__YPM-IZ-106941_mtgenome_scaffold_1--5624014_:0.0008392094,ref__YPM-IZ-110633_mtgenome_scaffold_1--5829952_:0.0005455913)81:0.0000028083,ref__YPM-IZ-110846_mtgenome_scaffold_1--4922341_:0.0008192540)95:0.0000757569,local__YPM-IZ-116697__path1:0.0006148017)100:0.0005359061,(ref__YPM-IZ-106943_mtgenome_scaffold_1--8748509_:0.0006135890,(ref__YPM-IZ-110436_mtgenome_scaffold_1--15_:0.0012976726,ref__YPM-IZ-111016_mtgenome_scaffold_1--25_:0.0010919505)73:0.0000035649)100:0.0004103355)87:0.0000759189,ref__YPM-IZ-110726_mtgenome_scaffold_1--42859_:0.0017099361)85:0.0000762129)57:0.0000033986,((ref__YPM-IZ-110254_mtgenome_scaffold_1--5573165_:0.0011614755,ref__YPM-IZ-110716_mtgenome_scaffold_1--3051232_:0.0015747190)71:0.0001339573,(ref__YPM-IZ-110880_mtgenome_scaffold_1--5613327_:0.0017209281,local__YPM-IZ-116695__path1:0.0014417174)66:0.0000616506)100:0.0002730465)70:0.0000026442,ref__YPM-IZ-111014_mtgenome_scaffold_1--49_:0.0015031095)71:0.0001485660);
+
+CONSENSUS TREE
+--------------
+
+Consensus tree is constructed from 1000 bootstrap trees
+Log-likelihood of consensus tree: -60843.124240
+Robinson-Foulds distance between ML tree and consensus tree: 0
+
+Branches with support >0.000000% are kept (extended consensus)
+Branch lengths are optimized by maximum likelihood on original alignment
+Numbers in parentheses are bootstrap supports (%)
+
++--ref__FM-16644_mtgenome_scaffold_1--2070701_
+|
+|                 +--ref__OA-190531-1_mtgenome_scaffold_1--6916990_
+|              +--| (95)
+|              |  +--ref__YPM-IZ-110264_mtgenome_scaffold_1--595_
+|           +--| (51)
+|           |  |  +--ref__YPM-IZ-110830_mtgenome_scaffold_1--14148106_
+|           |  +--| (51)
+|           |     +--ref__YPM-IZ-111006_mtgenome_scaffold_1--8287079_
+|        +--| (92)
+|        |  +--ref__YPM-IZ-104460_mtgenome_scaffold_1--1384602_785451_3532419_
+|     +--| (98)
+|     |  +--ref__WAM-Z97902_mtgenome_scaffold_1--3572698_
+|  +--| (99)
+|  |  |                                                       +--ref__KT809335.1
+|  |  |                                         +-------------| (100)
+|  |  |                                         |             +--ref__OQ957206.1
+|  |  +-----------------------------------------| (100)
+|  |                                            +--------------ref__OQ957199.1
++--| (77)
+|  |              +--ref__YPM-IZ-106936_mtgenome_scaffold_1--797_
+|  |           +--| (94)
+|  |           |  +--ref__YPM-IZ-110876_mtgenome_scaffold_1--26693_
+|  |        +--| (79)
+|  |        |  +--ref__YPM-IZ-106937_mtgenome_scaffold_1--5264988_
+|  |     +--| (86)
+|  |     |  |  +--ref__YPM-IZ-111012_mtgenome_scaffold_1--1607_
+|  |     |  +--| (100)
+|  |     |     +--ref__YPM-IZ-111013_mtgenome_scaffold_1--3855739_
+|  |  +--| (93)
+|  |  |  +--ref__YPM-IZ-110251_mtgenome_scaffold_1--5878756_
+|  +--| (72)
+|     |        +--ref__YPM-IZ-110434_mtgenome_scaffold_1--19_
+|     |     +--| (99)
+|     |     |  |  +--ref__YPM-IZ-110843_mtgenome_scaffold_1--3633236_
+|     |     |  +--| (98)
+|     |     |     |  +--ref__YPM-IZ-111018_mtgenome_scaffold_1--3743432_
+|     |     |     +--| (100)
+|     |     |        +--local__YPM-IZ-116696__path1
+|     |  +--| (100)
+|     |  |  |     +--ref__YPM-IZ-110738_mtgenome_scaffold_1--28195_
+|     |  |  |  +--| (99)
+|     |  |  |  |  +--ref__YPM-IZ-110847_mtgenome_scaffold_1--4169614_
+|     |  |  +--| (100)
+|     |  |     +--ref__YPM-IZ-110842_mtgenome_scaffold_1--4182747_
+|     +--| (90)
+|        |     +--ref__YPM-IZ-110667_mtgenome_scaffold_1--1220096_
+|        |  +--| (100)
+|        |  |  +--ref__YPM-IZ-110694_mtgenome_scaffold_1--6113849_
+|        +--| (86)
+|           +--local__YPM-IZ-116694__path1
+|
+|              +--ref__YPM-IZ-106935_mtgenome_scaffold_1--4052902_
+|           +--| (75)
+|           |  |  +--ref__YPM-IZ-106958_mtgenome_scaffold_1--4444372_
+|           |  +--| (98)
+|           |     +--ref__YPM-IZ-110433_mtgenome_scaffold_1--276053_235414_197950_245733_275821_
+|        +--| (99)
+|        |  |        +--ref__YPM-IZ-106954_mtgenome_scaffold_1--5859380_4732710_
+|        |  |     +--| (100)
+|        |  |     |  +--ref__YPM-IZ-110631_mtgenome_scaffold_1--171174_
+|        |  |  +--| (43)
+|        |  |  |  |  +--ref__YPM-IZ-111017_mtgenome_scaffold_1--3305370_
+|        |  |  |  +--| (97)
+|        |  |  |     +--local__YPM-IZ-116693__path1
+|        |  +--| (62)
+|        |     |  +--ref__YPM-IZ-110844_mtgenome_scaffold_1--4968002_
+|        |     +--| (40)
+|        |        +--ref__YPM-IZ-110845_mtgenome_scaffold_1--3569_3561_
+|     +--| (57)
+|     |  |              +--ref__YPM-IZ-106941_mtgenome_scaffold_1--5624014_
+|     |  |           +--| (81)
+|     |  |           |  +--ref__YPM-IZ-110633_mtgenome_scaffold_1--5829952_
+|     |  |        +--| (95)
+|     |  |        |  +--ref__YPM-IZ-110846_mtgenome_scaffold_1--4922341_
+|     |  |     +--| (100)
+|     |  |     |  +--local__YPM-IZ-116697__path1
+|     |  |  +--| (87)
+|     |  |  |  |  +--ref__YPM-IZ-106943_mtgenome_scaffold_1--8748509_
+|     |  |  |  +--| (100)
+|     |  |  |     |  +--ref__YPM-IZ-110436_mtgenome_scaffold_1--15_
+|     |  |  |     +--| (73)
+|     |  |  |        +--ref__YPM-IZ-111016_mtgenome_scaffold_1--25_
+|     |  +--| (85)
+|     |     +--ref__YPM-IZ-110726_mtgenome_scaffold_1--42859_
+|  +--| (70)
+|  |  |     +--ref__YPM-IZ-110254_mtgenome_scaffold_1--5573165_
+|  |  |  +--| (71)
+|  |  |  |  +--ref__YPM-IZ-110716_mtgenome_scaffold_1--3051232_
+|  |  +--| (100)
+|  |     |  +--ref__YPM-IZ-110880_mtgenome_scaffold_1--5613327_
+|  |     +--| (66)
+|  |        +--local__YPM-IZ-116695__path1
++--| (71)
+   +--ref__YPM-IZ-111014_mtgenome_scaffold_1--49_
+
+
+Consensus tree in newick format: 
+
+(ref__FM-16644_mtgenome_scaffold_1--2070701_:0.0019840884,((((((ref__OA-190531-1_mtgenome_scaffold_1--6916990_:0.0024783644,ref__YPM-IZ-110264_mtgenome_scaffold_1--595_:0.0024096057)95:0.0003372973,(ref__YPM-IZ-110830_mtgenome_scaffold_1--14148106_:0.0038733063,ref__YPM-IZ-111006_mtgenome_scaffold_1--8287079_:0.0031288199)51:0.0001024162)51:0.0001165621,ref__YPM-IZ-104460_mtgenome_scaffold_1--1384602_785451_3532419_:0.0027866025)92:0.0020111439,ref__WAM-Z97902_mtgenome_scaffold_1--3572698_:0.0036204539)98:0.0837976390,((ref__KT809335.1:0.0359422347,ref__OQ957206.1:0.0455135953)100:0.5608069240,ref__OQ957199.1:0.5892599134)100:1.6306559260)99:0.0793660071,(((((ref__YPM-IZ-106936_mtgenome_scaffold_1--797_:0.0015093031,ref__YPM-IZ-110876_mtgenome_scaffold_1--26693_:0.0012358452)94:0.0013749461,ref__YPM-IZ-106937_mtgenome_scaffold_1--5264988_:0.0022699353)79:0.0001288550,(ref__YPM-IZ-111012_mtgenome_scaffold_1--1607_:0.0022655872,ref__YPM-IZ-111013_mtgenome_scaffold_1--3855739_:0.0026167711)100:0.0007394558)86:0.0000582354,ref__YPM-IZ-110251_mtgenome_scaffold_1--5878756_:0.0024748524)93:0.0016920423,(((ref__YPM-IZ-110434_mtgenome_scaffold_1--19_:0.0019171000,(ref__YPM-IZ-110843_mtgenome_scaffold_1--3633236_:0.0013699853,(ref__YPM-IZ-111018_mtgenome_scaffold_1--3743432_:0.0012971028,local__YPM-IZ-116696__path1:0.0016404724)100:0.0004034143)98:0.0000652515)99:0.0002733459,((ref__YPM-IZ-110738_mtgenome_scaffold_1--28195_:0.0021229222,ref__YPM-IZ-110847_mtgenome_scaffold_1--4169614_:0.0010965794)99:0.0000609701,ref__YPM-IZ-110842_mtgenome_scaffold_1--4182747_:0.0015684575)100:0.0002675877)100:0.0003677712,((ref__YPM-IZ-110667_mtgenome_scaffold_1--1220096_:0.0004763862,ref__YPM-IZ-110694_mtgenome_scaffold_1--6113849_:0.0003816188)100:0.0010972909,local__YPM-IZ-116694__path1:0.0021738698)86:0.0002526342)90:0.0006308457)72:0.0004514711)77:0.0010398776,(((((ref__YPM-IZ-106935_mtgenome_scaffold_1--4052902_:0.0009531570,(ref__YPM-IZ-106958_mtgenome_scaffold_1--4444372_:0.0017091004,ref__YPM-IZ-110433_mtgenome_scaffold_1--276053_235414_197950_245733_275821_:0.0008192481)98:0.0001340169)75:0.0000672456,(((ref__YPM-IZ-106954_mtgenome_scaffold_1--5859380_4732710_:0.0003407366,ref__YPM-IZ-110631_mtgenome_scaffold_1--171174_:0.0003406835)100:0.0008863449,(ref__YPM-IZ-111017_mtgenome_scaffold_1--3305370_:0.0010245911,local__YPM-IZ-116693__path1:0.0008194305)97:0.0000658774)43:0.0000029058,(ref__YPM-IZ-110844_mtgenome_scaffold_1--4968002_:0.0013635327,ref__YPM-IZ-110845_mtgenome_scaffold_1--3569_3561_:0.0009528577)40:0.0000029058)62:0.0000029058)99:0.0003401590,(((((ref__YPM-IZ-106941_mtgenome_scaffold_1--5624014_:0.0008380097,ref__YPM-IZ-110633_mtgenome_scaffold_1--5829952_:0.0005449776)81:0.0000026919,ref__YPM-IZ-110846_mtgenome_scaffold_1--4922341_:0.0008172827)95:0.0000754457,local__YPM-IZ-116697__path1:0.0006141180)100:0.0005351342,(ref__YPM-IZ-106943_mtgenome_scaffold_1--8748509_:0.0006128944,(ref__YPM-IZ-110436_mtgenome_scaffold_1--15_:0.0012945518,ref__YPM-IZ-111016_mtgenome_scaffold_1--25_:0.0010893262)73:0.0000029058)100:0.0004091707)87:0.0000756842,ref__YPM-IZ-110726_mtgenome_scaffold_1--42859_:0.0017058203)85:0.0000756622)57:0.0000026919,((ref__YPM-IZ-110254_mtgenome_scaffold_1--5573165_:0.0011586950,ref__YPM-IZ-110716_mtgenome_scaffold_1--3051232_:0.0015709452)71:0.0001332927,(ref__YPM-IZ-110880_mtgenome_scaffold_1--5613327_:0.0017168181,local__YPM-IZ-116695__path1:0.0014383030)66:0.0000612010)100:0.0002722671)70:0.0000022097,ref__YPM-IZ-111014_mtgenome_scaffold_1--49_:0.0014995257)71:0.0001471957);
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t /vast/palmer/pi/dunn/dd2233/physalia-illumina-qc/phylogenetics/results/trees/mitogenome_submitted.treefile -m "TPM3u{1.26514,19.3286}+F{0.291012,0.163115,0.171566,0.374308}+I{0.469818}+R3{0.166494,0.189281,0.106038,2.13761,0.257651,2.87916}" --length 16134
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s /vast/palmer/pi/dunn/dd2233/physalia-illumina-qc/phylogenetics/results/alignments/mitogenome_submitted.fasta --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s /vast/palmer/pi/dunn/dd2233/physalia-illumina-qc/phylogenetics/results/alignments/mitogenome_submitted.fasta --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Mon Oct 12 11:21:41 2026
+Total CPU time used: 760.414991 seconds (0h:12m:40s)
+Total wall-clock time used: 105.2303428 seconds (0h:1m:45s)
+

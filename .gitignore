@@ -1,0 +1,50 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.snakemake/
+.cache/
+work/
+envs/
+resources/
+*.local.yaml
+**/slurm-*/
+**/evidence/
+*.fastq*
+*.bam
+*.bai
+*.ckp.gz
+*.model.gz
+
+# Public documentation: keep README.md files at any depth.
+*.md
+!README.md
+
+# Local editor, agent and environment state.
+.vscode/
+.idea/
+.codex/
+.agents/
+.venv/
+.env
+.env.*
+!.env.example
+*~
+*.swp
+*.swo
+*.tmp
+*.temp
+
+# Bulk sequencing intermediates and indexes.
+*.sam
+*.cram
+*.crai
+*.sra
+
+# Scheduler output and local workflow previews (retain scientific tool logs).
+slurm-*.out
+slurm-*.err
+slurm-*.log
+**/provenance/*dry-run*.txt
+/provenance/plot-regeneration.log

@@ -1,0 +1,18 @@
+run_id: phylogenetics-utriculus-2026-10-12
+scratch: /vast/palmer/scratch/dunn/dd2233/physalia-illumina-qc/phylogenetics-utriculus-2026-10-12
+upstream_commit: d08f0edf4d819e21c85705e4965de71673808dec
+qc_run: cohort-2026-10-09
+mitos_env: /vast/palmer/home.mccleary/sc2962/.conda/envs/mitos
+mitos_refdir: /gpfs/gibbs/pi/dunn/sc2962/20250114_Siph_Genomics/mitos_reference
+mitos_refname: refseq89m
+iqtree: /vast/palmer/pi/dunn/dd2233/Physalia_Phylogenetics_2026/software/iqtree-3.0.1-Linux/bin/iqtree3
+seed: 20261012
+search_runs: 5
+reference_scope: published_cohort
+additional_reference_samples:
+  - OA-190531-1
+  - WAM-Z97902
+  - YPM-IZ-104460
+  - YPM-IZ-110264
+  - YPM-IZ-110830
+  - YPM-IZ-111006
