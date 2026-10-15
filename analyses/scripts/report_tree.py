@@ -1,4 +1,4 @@
-"""Check tree scope and plot reference species with highlighted October specimens."""
+"""Validate the selected tree, root its consensus and report query/reference distances."""
 
 import csv
 import json
@@ -6,10 +6,6 @@ import re
 import sys
 from pathlib import Path
 
-import matplotlib
-
-matplotlib.use("Agg")
-import matplotlib.pyplot as plt
 from Bio import Phylo, SeqIO
 
 
@@ -23,7 +19,8 @@ def main(gene: str) -> None:
         raise ValueError("Missing bootstrap consensus")
     consensus = Phylo.read(consensus_path, "newick")
     alignment = {r.id for r in SeqIO.parse(results / "alignments" / f"{gene}.fasta", "fasta")}
-    with (root / "inputs" / f"{gene}.tips.tsv").open() as stream:
+    panel = root / "inputs" / "combined" if gene in {"16S", "CO1"} else root / "inputs"
+    with (panel / f"{gene}.tips.tsv").open() as stream:
         metadata = {r["tip"]: r for r in csv.DictReader(stream, delimiter="\t")}
     for candidate in (tree, consensus):
         names = [t.name for t in candidate.get_terminals()]
@@ -39,51 +36,13 @@ def main(gene: str) -> None:
     else:
         consensus.root_at_midpoint()
     consensus.ladderize()
-    palette = {
-        "Physalia physalis": "#2166ac",
-        "Physalia utriculus": "#1b9e77",
-        "Physalia megalista": "#984ea3",
-        "Physalia minuta": "#e6ab02",
-        "Physalia glaucus": "#e7298a",
-    }
-    fig, ax = plt.subplots(figsize=(16, max(12, len(alignment) * 0.16)))
-    labels = {}
-    colors = {}
-    for tip, row in metadata.items():
-        local = row["source"].startswith("October_QC")
-        mexico = row["sample"] in {f"YPM-IZ-{i}" for i in range(116693, 116698)}
-        label = (
-            f"{row['sample']} [OCTOBER{' MEXICO' if mexico else ''}]"
-            if local
-            else f"{row['sample']} | {row['species'] or 'unassigned'} [reference]"
-        )
-        # Preserve unique display labels for alternative mitochondrial paths.
-        if gene.startswith("mitogenome"):
-            label += " " + tip.removeprefix("ref__").removeprefix("local__")
-        labels[tip] = label
-        colors[label] = (
-            "#d73027" if mexico else "#000000" if local else palette.get(row["species"], "#777777")
-        )
-    Phylo.draw(
-        consensus,
-        axes=ax,
-        do_show=False,
-        label_func=lambda c: labels.get(c.name),
-        label_colors=colors,
-        show_confidence=True,
-    )
-    ax.set_title(
-        f"{gene}: October assemblies and published reference sequences\n{rooting}; ultrafast bootstrap 1000; black = October, red = Mexico"
-    )
     (results / "figures").mkdir(exist_ok=True)
-    fig.savefig(results / "figures" / f"{gene}.pdf", bbox_inches="tight")
-    plt.close(fig)
     Phylo.write(consensus, results / "figures" / f"{gene}.rooted.nwk", "newick")
     references = [t for t in tree.get_terminals() if metadata[t.name]["source"] == "repository"]
     comparison = []
     for tip in tree.get_terminals():
         row = metadata[tip.name]
-        if not row["source"].startswith("October_QC"):
+        if not (row["source"].startswith("October_QC") or row["source"] == "Sanger_AB1"):
             continue
         distances = [(tree.distance(tip, ref), ref) for ref in references]
         best = min(d for d, _ in distances)

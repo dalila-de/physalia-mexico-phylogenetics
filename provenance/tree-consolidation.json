@@ -1,0 +1,248 @@
+{
+  "prior_commit": "e5769ca93a1108de3d8fab2d685ff5bc480536c0",
+  "archive": "/vast/palmer/pi/dunn/dd2233/physalia-analysis-archive/tree-consolidation-2026-10-15/before-consolidation.tar.gz",
+  "archive_sha256": "eb898569d4af51401e96c312b213248996dc19c4702bcc5c9d77253d00cccdb5",
+  "relocated": [
+    {
+      "from": "sanger-2026-10-14/inputs/16S.fasta",
+      "to": "analyses/inputs/combined/16S.fasta",
+      "sha256": "36d485c344ffe16db52f956b23eaa8e67c8ccd52fc0f942b15c5747424d6fc6a"
+    },
+    {
+      "from": "sanger-2026-10-14/inputs/16S.tips.tsv",
+      "to": "analyses/inputs/combined/16S.tips.tsv",
+      "sha256": "8f9fafc9ff252c23464fcc0a91254afae9fc39b8dbb958e99fb8956dfff81d98"
+    },
+    {
+      "from": "sanger-2026-10-14/results/alignments/16S.fasta",
+      "to": "analyses/results/alignments/16S.fasta",
+      "sha256": "36464cf9ae10e7b3854ca00984b1bb6891623e321eb188eb1589c8656fc2f933"
+    },
+    {
+      "from": "sanger-2026-10-14/results/alignments/16S.json",
+      "to": "analyses/results/alignments/16S.json",
+      "sha256": "67e22097a45ee60639d25cb2bc4903be54b1340296de37a3e2ae853a58357ae9"
+    },
+    {
+      "from": "sanger-2026-10-14/results/trees/16S.bionj",
+      "to": "analyses/results/trees/16S.bionj",
+      "sha256": "0024e30b8639c7d0eb08aa6d3f38c3452af4416dd6ca456b88c367d7a49234ef"
+    },
+    {
+      "from": "sanger-2026-10-14/results/trees/16S.ckp.gz",
+      "to": "analyses/results/trees/16S.ckp.gz",
+      "sha256": "d5300f4f597a737ec584577f58469463ad23cd384c7419d574be3eb7f7dbda85"
+    },
+    {
+      "from": "sanger-2026-10-14/results/trees/16S.contree",
+      "to": "analyses/results/trees/16S.contree",
+      "sha256": "442009b44f6a6e90a3febcc63bc83f7afb2b0dbf713de26c23e3020107476243"
+    },
+    {
+      "from": "sanger-2026-10-14/results/trees/16S.iqtree",
+      "to": "analyses/results/trees/16S.iqtree",
+      "sha256": "a17e9801dd1a76f2ec051858968b58794e00a9e13493a27422a1f56506c1cf93"
+    },
+    {
+      "from": "sanger-2026-10-14/results/trees/16S.log",
+      "to": "analyses/results/trees/16S.log",
+      "sha256": "fa6ee9a07c8fcad652d84032e353b62a8779d5b2e5e86dcfac1d9157397f13b5"
+    },
+    {
+      "from": "sanger-2026-10-14/results/trees/16S.mldist",
+      "to": "analyses/results/trees/16S.mldist",
+      "sha256": "ae0f0a148ba763467a75be6e36c7580907bc77019b9464d8d911982c9a16c579"
+    },
+    {
+      "from": "sanger-2026-10-14/results/trees/16S.model.gz",
+      "to": "analyses/results/trees/16S.model.gz",
+      "sha256": "b74f27728e2a4723862de3364910aef0603eabddcbda5abf2eb5b2950ca4b8ba"
+    },
+    {
+      "from": "sanger-2026-10-14/results/trees/16S.runtrees",
+      "to": "analyses/results/trees/16S.runtrees",
+      "sha256": "3541b571415c10f7b3e00332fbfb011138887f2a81c0524a6e54a801f8bccb99"
+    },
+    {
+      "from": "sanger-2026-10-14/results/trees/16S.splits.nex",
+      "to": "analyses/results/trees/16S.splits.nex",
+      "sha256": "9328f040b20ba467447e7182abf1511661bba71b74c53244621b79e9df8ec6f5"
+    },
+    {
+      "from": "sanger-2026-10-14/results/trees/16S.treefile",
+      "to": "analyses/results/trees/16S.treefile",
+      "sha256": "b327f5681f4b6f2b81474721c68a5f88df24e246d1fc0d1c445bc0410010a3dc"
+    },
+    {
+      "from": "sanger-2026-10-14/results/trees/16S.uniqueseq.phy",
+      "to": "analyses/results/trees/16S.uniqueseq.phy",
+      "sha256": "e9d3f5f68c239e1b144283fd5e287122745542a85bcb606db66a35d6ecf6e57f"
+    },
+    {
+      "from": "sanger-2026-10-14/results/figures/16S.rooted.nwk",
+      "to": "analyses/results/figures/16S.rooted.nwk",
+      "sha256": "c5c7e60e61ad661c673f78756d6d3f961da704b50966e9765a1cd64987c432c5"
+    },
+    {
+      "from": "sanger-2026-10-14/results/genetic_groups/16S.annotations.tsv",
+      "to": "analyses/results/genetic_groups/16S.annotations.tsv",
+      "sha256": "285becb435a9dc36fc9faf4b71f99ea7e9739c4421bc321c444a2dcf25221365"
+    },
+    {
+      "from": "sanger-2026-10-14/results/genetic_groups/16S.focal.pdf",
+      "to": "analyses/results/genetic_groups/16S.focal.pdf",
+      "sha256": "424bc287ced26c6329776fe89724b124128c366790187abd4f898b2609319d48"
+    },
+    {
+      "from": "sanger-2026-10-14/results/genetic_groups/16S.focal.png",
+      "to": "analyses/results/genetic_groups/16S.focal.png",
+      "sha256": "458a6149388024af92164817d2a3db0f8fe6e2c138720c64d6cfbd4c6752ae46"
+    },
+    {
+      "from": "sanger-2026-10-14/results/genetic_groups/16S.focal.svg",
+      "to": "analyses/results/genetic_groups/16S.focal.svg",
+      "sha256": "4e0a881fe88ed30f4b8cb6da4c69379477937e0b8bcd5483bb2f9a06946e3d18"
+    },
+    {
+      "from": "sanger-2026-10-14/results/genetic_groups/16S.pdf",
+      "to": "analyses/results/genetic_groups/16S.pdf",
+      "sha256": "f33ad03ed75e415ade3625d8676759eb9b93063ebc326b188969f50a5df533ac"
+    },
+    {
+      "from": "sanger-2026-10-14/results/genetic_groups/16S.png",
+      "to": "analyses/results/genetic_groups/16S.png",
+      "sha256": "515fe3ec67cdaec820bc1101b075ae6ae8cbe7abce809d9ccc78375664cfd0cd"
+    },
+    {
+      "from": "sanger-2026-10-14/results/genetic_groups/16S.svg",
+      "to": "analyses/results/genetic_groups/16S.svg",
+      "sha256": "78697c766eda15cbc63d8d8920a1389e269926097ec8e49138f3b12038e23926"
+    },
+    {
+      "from": "sanger-2026-10-14/inputs/CO1.fasta",
+      "to": "analyses/inputs/combined/CO1.fasta",
+      "sha256": "5eb033c485dcf5baea1e7083a22a5f9e255a511a8db4e2cf5f925ccb19ae9e1d"
+    },
+    {
+      "from": "sanger-2026-10-14/inputs/CO1.tips.tsv",
+      "to": "analyses/inputs/combined/CO1.tips.tsv",
+      "sha256": "99becacc06044b9a7be1385e57a30575d9dea03ce39daa903801da44e3c558d8"
+    },
+    {
+      "from": "sanger-2026-10-14/results/alignments/CO1.fasta",
+      "to": "analyses/results/alignments/CO1.fasta",
+      "sha256": "f89f8dedd9bd6ff1e74470e05818e73718081cfa48ab739099a10c5f7f0f4c69"
+    },
+    {
+      "from": "sanger-2026-10-14/results/alignments/CO1.json",
+      "to": "analyses/results/alignments/CO1.json",
+      "sha256": "a87053427c8d4feb894d961f1c3dba5fff43c895077f2a06c68e996f4b2f9d3d"
+    },
+    {
+      "from": "sanger-2026-10-14/results/trees/CO1.bionj",
+      "to": "analyses/results/trees/CO1.bionj",
+      "sha256": "0ad464e954d27e1505cbbe0170b58efdba40ea8a46514d8af96a88bbfe2e2a6d"
+    },
+    {
+      "from": "sanger-2026-10-14/results/trees/CO1.ckp.gz",
+      "to": "analyses/results/trees/CO1.ckp.gz",
+      "sha256": "722c0df1e4be9ad566069fe32cd6d9df86df391da97e91f2c6e9c6b5926f36a9"
+    },
+    {
+      "from": "sanger-2026-10-14/results/trees/CO1.contree",
+      "to": "analyses/results/trees/CO1.contree",
+      "sha256": "b3fd123c6741901d28e18c81710d476d7e944f7fc9ccc0a87ffc3e9937cb95cc"
+    },
+    {
+      "from": "sanger-2026-10-14/results/trees/CO1.iqtree",
+      "to": "analyses/results/trees/CO1.iqtree",
+      "sha256": "6f388a2c4f21a66b6411803641d7b3915c4ff07cae41b4c6f17dc1c3187f4bc0"
+    },
+    {
+      "from": "sanger-2026-10-14/results/trees/CO1.log",
+      "to": "analyses/results/trees/CO1.log",
+      "sha256": "eaaed5fd02d59005d08845a9f1b352665751844050ecfd7e57f3ebe68502342b"
+    },
+    {
+      "from": "sanger-2026-10-14/results/trees/CO1.mldist",
+      "to": "analyses/results/trees/CO1.mldist",
+      "sha256": "e97459894e357752b09594f361b362a351ff853705b6e67795bea48ae17176dc"
+    },
+    {
+      "from": "sanger-2026-10-14/results/trees/CO1.model.gz",
+      "to": "analyses/results/trees/CO1.model.gz",
+      "sha256": "3c0db7c6ac4c4e88eec189c47bb9a03dae8652003dbeadad26c76f0900b5e8ce"
+    },
+    {
+      "from": "sanger-2026-10-14/results/trees/CO1.runtrees",
+      "to": "analyses/results/trees/CO1.runtrees",
+      "sha256": "1007e856bdf4cb9fa0814aa4a84b4accd0c97a9277ca19428e9b053e7b45e51c"
+    },
+    {
+      "from": "sanger-2026-10-14/results/trees/CO1.splits.nex",
+      "to": "analyses/results/trees/CO1.splits.nex",
+      "sha256": "6f8a9a41dad066199e59023c815a86b85691362bc0e6696baa865f4a7b3f1c3d"
+    },
+    {
+      "from": "sanger-2026-10-14/results/trees/CO1.treefile",
+      "to": "analyses/results/trees/CO1.treefile",
+      "sha256": "0a77bf1c87231885d66b6cd9e87f85bd6b09e62be01b001ed244aa132fb65a26"
+    },
+    {
+      "from": "sanger-2026-10-14/results/figures/CO1.rooted.nwk",
+      "to": "analyses/results/figures/CO1.rooted.nwk",
+      "sha256": "95c1e7a045e6e4372be9e116373c7d0b8a3143b857e354af5d5c12bfe9a0684c"
+    },
+    {
+      "from": "sanger-2026-10-14/results/genetic_groups/CO1.annotations.tsv",
+      "to": "analyses/results/genetic_groups/CO1.annotations.tsv",
+      "sha256": "d3bf976c7e88be50d71fe3ef3b4393fd4d759477d2a7173420c29902f16806cd"
+    },
+    {
+      "from": "sanger-2026-10-14/results/genetic_groups/CO1.focal.pdf",
+      "to": "analyses/results/genetic_groups/CO1.focal.pdf",
+      "sha256": "9a3b6a68d7249ffd6ec6ffbdacbae05a2517efa0e9f9b707df4fb3154cb83d64"
+    },
+    {
+      "from": "sanger-2026-10-14/results/genetic_groups/CO1.focal.png",
+      "to": "analyses/results/genetic_groups/CO1.focal.png",
+      "sha256": "4062a8065c68ce08036fbefe8148c92dfd9d0921974ba7b442a63bc2af8a1d4c"
+    },
+    {
+      "from": "sanger-2026-10-14/results/genetic_groups/CO1.focal.svg",
+      "to": "analyses/results/genetic_groups/CO1.focal.svg",
+      "sha256": "6db71d2ed6ba25f7110d4e418c16bed39247d435cf4967d7df3ac97a4359fa0c"
+    },
+    {
+      "from": "sanger-2026-10-14/results/genetic_groups/CO1.pdf",
+      "to": "analyses/results/genetic_groups/CO1.pdf",
+      "sha256": "2c4c62a1c474834515e585c3a4a9224d169f1855b2a1c2b0792a3c1549a44a7f"
+    },
+    {
+      "from": "sanger-2026-10-14/results/genetic_groups/CO1.png",
+      "to": "analyses/results/genetic_groups/CO1.png",
+      "sha256": "1f669dad99bbdf3e080f46f95cc7ae46c88ff0ebaa7384477ec34380a702f816"
+    },
+    {
+      "from": "sanger-2026-10-14/results/genetic_groups/CO1.svg",
+      "to": "analyses/results/genetic_groups/CO1.svg",
+      "sha256": "785c565a84c7b5a05378593547676fff160e36d4cd2b979aa73282681304dde4"
+    }
+  ],
+  "canonical_results": "analyses/results",
+  "canonical_combined_inputs": "analyses/inputs/combined",
+  "final_tips": {
+    "CO1": 57,
+    "16S": 60
+  },
+  "inference_rerun": false,
+  "sequence_processing_verified_unchanged": true,
+  "tests_passed": 15,
+  "plots_regenerated": [
+    "16S",
+    "CO1",
+    "18S",
+    "ITS",
+    "mitogenome_submitted"
+  ]
+}

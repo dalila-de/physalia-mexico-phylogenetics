@@ -3,16 +3,17 @@
 The four marker analyses use 35 published Atlantic specimens and five Mexican
 specimens. Six published P. utriculus specimens provide comparison; Rhizophysa
 is the outgroup wherever the source panel provides it. Each specimen appears
-once. The mitochondrial tree excludes YPM-IZ-110972 because its repository
+once. COI and 16S also include one Caribbean Sanger specimen (CH887).
+These are the only retained COI and 16S tree analyses. The mitochondrial tree excludes YPM-IZ-110972 because its repository
 mitogenome has unresolved alternative paths and was not deposited.
 
-| Analysis | Atlantic published | Mexico | utriculus | Rhizophysa | Total |
-|---|---:|---:|---:|---:|---:|
-|16S|35|5|6|13|59|
-|18S|35|5|6|2|48|
-|CO1|35|5|6|10|56|
-|ITS|35|5|6|0|46|
-|Mitogenome|34|5|6|3|48|
+| Analysis | Atlantic published | Mexico | utriculus | Rhizophysa | Sanger | Total |
+|---|---:|---:|---:|---:|---:|---:|
+|16S|35|5|6|13|1|60|
+|18S|35|5|6|2|0|48|
+|COI|35|5|6|10|1|57|
+|ITS|35|5|6|0|0|46|
+|Mitogenome|34|5|6|3|0|48|
 
 MAFFT 7.526 aligns the marker sequences de novo with direction adjustment;
 mitogenomes are added to the paper's aligned backbone. IQ-TREE 3.0.1 uses
@@ -21,18 +22,24 @@ For Mexican 16S/CO1, select the longest individual MITOS rrnL/cox1 fragment or
 canonical sharkmer product, with MITOS winning ties. 18S/ITS select the longest
 canonical sharkmer product. Fragmented genes are never concatenated for length.
 Candidate selection is recorded in `inputs/*.candidates.tsv`.
+The WGS/reference FASTAs in `inputs/` are intermediate panels. Final COI/16S
+inputs in `inputs/combined/` add the quality-controlled Sanger sequences; all
+alignments, inferred trees and figures are together under `results/`.
+See [Sanger processing](../sanger-2026-10-14/README.md) for trace evidence.
 
 ## Figures
 
 `results/genetic_groups/` contains PDF, SVG and PNG figures. Full plots retain
 all taxa; `.focal` plots prune utriculus/Rhizophysa only for display, preserving
-focal branch lengths and topology. The original inference is unchanged.
+focal branch lengths and topology. The existing combined COI/16S inference and the other three inferences are preserved.
+Full and focal figures are two views of each single analysis, not independent trees.
 Filled internal-node dots indicate bootstrap ≥95; hollow dots indicate 70–94;
 values below 70 are unmarked. Exact values remain in Newick trees.
 Rhizophysa roots the reported non-ITS trees; ITS is midpoint-rooted for display.
 
 Blue/orange E/W groups come from the **prior genome-wide NGSadmix K2 results**,
-not these gene trees or collection geography. Mexico is pink and unassigned here.
+not these gene trees or collection geography. The five Gulf of Mexico (Progreso) specimens are pink and unassigned here;
+CH887, Caribbean Sea (Puerto Morelos), is purple and also unassigned.
 The three vagrants have a dagger:110844 W-like,111012 E-like,111018 predominantly
 E-like (94.73% eastern component in the whole-assembly analysis). Frozen evidence
 and annotations are in `provenance/genetic_groups/` and

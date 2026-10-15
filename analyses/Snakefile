@@ -3,6 +3,7 @@
 This entry point consumes completed October QC outputs and never reruns QC.
 Four marker trees and one mitochondrial tree use published cohort references
 and five new Mexican specimens, with one sequence per specimen.
+COI and 16S also include the processed CH887 Sanger sequences.
 """
 import csv
 import shutil
@@ -19,6 +20,9 @@ INPUTS = str(HERE / "inputs")
 with open(ROOT / "illumina-qc-run/metadata/samples.tsv") as stream:
     SAMPLES = [r["sample"] for r in csv.DictReader(stream, delimiter="\t") if r["cohort"] != "published"]
 GENES = ["16S", "18S", "CO1", "ITS", "mitogenome_submitted"]
+
+wildcard_constraints:
+    gene="16S|18S|CO1|ITS|mitogenome_submitted"
 
 rule annotate_mitogenome_mitos:
     input:
@@ -62,9 +66,11 @@ rule prepare_tree_sequences:
     shell:
         "python {input.script:q} {wildcards.gene:q}"
 
+include: "sanger.smk"
+
 rule align_sequences_mafft:
     input:
-        fasta=INPUTS + "/{gene}.fasta",
+        fasta=lambda w: str(HERE / "inputs" / ("combined" if w.gene in {"16S", "CO1"} else "") / f"{w.gene}.fasta"),
         base=INPUTS + "/{gene}.base.fasta",
         addition=INPUTS + "/{gene}.add.fasta",
         validator=str(HERE / "scripts/validate_alignment.py")
@@ -93,7 +99,8 @@ rule infer_phylogeny_iqtree:
         tool=config["iqtree"]
     output:
         tree=OUT + "/trees/{gene}.treefile",
-        report=OUT + "/trees/{gene}.iqtree"
+        report=OUT + "/trees/{gene}.iqtree",
+        consensus=OUT + "/trees/{gene}.contree"
     params:
         tool=config["iqtree"],
         prefix=OUT + "/trees/{gene}",
@@ -110,11 +117,11 @@ rule report_phylogeny:
     input:
         tree=OUT + "/trees/{gene}.treefile",
         inference=OUT + "/trees/{gene}.iqtree",
+        consensus=OUT + "/trees/{gene}.contree",
         alignment=OUT + "/alignments/{gene}.fasta",
-        tips=INPUTS + "/{gene}.tips.tsv",
+        tips=lambda w: str(HERE / "inputs" / ("combined" if w.gene in {"16S", "CO1"} else "") / f"{w.gene}.tips.tsv"),
         script=str(HERE / "scripts/report_tree.py")
     output:
-        figure=OUT + "/figures/{gene}.pdf",
         report=OUT + "/tree_reports/{gene}.json",
         rooted=OUT + "/figures/{gene}.rooted.nwk"
     params:
@@ -127,7 +134,7 @@ rule plot_genetic_groups:
     input:
         report=OUT + "/tree_reports/{gene}.json",
         tree=OUT + "/figures/{gene}.rooted.nwk",
-        tips=INPUTS + "/{gene}.tips.tsv",
+        tips=lambda w: str(HERE / "inputs" / ("combined" if w.gene in {"16S", "CO1"} else "") / f"{w.gene}.tips.tsv"),
         annotation=INPUTS + "/genetic_annotations.tsv",
         script=str(HERE / "scripts/plot_genetic_groups.py")
     output:

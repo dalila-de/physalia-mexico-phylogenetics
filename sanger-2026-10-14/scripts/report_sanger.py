@@ -6,13 +6,13 @@ from pathlib import Path
 
 from Bio import Phylo, SeqIO
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[2] / "analyses"
 
 
 def main():
     rows = []
     for gene in ["CO1", "16S"]:
-        with (ROOT / "inputs" / f"{gene}.tips.tsv").open() as stream:
+        with (ROOT / "inputs/combined" / f"{gene}.tips.tsv").open() as stream:
             tips = {r["tip"]: r for r in csv.DictReader(stream, delimiter="\t")}
         records = list(SeqIO.parse(ROOT / "results/alignments" / f"{gene}.fasta", "fasta"))
         if len(records) != len(tips) or {r.id for r in records} != set(tips):
@@ -50,7 +50,7 @@ def main():
             interpretation="Marker-tree placement does not assign genetic E/W ancestry or prove specimen identity.",
         )
         rows.append(row)
-    (ROOT / "results/tree_summary.json").write_text(json.dumps(rows, indent=2) + "\n")
+    (ROOT / "results/sanger_tree_summary.json").write_text(json.dumps(rows, indent=2) + "\n")
 
 
 if __name__ == "__main__":

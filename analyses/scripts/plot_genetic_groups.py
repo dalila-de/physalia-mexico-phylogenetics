@@ -25,7 +25,7 @@ PALETTE = {
 LABELS = {
     "E": "E — genetic group",
     "W": "W — genetic group",
-    "Mexico": "Mexico — separate category",
+    "Mexico": "Gulf (Progreso) — separate category",
     "utriculus": "P. utriculus — E/W not applicable",
     "outgroup": "Rhizophysa outgroup",
 }
@@ -38,7 +38,8 @@ def read_table(path):
 
 def main(gene, root=ROOT):
     annotations = {r["sample"]: r for r in read_table(root / "inputs/genetic_annotations.tsv")}
-    tips = {r["tip"]: r for r in read_table(root / f"inputs/{gene}.tips.tsv")}
+    panel = root / "inputs" / "combined" if gene in {"16S", "CO1"} else root / "inputs"
+    tips = {r["tip"]: r for r in read_table(panel / f"{gene}.tips.tsv")}
     tree = Phylo.read(root / f"results/figures/{gene}.rooted.nwk", "newick")
     if {t.name for t in tree.get_terminals()} != set(tips):
         raise ValueError("Tree and tip metadata do not match")
@@ -140,7 +141,7 @@ def main(gene, root=ROOT):
             "topological steps" if topology_only else "substitutions / site"
         )
         ax.text(scale / 2, -0.6, scale_label, ha="center", va="top", fontsize=8, color="#64707d")
-        title = "Mitogenome" if gene == "mitogenome_submitted" else gene
+        title = "Mitogenome" if gene == "mitogenome_submitted" else "COI" if gene == "CO1" else gene
         fig.text(0.045, 0.968, title, fontsize=21, weight="bold", color="#23313f")
         scope = (
             "All specimens and outgroups"
@@ -166,7 +167,7 @@ def main(gene, root=ROOT):
                 label={
                     "E": "Genetic E",
                     "W": "Genetic W",
-                    "Mexico": "Mexico",
+                    "Mexico": "Gulf (Progreso)",
                     "utriculus": "P. utriculus",
                     "outgroup": "Rhizophysa",
                     "Sanger": "Sanger — E/W unassigned",

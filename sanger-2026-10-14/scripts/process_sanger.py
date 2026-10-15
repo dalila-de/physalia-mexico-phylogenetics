@@ -107,6 +107,7 @@ def write_table(path, rows):
 
 
 def main():
+    (REPO / "analyses/inputs/combined").mkdir(parents=True, exist_ok=True)
     out = ROOT / "results/qc"
     out.mkdir(parents=True, exist_ok=True)
     with (ROOT / "config/samples.tsv").open() as f:
@@ -232,7 +233,9 @@ def main():
         refs = list(SeqIO.parse(REPO / "analyses/inputs" / f"{sample['gene']}.fasta", "fasta"))
         if rec.id in {x.id for x in refs}:
             raise ValueError("Duplicate tip")
-        SeqIO.write(refs + [rec], ROOT / "inputs" / f"{sample['gene']}.fasta", "fasta")
+        SeqIO.write(
+            refs + [rec], REPO / "analyses/inputs/combined" / f"{sample['gene']}.fasta", "fasta"
+        )
         with (REPO / "analyses/inputs" / f"{sample['gene']}.tips.tsv").open() as stream:
             tips = list(csv.DictReader(stream, delimiter="\t"))
         tips.append(
@@ -245,7 +248,7 @@ def main():
                 sequence_sha256=hashlib.sha256(sequence.encode()).hexdigest(),
             )
         )
-        write_table(ROOT / "inputs" / f"{sample['gene']}.tips.tsv", tips)
+        write_table(REPO / "analyses/inputs/combined" / f"{sample['gene']}.tips.tsv", tips)
         comparisons = []
         for ref in refs:
             a = ALIGNER.align(ref.seq, rec.seq)[0]
@@ -321,7 +324,7 @@ def main():
             )
             + "\n"
         )
-    with (REPO / "analyses/inputs/genetic_annotations.tsv").open() as stream:
+    with (REPO / "analyses/inputs/wgs_genetic_annotations.tsv").open() as stream:
         annotations = list(csv.DictReader(stream, delimiter="\t"))
     a = dict.fromkeys(annotations[0], "")
     a.update(
@@ -338,7 +341,7 @@ def main():
     for row in annotations:
         if row["sample"] in localities:
             row["location"] = localities[row["sample"]]
-    write_table(ROOT / "inputs/genetic_annotations.tsv", annotations)
+    write_table(REPO / "analyses/inputs/genetic_annotations.tsv", annotations)
     overview.savefig(out / "quality_overview.png", dpi=160)
     plt.close(overview)
     (out / "read_qc.json").write_text(json.dumps(reports, indent=2) + "\n")

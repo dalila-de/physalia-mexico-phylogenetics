@@ -7,24 +7,22 @@ The voucher ID, precise collection coordinates, and experimental PCR primer iden
 not supplied. The specimen is **unassigned for genetic E/W** and shown in purple.
 This addition does not infer genome-wide ancestry from mitochondrial markers.
 
-The original five-marker analysis remains in `../analyses`. These updated COI and
-16S analyses add one tip to each existing panel, retaining published references,
-the five Mexican specimens, six utriculus comparators and Rhizophysa outgroups.
-The new panels contain 57 COI tips and 60 16S tips.
+COI and 16S now have one combined analysis each in `../analyses/results`,
+including CH887, the published references, all five Gulf of Mexico (Progreso)
+specimens, six utriculus comparators and Rhizophysa outgroups. There are 57 COI
+tips and 60 16S tips. This folder contains the chromatograms and processing evidence;
+it does not contain a second set of tree results.
 
-## Updated trees
+## Combined trees
 
-| Marker | Full tree | Focal view |
+| Marker | Full tree | Focal view of the same tree |
 |---|---|---|
-| COI | [PDF](results/genetic_groups/CO1.pdf) | [PNG](results/genetic_groups/CO1.focal.png) · [PDF](results/genetic_groups/CO1.focal.pdf) |
-| 16S | [PDF](results/genetic_groups/16S.pdf) | [PNG](results/genetic_groups/16S.focal.png) · [PDF](results/genetic_groups/16S.focal.pdf) |
+| COI | [PDF](../analyses/results/genetic_groups/CO1.pdf) | [PDF](../analyses/results/genetic_groups/CO1.focal.pdf) |
+| 16S | [PDF](../analyses/results/genetic_groups/16S.pdf) | [PDF](../analyses/results/genetic_groups/16S.focal.pdf) |
 
-Editable SVGs are alongside the PDFs. Figures show the bootstrap consensus;
-`results/tree_summary.json` reports nearest-tip distances on the ML tree, which
-can differ in poorly resolved regions. Many internal branches are near zero and
-the displayed consensus contains polytomies. These partial markers do not resolve
-all relationships among specimens. All five search likelihoods are retained in
-the IQ-TREE reports; the searches do not yield identical likelihoods.
+PNG and editable SVG versions are alongside the PDFs. Figures show the bootstrap
+consensus; nearest-tip reports use the ML tree and can differ in poorly resolved
+regions. Partial markers do not resolve all relationships among specimens.
 
 ## Processed sequences
 
@@ -48,11 +46,10 @@ identity alone cannot distinguish those specimens.
 - `config/samples.tsv`: one specimen, two marker amplicons, provenance of names.
 - `results/qc/`: quality overview, full chromatogram PDFs, trimmed FASTQ files,
   per-base consensus evidence, sequence summaries and marker/reference matches.
-- `inputs/*.sanger.fasta`: the new sequences alone. The combined FASTAs and tip
-  metadata retain the original reference IDs and sequences.
-- `results/alignments`, `results/trees`: updated alignments and IQ-TREE results.
-- `results/genetic_groups`: full and focal PDF, PNG and SVG trees, with colored
-  labels beside branch tips. Focal plots prune utriculus/Rhizophysa only for display.
+- `inputs/*.sanger.fasta`: the new sequences alone. Combined FASTAs and tip
+  metadata are in `../analyses/inputs/combined/`.
+- `../analyses/results/`: the single set of combined alignments, IQ-TREE results
+  and figures; full and focal plots share the same inference.
 
 The COI reverse trace fails quality control; COI is a **single-forward-read sequence**,
 not a bidirectionally verified consensus. Its ambiguous calls remain N. The 16S
@@ -103,10 +100,13 @@ From the repository root, activate the `physalia-trees` environment defined in
 
 ```bash
 snakemake all --snakefile sanger-2026-10-14/Snakefile --cores 8 --dry-run
-snakemake all --snakefile sanger-2026-10-14/Snakefile --cores 8
+snakemake all --snakefile sanger-2026-10-14/Snakefile --cores 8  # trace QC and combined inputs
+snakemake all --snakefile analyses/Snakefile --cores 24  # all five trees
 ```
 
-On this cluster, submit `sbatch sanger-2026-10-14/batch.sh`. It records environment,
+On this cluster, `sbatch sanger-2026-10-14/batch.sh` runs trace QC and input preparation.
+Tree inference uses the shared `analyses/Snakefile`; plotting alone uses
+`snakemake --snakefile analyses/plots.smk --cores 2 --forceall`. It records environment,
 source changes and tool versions alongside its workflow log. All originals are
 preserved; `provenance/raw_checksums.tsv` records their identities. Existing analysis
 artifacts remain covered by the repository's release validator.

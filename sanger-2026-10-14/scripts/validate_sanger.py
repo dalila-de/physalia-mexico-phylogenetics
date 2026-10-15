@@ -23,7 +23,7 @@ def main():
             r.id: str(r.seq)
             for r in SeqIO.parse(REPO / "analyses/inputs" / f"{gene}.fasta", "fasta")
         }
-        records = list(SeqIO.parse(ROOT / "inputs" / f"{gene}.fasta", "fasta"))
+        records = list(SeqIO.parse(REPO / "analyses/inputs/combined" / f"{gene}.fasta", "fasta"))
         new = {r.id: str(r.seq) for r in records}
         assert len(new) == len(records) == len(original) + 1
         assert {k: v for k, v in new.items() if k != "sanger__CH887"} == original
@@ -34,7 +34,7 @@ def main():
             len(seq) == qc["length"]
             and sum(b not in "ACGT" for b in str(seq.seq)) == qc["ambiguous_bases"]
         )
-        aln = list(SeqIO.parse(ROOT / "results/alignments" / f"{gene}.fasta", "fasta"))
+        aln = list(SeqIO.parse(REPO / "analyses/results/alignments" / f"{gene}.fasta", "fasta"))
         assert len({len(r) for r in aln}) == 1 and {r.id for r in aln} == set(new)
         for r in aln:
             assert str(r.seq).replace("-", "").upper() in (
@@ -42,7 +42,7 @@ def main():
                 str(Seq(new[r.id]).reverse_complement()).upper(),
             )
         for suffix in ["treefile", "contree"]:
-            tree = Phylo.read(ROOT / "results/trees" / f"{gene}.{suffix}", "newick")
+            tree = Phylo.read(REPO / "analyses/results/trees" / f"{gene}.{suffix}", "newick")
             names = [t.name for t in tree.get_terminals()]
             assert len(names) == len(set(names)) and set(names) == set(new)
     print(

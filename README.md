@@ -6,7 +6,9 @@ for five Mexican specimens alongside published Physalia sequences.
 The five new specimens are **YPM-IZ-116693–116697**. The Illumina workflow and bundled QC outputs cover only these five specimens.
 The trees use published sequences for those 35 Atlantic specimens, the five Mexican
 assemblies, six published P. utriculus comparators, and available Rhizophysa
-outgroups. There is one sequence per specimen per analysis.
+outgroups. COI and 16S also include the Caribbean Sanger specimen CH887.
+There is one sequence per specimen per analysis and one retained tree analysis
+per marker; the full and focal figures are views of that same tree.
 
 ![Mitogenome tree, focal view](analyses/results/genetic_groups/mitogenome_submitted.focal.png)
 
@@ -16,14 +18,15 @@ outgroups. There is one sequence per specimen per analysis.
 |---|---|---|
 |16S|[PDF](analyses/results/genetic_groups/16S.pdf)|[PDF](analyses/results/genetic_groups/16S.focal.pdf)|
 |18S|[PDF](analyses/results/genetic_groups/18S.pdf)|[PDF](analyses/results/genetic_groups/18S.focal.pdf)|
-|CO1|[PDF](analyses/results/genetic_groups/CO1.pdf)|[PDF](analyses/results/genetic_groups/CO1.focal.pdf)|
+|COI|[PDF](analyses/results/genetic_groups/CO1.pdf)|[PDF](analyses/results/genetic_groups/CO1.focal.pdf)|
 |ITS|[PDF](analyses/results/genetic_groups/ITS.pdf)|[PDF](analyses/results/genetic_groups/ITS.focal.pdf)|
 |Mitogenome|[PDF](analyses/results/genetic_groups/mitogenome_submitted.pdf)|[PDF](analyses/results/genetic_groups/mitogenome_submitted.focal.pdf)|
 
 PNG and editable SVG versions are alongside each PDF. E/W colors represent
 **prior genome-wide genetic assignments**, not classifications inferred from
 these trees. A dagger marks the three known vagrants; Mexican specimens are
-pink and displayed separately. Filled/hollow internal-node dots show bootstrap
+pink and labeled **Gulf of Mexico (Progreso)**. CH887 is labeled
+**Caribbean Sea (Puerto Morelos)** and shown in purple, without an E/W assignment. Filled/hollow internal-node dots show bootstrap
 support ≥95/70–94. All original support values remain in the Newick files.
 
 ITS lacks a Rhizophysa sequence in the reference panel and is midpoint-rooted
@@ -40,6 +43,7 @@ inference or change the retained subtree's branch lengths.
 |[mitogenome-annotation](mitogenome-annotation/)|Five Mexican assemblies, original MITOS2 FASTA/GFF3/gene-order annotations, and a summary|
 |[analyses](analyses/)|Selected sequences, alignments, IQ-TREE outputs, genetic-group annotations, figures, and public-sequence audit|
 |[references/church](references/church/)|Pinned published reference panels, specimen metadata, and upstream license/attribution|
+|[sanger-2026-10-14](sanger-2026-10-14/)|Original chromatograms, trace QC and processed CH887 sequences; combined trees are in analyses|
 |[provenance](provenance/)|Historical execution settings, tool/environment records, input identities, and artifact checksums|
 
 The Illumina manifests and outputs contain only the five Mexican specimens.
@@ -87,7 +91,7 @@ Published reference data are from
 [Church's Physalia repository](https://github.com/shchurch/Physalia_spatiotemporal_patterns),
 commit `d08f0edf4d819e21c85705e4965de71673808dec`. See
 [third-party attribution](references/church/README.md) and its preserved LICENSE.
-This folder is prepared for a GitHub repository; it has not been uploaded.
+
 
 ## Caribbean Sanger specimen
 
@@ -95,7 +99,10 @@ The [CH887 Sanger analysis](sanger-2026-10-14/README.md) adds COI and 16S from o
 Caribbean Sea specimen, with raw chromatograms, quality reports and reproducible
 sequence processing. The two amplicons initially supplied as COI were identified
 as different mitochondrial markers. CH887 is shown separately from genetic E/W.
-The updated trees retain the original reference panels and five Mexican specimens.
+The single COI and 16S trees linked above include CH887, the published reference
+panels and all five Mexican specimens. Superseded WGS-only COI/16S results were
+archived outside this repository; [consolidation provenance](provenance/tree-consolidation.json)
+records their replacement by the previously completed combined analyses.
 
 ## Validation
 
