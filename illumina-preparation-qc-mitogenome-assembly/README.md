@@ -1,6 +1,7 @@
-# Physalia Illumina QC
+# Physalia Illumina preparation, QC and mitogenome assembly
 
-Read quality assessment and marker recovery for **five Mexican specimens**,
+Read preparation, quality control, marker recovery and mitochondrial genome
+assembly for **five Mexican specimens**,
 `YPM-IZ-116693` through `YPM-IZ-116697`, collected at Gulf of Mexico (Progreso).
 See the [sample manifest](metadata/samples.tsv) and [exact read paths](metadata/reads.tsv).
 Published specimens enter the downstream trees through the pinned reference
@@ -44,7 +45,7 @@ This workflow runs on McCleary against existing YCGA inputs. Use the existing
 [`scripts/environment.sh`](scripts/environment.sh):
 
 ```bash
-cd illumina-qc-run
+cd illumina-preparation-qc-mitogenome-assembly
 source scripts/environment.sh
 python scripts/preflight.py --output provenance/preflight.json
 ```

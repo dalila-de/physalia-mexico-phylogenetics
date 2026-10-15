@@ -26,11 +26,11 @@ def main():
         raise ValueError("Duplicate Sanger tree results remain outside analyses")
     mexico = {f"YPM-IZ-{i}" for i in range(116693, 116698)}
     for name in ("samples", "reads"):
-        with (ROOT / f"illumina-qc-run/metadata/{name}.tsv").open() as stream:
+        with (ROOT / f"illumina-preparation-qc-mitogenome-assembly/metadata/{name}.tsv").open() as stream:
             rows = list(csv.DictReader(stream, delimiter="\t"))
         if len(rows) != 5 or {r["sample"] for r in rows} != mexico:
             raise ValueError(f"Unexpected QC scope: {name}")
-    qc = ROOT / "illumina-qc-run/results/cohort-2026-10-09"
+    qc = ROOT / "illumina-preparation-qc-mitogenome-assembly/results/cohort-2026-10-09"
     if {p.name for p in qc.iterdir() if p.is_dir()} != mexico:
         raise ValueError("Unexpected bundled QC specimens")
     expected = {"16S": 60, "18S": 48, "CO1": 57, "ITS": 46, "mitogenome_submitted": 48}

@@ -1,0 +1,12 @@
+{
+  "renames": [
+    {
+      "from": "illumina-qc-run",
+      "to": "illumina-preparation-qc-mitogenome-assembly",
+      "reason": "Name the read preparation, QC and mitogenome assembly stages explicitly",
+      "prior_commit": "5856b1b8fddc43b06a171af7233ee65d93c94a1d",
+      "scientific_artifacts_changed": false,
+      "historical_records": "Original execution and selection records retain their contemporaneous paths."
+    }
+  ]
+}

@@ -39,7 +39,7 @@ inference or change the retained subtree's branch lengths.
 
 | Directory | Contents |
 |---|---|
-|[illumina-qc-run](illumina-qc-run/)|Five-specimen Mexican workflow, manifests, environment records, compact QC reports, sharkmer products, and mitochondrial assemblies|
+|[illumina-preparation-qc-mitogenome-assembly](illumina-preparation-qc-mitogenome-assembly/)|Five-specimen Mexican workflow, manifests, environment records, compact QC reports, sharkmer products, and mitochondrial assemblies|
 |[mitogenome-annotation](mitogenome-annotation/)|Five Mexican assemblies, original MITOS2 FASTA/GFF3/gene-order annotations, and a summary|
 |[analyses](analyses/)|Selected sequences, alignments, IQ-TREE outputs, genetic-group annotations, figures, and public-sequence audit|
 |[references/church](references/church/)|Pinned published reference panels, specimen metadata, and upstream license/attribution|
@@ -72,7 +72,7 @@ has not been tested. The figures were checked with the recorded existing Python,
 Biopython and matplotlib environment.
 
 For full inference, see [analysis methods](analyses/README.md). For QC, see
-[the QC workflow](illumina-qc-run/README.md); full raw-read reruns require access
+[the QC workflow](illumina-preparation-qc-mitogenome-assembly/README.md); full raw-read reruns require access
 to the FASTQs and installation/configuration of the site-specific tools and
 reference databases. Historical absolute paths in manifests/provenance identify
 what was used; update execution configs when running elsewhere.
@@ -110,7 +110,7 @@ With the analysis environment activated, run from the repository root:
 
 ```bash
 python -m pytest -q
-ruff check analyses/scripts illumina-qc-run/scripts sanger-2026-10-14/scripts
+ruff check analyses/scripts illumina-preparation-qc-mitogenome-assembly/scripts sanger-2026-10-14/scripts
 python scripts/validate_release.py
 python sanger-2026-10-14/scripts/validate_sanger.py
 ```

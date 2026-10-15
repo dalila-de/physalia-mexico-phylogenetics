@@ -17,7 +17,7 @@ WORK = str(ROOT / config["scratch"])
 REFERENCE = str(ROOT / "references/church/phylogenetics")
 OUT = str(HERE / "results")
 INPUTS = str(HERE / "inputs")
-with open(ROOT / "illumina-qc-run/metadata/samples.tsv") as stream:
+with open(ROOT / "illumina-preparation-qc-mitogenome-assembly/metadata/samples.tsv") as stream:
     SAMPLES = [r["sample"] for r in csv.DictReader(stream, delimiter="\t") if r["cohort"] != "published"]
 GENES = ["16S", "18S", "CO1", "ITS", "mitogenome_submitted"]
 
@@ -26,7 +26,7 @@ wildcard_constraints:
 
 rule annotate_mitogenome_mitos:
     input:
-        fasta=lambda w: sorted(str(p) for p in (ROOT / "illumina-qc-run/results" / config["qc_run"] / w.sample / "mitogenomes").glob("*.fasta")),
+        fasta=lambda w: sorted(str(p) for p in (ROOT / "illumina-preparation-qc-mitogenome-assembly/results" / config["qc_run"] / w.sample / "mitogenomes").glob("*.fasta")),
         reference=str(Path(config["mitos_refdir"]) / config["mitos_refname"]),
         tool=str(Path(config["mitos_env"]) / "bin/runmitos.py")
     output:
@@ -50,7 +50,7 @@ rule annotate_mitogenome_mitos:
 rule prepare_tree_sequences:
     input:
         mitos=lambda w: expand(OUT + "/annotations/{sample}/result.fas", sample=SAMPLES) if w.gene in {"16S", "CO1"} else [],
-        qc=lambda w: sorted(str(p) for s in SAMPLES for p in (ROOT / "illumina-qc-run/results" / config["qc_run"] / s).glob("markers/*.fasta")) if not w.gene.startswith("mitogenome") else sorted(str(p) for s in SAMPLES for p in (ROOT / "illumina-qc-run/results" / config["qc_run"] / s).glob("mitogenomes/*.fasta")),
+        qc=lambda w: sorted(str(p) for s in SAMPLES for p in (ROOT / "illumina-preparation-qc-mitogenome-assembly/results" / config["qc_run"] / s).glob("markers/*.fasta")) if not w.gene.startswith("mitogenome") else sorted(str(p) for s in SAMPLES for p in (ROOT / "illumina-preparation-qc-mitogenome-assembly/results" / config["qc_run"] / s).glob("mitogenomes/*.fasta")),
         script=str(HERE / "scripts/prepare_tree_inputs.py"),
         common=str(HERE / "scripts/common.py"),
         configfile=str(HERE / "config/config.yaml"),

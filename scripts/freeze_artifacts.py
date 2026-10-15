@@ -6,7 +6,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 paths = [
-    "illumina-qc-run/results",
+    "illumina-preparation-qc-mitogenome-assembly/results",
     "mitogenome-annotation/inputs",
     "mitogenome-annotation/results",
     "analyses/inputs",
