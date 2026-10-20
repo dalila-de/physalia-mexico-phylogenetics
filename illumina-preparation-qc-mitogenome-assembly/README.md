@@ -59,6 +59,19 @@ The historical package request is also retained in `env/illuminaqc-history.yaml`
 Paths are configurable in `config/config.yaml`. Access to the original YCGA
 FASTQs and shared reference databases is required; they are not distributed here.
 
+The exact nine-sequence mitochondrial seed FASTA is bundled separately in
+[`../references/mitochondrial-seed/`](../references/mitochondrial-seed/), with
+its original headers, sequence inventory, and execution-matching checksum.
+For a rerun, set `mito_seed` to the absolute path of that bundled file.
+This seed is supplied to GetOrganelle with `-s`; the GetOrganelle database
+configured through `getorganelle_db` remains a separate external dependency.
+Its animal mitochondrial LabelDatabase and SeedDatabase report version 0.0.1.
+The Kraken2 site alias resolves to `k2_standard_20240904`. Human screening
+used GRCh38 primary-assembly and mitochondrial sequences (GCA_000001405.15),
+with an additional EBV decoy (AJ507799.2).
+The [reference audit](../provenance/reference-audit/README.md) records the
+supporting checksums, source metadata, and limits of release-date verification.
+
 The prefix preflight is a quick check. Every read pair actually selected is
 validated during the run, and selected uncompressed input prefixes are hashed.
 The unread tails of original FASTQs are not validated or hashed.

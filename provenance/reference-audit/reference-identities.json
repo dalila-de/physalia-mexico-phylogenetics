@@ -1,0 +1,92 @@
+{
+  "historical_manifest": "provenance/illumina-qc/references.tsv",
+  "getorganelle": {
+    "LabelDatabase": {
+      "source_path": "/vast/palmer/pi/dunn/dd2233/Illumina_QC_Pop_Gen/runs/libraries_2026_09_08/getorganelle_db/LabelDatabase/VERSION",
+      "resolved_path": "/vast/palmer/pi/dunn/dd2233/Illumina_QC_Pop_Gen/runs/libraries_2026_09_08/getorganelle_db/LabelDatabase/VERSION",
+      "bytes": 81,
+      "sha256": "c87e8c2b4522c98d019087068c5331286aed11d7db3f85f35987238e1903ee18",
+      "matches_historical_manifest": true,
+      "database": "animal_mt",
+      "version": "0.0.1",
+      "fasta": {
+        "source_path": "/vast/palmer/pi/dunn/dd2233/Illumina_QC_Pop_Gen/runs/libraries_2026_09_08/getorganelle_db/LabelDatabase/animal_mt.fasta",
+        "resolved_path": "/vast/palmer/pi/dunn/dd2233/Illumina_QC_Pop_Gen/runs/libraries_2026_09_08/getorganelle_db/LabelDatabase/animal_mt.fasta",
+        "bytes": 6674918,
+        "sha256": "af9541621107623ed13f668b4744ddbdcc1e6a8157aa53132717d90e7ac63c4e",
+        "matches_historical_manifest": true
+      }
+    },
+    "SeedDatabase": {
+      "source_path": "/vast/palmer/pi/dunn/dd2233/Illumina_QC_Pop_Gen/runs/libraries_2026_09_08/getorganelle_db/SeedDatabase/VERSION",
+      "resolved_path": "/vast/palmer/pi/dunn/dd2233/Illumina_QC_Pop_Gen/runs/libraries_2026_09_08/getorganelle_db/SeedDatabase/VERSION",
+      "bytes": 81,
+      "sha256": "2a3caf7d24f0aef48eef93c264116a41bde612a6d0b2f05384dca066ed17bccf",
+      "matches_historical_manifest": true,
+      "database": "animal_mt",
+      "version": "0.0.1",
+      "fasta": {
+        "source_path": "/vast/palmer/pi/dunn/dd2233/Illumina_QC_Pop_Gen/runs/libraries_2026_09_08/getorganelle_db/SeedDatabase/animal_mt.fasta",
+        "resolved_path": "/vast/palmer/pi/dunn/dd2233/Illumina_QC_Pop_Gen/runs/libraries_2026_09_08/getorganelle_db/SeedDatabase/animal_mt.fasta",
+        "bytes": 30285897,
+        "sha256": "a293c02e0c0496beb29383927cc7c643b13e09f8cfa03f7688b352315a43f898",
+        "matches_historical_manifest": true
+      }
+    }
+  },
+  "kraken2": {
+    "current_resolved_path": "/gpfs/gibbs/data/db/kraken2/k2_standard_20240904",
+    "directory_release_label": "k2_standard_20240904",
+    "release_date_from_directory_label": "2024-09-04",
+    "date_basis": "Current alias target, not a claim about exact build timestamp",
+    "components": [
+      {
+        "source_path": "/gpfs/gibbs/data/kraken2/standard/opts.k2d",
+        "resolved_path": "/gpfs/gibbs/data/db/kraken2/k2_standard_20240904/opts.k2d",
+        "bytes": 64,
+        "sha256": "e6585825db429bd44835603fc00dae772fa48cb3c792ae2deee51856fd66dc31",
+        "matches_historical_manifest": true
+      },
+      {
+        "source_path": "/gpfs/gibbs/data/kraken2/standard/taxo.k2d",
+        "resolved_path": "/gpfs/gibbs/data/db/kraken2/k2_standard_20240904/taxo.k2d",
+        "bytes": 4073643,
+        "sha256": "63ec6ccabd4f00775e73566772359610b969a693538faf8ebbddcf6ba318f5d5",
+        "matches_historical_manifest": true
+      },
+      {
+        "source_path": "/gpfs/gibbs/data/kraken2/standard/hash.k2d",
+        "bytes": 85932209036,
+        "historical_sha256": "ef7bb630516b65f967611c996490486478e5f6799d74406a3c914c7c0ab6727f",
+        "rehash_performed": false,
+        "size_matches_historical": true,
+        "mtime_matches_historical": true,
+        "note": "85.9 GB hash table was not reread; identity retained from execution manifest. Small component hashes were reverified."
+      }
+    ]
+  },
+  "human_reference": {
+    "source_path": "/gpfs/gibbs/data/genomes/Homo_sapiens/NCBI/GRCh38/Sequence/BWAIndex/genome.fa",
+    "resolved_path": "/gpfs/gibbs/data/genomes/Homo_sapiens/NCBI/GRCh38/Sequence/WholeGenomeFasta/genome.fa",
+    "bytes": 3144230986,
+    "sha256": "9cce8b926416dd96b152deea85188495b75f7ac8d634cc723a017067be8702b7",
+    "matches_historical_manifest": true,
+    "index": {
+      "source_path": "/gpfs/gibbs/data/genomes/Homo_sapiens/NCBI/GRCh38/Sequence/BWAIndex/genome.fa.ann",
+      "resolved_path": "/gpfs/gibbs/data/genomes/Homo_sapiens/NCBI/GRCh38/Sequence/BWAIndex/version0.6.0/genome.fa.ann",
+      "bytes": 27715,
+      "sha256": "71b231aee7bd25800756f1165d2cf9dd41501ca248a147de70c2bb83f2849f1c",
+      "matches_historical_manifest": true
+    },
+    "assembly_accession": "GCA_000001405.15",
+    "primary_assembly_records": 193,
+    "mitochondrial_records": 1,
+    "extra_decoy": {
+      "id": "chrEBV",
+      "accession": "AJ507799.2",
+      "length_bp": 171823
+    },
+    "assembly_report_source": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/001/405/GCA_000001405.15_GRCh38/GCA_000001405.15_GRCh38_assembly_report.txt",
+    "verification_scope": "Executed FASTA and BWA annotation match historical SHA256; annotation accessions and lengths match all primary-assembly and non-nuclear records in the official NCBI report. No base-by-base download comparison to NCBI performed."
+  }
+}

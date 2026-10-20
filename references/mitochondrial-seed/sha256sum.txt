@@ -1,0 +1,1 @@
+4d6bae1baae57862995925ba4515b9cccba467f7f1f0be11c322bee618436b78  siph_mitochondrion_ncbi.fasta
