@@ -1,4 +1,4 @@
-# Mexican Physalia in a published phylogenetic context
+# Mexican Physalia phylogenetics using previously published datasets
 
 Illumina read QC, mitochondrial annotation, and marker/mitogenome phylogenies
 for five Mexican specimens alongside published Physalia sequences.
