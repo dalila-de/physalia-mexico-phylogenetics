@@ -61,6 +61,26 @@ and annotations are in `provenance/genetic_groups/` and
 `inputs/genetic_annotations.tsv`. Coefficients are not calibrated historical
 ancestry proportions. Colored specimen labels and collection locations sit directly beside branch tips.
 
+## Interpretation of the retained placements
+
+The new specimens group with published *P. physalis* references, consistent with
+that identification. This is not definitive species confirmation or a genome-wide
+E/W assignment. In the rooted bootstrap consensus trees, the clade containing all
+published *P. physalis* references and the new specimens has support of 36% (COI),
+58% (16S), 75% (ITS), and 77% (mitogenomes). The corresponding 18S node has no
+recorded support value; a missing value is not a zero-support estimate.
+CH887's immediate groupings have 14% COI and 30% 16S support. These values describe
+particular branches, not probabilities of species identity. Its COI sequence is
+partial and forward-only. Short or near-zero branches and weak groupings limit
+within-species resolution. Some mitochondrial subclades have stronger support,
+but mitochondrial placement alone does not establish genome-wide ancestry.
+
+Support values are retained in `results/trees/*.contree` and their rooted display
+copies in `results/figures/*.rooted.nwk`. Nearest-reference reports use the separate
+maximum-likelihood trees and should not be substituted for consensus branch support.
+The five mitochondrial assemblies have automated, fragmented MITOS2 annotations;
+manual annotation validation and genome completeness have not been established.
+
 ## Reproduce
 
 From the repository root, use the top-level environment.yml:
