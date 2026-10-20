@@ -22,6 +22,11 @@ For Mexican 16S/CO1, select the longest individual MITOS rrnL/cox1 fragment or
 canonical sharkmer product, with MITOS winning ties. 18S/ITS select the longest
 canonical sharkmer product. Fragmented genes are never concatenated for length.
 Candidate selection is recorded in `inputs/*.candidates.tsv`.
+In the retained selection, MITOS2 supplied COI and 16S for all five Progreso
+specimens; canonical `cnidaria_18S` and `cnidaria_ITS` sharkmer products supplied
+18S and ITS. Other recovered primer products were not added as duplicate tips.
+The MITOS2 annotations used version 2.1.9 with `refseq89m`, code 4, and
+`--linear --orih 0 --oril 0 --trna 0 --intron 0`.
 The WGS/reference FASTAs in `inputs/` are intermediate panels. Final COI/16S
 inputs in `inputs/combined/` add the quality-controlled Sanger sequences; all
 alignments, inferred trees and figures are together under `results/`.

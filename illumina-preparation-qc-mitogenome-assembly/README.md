@@ -21,6 +21,16 @@ animal mitochondrial assembly; sharkmer recovers cnidarian, metazoan, and bacter
 primer products; rego retrieves reads matching seven established primers. A
 recovered assembly path is not, by itself, evidence of a complete mitogenome.
 
+GetOrganelle consumes paired trimmed reads. sharkmer v0.2.0 consumes the
+trimmed forward reads with `-k 31 -n 100` and the `cnidaria`, `metazoa`, and
+`bacteria` primer panels. rego also consumes trimmed forward reads, searching
+seven primer patterns (16S forward/reverse, COI forward/reverse, 18S
+forward/reverse, and ITS forward) with `--before 150 --after 150 --max_hits 50`.
+rego retrieves primer-matching reads; this step does not independently assemble
+or validate the recovered marker sequences. The unversioned executed script
+is identified in `../provenance/illumina-qc/references.tsv` by SHA256
+`c38082482ff84540871a0ffac2eaa160a47e25eb97e78152b6ee68471dc1d48c`.
+
 ## Storage
 
 - This repository holds code, configuration, metadata, and compact final results.
