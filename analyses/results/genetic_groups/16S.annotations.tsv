@@ -32,7 +32,6 @@ ref__YPM-IZ-110846	YPM-IZ-110846	Azores	Eastern North Atlantic	E	Prior genome-wi
 ref__YPM-IZ-110847	YPM-IZ-110847	Azores	Eastern North Atlantic	E	Prior genome-wide NGSadmix K2 dominant component; same assignment excluding scaffold10; vagrant flag from original population metadata	E	E	False	0.9999537966	0.9999415118
 ref__YPM-IZ-110876	YPM-IZ-110876	Texas	Gulf of Mexico	W	Prior genome-wide NGSadmix K2 dominant component; same assignment excluding scaffold10; vagrant flag from original population metadata	W	W	False	1e-09	1e-09
 ref__YPM-IZ-110880	YPM-IZ-110880	Rhode Island	Western North Atlantic	W	Prior genome-wide NGSadmix K2 dominant component; same assignment excluding scaffold10; vagrant flag from original population metadata	W	W	False	1e-09	1e-09
-ref__YPM-IZ-110972	YPM-IZ-110972	Ireland	Eastern North Atlantic	E	Prior genome-wide NGSadmix K2 dominant component; same assignment excluding scaffold10; vagrant flag from original population metadata	E	E	False	0.999999999	0.999999999
 ref__YPM-IZ-111006	YPM-IZ-111006	South Africa	W Indian	utriculus	Pinned Church tip_metadata.tsv; outside North Atlantic physalis E/W comparison	not_applicable	not_applicable	False		
 ref__YPM-IZ-111012	YPM-IZ-111012	Bermuda	Western North Atlantic	E	Prior genome-wide NGSadmix K2 dominant component; same assignment excluding scaffold10; vagrant flag from original population metadata	W	E	True	0.9999989929	0.9999865752
 ref__YPM-IZ-111013	YPM-IZ-111013	Bermuda	Western North Atlantic	W	Prior genome-wide NGSadmix K2 dominant component; same assignment excluding scaffold10; vagrant flag from original population metadata	W	W	False	1e-09	1e-09
@@ -43,8 +42,6 @@ ref__YPM-IZ-111018	YPM-IZ-111018	Bermuda	Western North Atlantic	E	Prior genome-w
 ref__AY935286.1	AY935286.1			outgroup	Pinned Church species metadata; E/W not applicable	not_applicable	not_applicable	False		
 ref__AY935309.1	AY935309.1			outgroup	Pinned Church species metadata; E/W not applicable	not_applicable	not_applicable	False		
 ref__KT809335.1	KT809335.1			outgroup	Pinned Church species metadata; E/W not applicable	not_applicable	not_applicable	False		
-ref__NC_080941.1	NC_080941.1			outgroup	Pinned Church species metadata; E/W not applicable	not_applicable	not_applicable	False		
-ref__NC_080942.1	NC_080942.1			outgroup	Pinned Church species metadata; E/W not applicable	not_applicable	not_applicable	False		
 ref__OQ957199.1	OQ957199.1			outgroup	Pinned Church species metadata; E/W not applicable	not_applicable	not_applicable	False		
 ref__OQ957206.1	OQ957206.1			outgroup	Pinned Church species metadata; E/W not applicable	not_applicable	not_applicable	False		
 ref__PX372070.1	PX372070.1			outgroup	Pinned Church species metadata; E/W not applicable	not_applicable	not_applicable	False		

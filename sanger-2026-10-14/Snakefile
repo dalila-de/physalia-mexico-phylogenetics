@@ -1,7 +1,7 @@
 """Reprocess chromatograms and prepare combined inputs; trees use analyses/Snakefile."""
 from pathlib import Path
 ROOT = Path(workflow.basedir).resolve().parent
-include: "../analyses/sanger.smk"
+include: "workflow/processing.smk"
 rule all:
     input: rules.process_sanger.output
     default_target: True

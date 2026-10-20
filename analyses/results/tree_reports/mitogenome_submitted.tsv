@@ -1,6 +1,6 @@
 sample	local_tip	nearest_reference_distance	nearest_reference_tips	nearest_reference_species	same_specimen_reference_distance
-YPM-IZ-116696	local__YPM-IZ-116696__path1	0.0029433875	ref__YPM-IZ-111018_mtgenome_scaffold_1--3743432_	Physalia physalis	not_available
-YPM-IZ-116694	local__YPM-IZ-116694__path1	0.003660413	ref__YPM-IZ-110694_mtgenome_scaffold_1--6113849_	Physalia physalis	not_available
-YPM-IZ-116693	local__YPM-IZ-116693__path1	0.0018484009	ref__YPM-IZ-111017_mtgenome_scaffold_1--3305370_	Physalia physalis	not_available
-YPM-IZ-116697	local__YPM-IZ-116697__path1	0.0012389582000000001	ref__YPM-IZ-110633_mtgenome_scaffold_1--5829952_	Physalia physalis	not_available
-YPM-IZ-116695	local__YPM-IZ-116695__path1	0.0027988008	ref__YPM-IZ-110254_mtgenome_scaffold_1--5573165_	Physalia physalis	not_available
+YPM-IZ-116696	local__YPM-IZ-116696__path1	0.0029456379	ref__YPM-IZ-111018	Physalia physalis	not_available
+YPM-IZ-116694	local__YPM-IZ-116694__path1	0.0036481209000000002	ref__YPM-IZ-110694	Physalia physalis	not_available
+YPM-IZ-116693	local__YPM-IZ-116693__path1	0.0018463271	ref__YPM-IZ-110845	Physalia physalis	not_available
+YPM-IZ-116697	local__YPM-IZ-116697__path1	0.0012401922999999999	ref__YPM-IZ-110633	Physalia physalis	not_available
+YPM-IZ-116695	local__YPM-IZ-116695__path1	0.0028007896	ref__YPM-IZ-110254	Physalia physalis	not_available

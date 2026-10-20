@@ -1,6 +1,5 @@
-run_id: phylogenetics-utriculus-2026-10-12
-scratch: work/analyses
-upstream_commit: d08f0edf4d819e21c85705e4965de71673808dec
+run_id: ncbi-denovo-2026-10-20
+scratch: work/ncbi-denovo-2026-10-20
 qc_run: cohort-2026-10-09
 mitos_env: envs/mitos
 mitos_refdir: resources/mitos
@@ -8,7 +7,7 @@ mitos_refname: refseq89m
 iqtree: iqtree3
 seed: 20261012
 search_runs: 5
-reference_scope: published_cohort
+reference_scope: ncbi_accession_manifest
 additional_reference_samples:
 - OA-190531-1
 - WAM-Z97902
@@ -17,3 +16,8 @@ additional_reference_samples:
 - YPM-IZ-110830
 - YPM-IZ-111006
 plot_python: python
+
+search_runs_by_marker:
+  CO1: 10
+  16S: 10
+  mitogenome_submitted: 10

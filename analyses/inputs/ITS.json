@@ -2,5 +2,7 @@
   "analysis": "ITS",
   "tips": 46,
   "local_tips": 5,
-  "reference_tips": 41
+  "reference_tips": 41,
+  "reference_source": "NCBI GenBank accession manifest",
+  "alignment": "de_novo"
 }

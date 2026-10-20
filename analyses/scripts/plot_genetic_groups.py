@@ -68,7 +68,7 @@ def main(gene, root=ROOT):
             focal.prune(tip)
     # Remove the stem to excluded taxa; focal pairwise distances are unchanged.
     focal.root.branch_length = 0
-    root_note = "Midpoint root" if gene == "ITS" else "Original root: Rhizophysa"
+    root_note = "Midpoint root" if gene == "ITS" else "Rhizophysa root"
     for suffix, subtitle, view in [
         ("", " — all tips", tree),
         (".focal", " — focal view (references pruned for display)", focal),
@@ -99,17 +99,24 @@ def main(gene, root=ROOT):
                         color="#505861",
                         linewidth=0.8,
                     )
-            if not node.is_terminal() and node is not view.root and node.confidence is not None:
-                if node.confidence >= 70:
-                    ax.scatter(
-                        depths[node],
-                        y[node],
-                        s=15,
-                        zorder=4,
-                        facecolor="#505861" if node.confidence >= 95 else "white",
-                        edgecolor="#505861",
-                        linewidth=0.7,
-                    )
+            if (
+                not node.is_terminal()
+                and node is not view.root
+                and node.confidence is not None
+                and node.confidence >= 95
+            ):
+                ax.annotate(
+                    f"{node.confidence:g}",
+                    (depths[node], y[node]),
+                    xytext=(-3, 3),
+                    textcoords="offset points",
+                    ha="right",
+                    va="bottom",
+                    fontsize=6,
+                    color="#505861",
+                    bbox=dict(facecolor="white", edgecolor="none", pad=0.15),
+                    zorder=5,
+                )
         for tip in leaves:
             row = tips[tip.name]
             annotation = annotations[row["sample"]]
@@ -187,7 +194,7 @@ def main(gene, root=ROOT):
         fig.text(
             0.5,
             0.013,
-            f"† Known vagrant    • Bootstrap ≥95    ○ Bootstrap 70–94    |    {root_note}",
+            f"† Known vagrant    Node labels: ultrafast bootstrap ≥95%    |    {root_note}",
             ha="center",
             fontsize=8,
             color="#64707d",

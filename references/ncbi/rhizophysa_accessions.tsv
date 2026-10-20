@@ -1,0 +1,25 @@
+marker	sample	species	accession	extraction
+CO1	AY937377.1	Rhizophysa filiformis	AY937377.1	whole_record
+CO1	GQ120038.1	Rhizophysa eysenhardtii	GQ120038.1	whole_record
+CO1	GQ120039.1	Rhizophysa eysenhardtii	GQ120039.1	whole_record
+CO1	GQ120040.1	Rhizophysa eysenhardtii	GQ120040.1	whole_record
+CO1	GQ120041.1	Rhizophysa filiformis	GQ120041.1	whole_record
+CO1	KT809335.1	Rhizophysa eysenhardtii	KT809335.1	cox1_CDS
+CO1	OQ957199.1	Rhizophysa filiformis	OQ957199.1	cox1_CDS
+CO1	OQ957206.1	Rhizophysa eysenhardtii	OQ957206.1	cox1_CDS
+16S	AY935286.1	Rhizophysa filiformis	AY935286.1	whole_record
+16S	AY935309.1	Rhizophysa eysenhardtii	AY935309.1	whole_record
+16S	KT809335.1	Rhizophysa eysenhardtii	KT809335.1	16S_rRNA
+16S	OQ957199.1	Rhizophysa filiformis	OQ957199.1	16S_rRNA
+16S	OQ957206.1	Rhizophysa eysenhardtii	OQ957206.1	16S_rRNA
+16S	PX372070.1	Rhizophysa filiformis	PX372070.1	whole_record
+16S	PX372075.1	Rhizophysa eysenhardtii	PX372075.1	whole_record
+16S	PX372076.1	Rhizophysa eysenhardtii	PX372076.1	whole_record
+16S	PX372077.1	Rhizophysa eysenhardtii	PX372077.1	whole_record
+16S	PX372078.1	Rhizophysa eysenhardtii	PX372078.1	whole_record
+16S	PX372079.1	Rhizophysa eysenhardtii	PX372079.1	whole_record
+18S	AY937327.1	Rhizophysa filiformis	AY937327.1	whole_record
+18S	AY937351.1	Rhizophysa eysenhardtii	AY937351.1	whole_record
+mitogenome_submitted	KT809335.1	Rhizophysa eysenhardtii	KT809335.1	whole_record
+mitogenome_submitted	OQ957199.1	Rhizophysa filiformis	OQ957199.1	whole_record
+mitogenome_submitted	OQ957206.1	Rhizophysa eysenhardtii	OQ957206.1	whole_record

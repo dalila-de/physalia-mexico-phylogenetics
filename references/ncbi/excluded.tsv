@@ -1,0 +1,4 @@
+sample_or_accession	markers	reason
+YPM-IZ-110972	CO1;16S;mitogenome_submitted	No deposited mitochondrial record in the specified accession range; retained for nuclear 18S and ITS
+NC_080941.1	CO1;16S	RefSeq copy of OQ957199.1 according to NCBI record comment; retained original once
+NC_080942.1	CO1;16S	RefSeq copy of OQ957206.1 according to NCBI record comment; retained original once

@@ -1,17 +1,30 @@
 """Selection must choose one record, not concatenate split mitochondrial genes."""
 
+import gzip
+
 import prepare_tree_inputs as prepare
 from Bio import SeqIO
+from Bio.Seq import Seq
+from Bio.SeqFeature import FeatureLocation, SeqFeature
+from Bio.SeqRecord import SeqRecord
 
 
 def test_longest_mitos_fragment_competes_with_sharkmer(tmp_path, monkeypatch):
     upstream = tmp_path / "upstream"
     qc = tmp_path / "qc"
     result = tmp_path / "results"
-    for p in [upstream / "gene_trees", qc / "test/markers", result / "annotations/test"]:
+    for p in [upstream, qc / "test/markers", result / "annotations/test"]:
         p.mkdir(parents=True)
-    (upstream / "tip_metadata.tsv").write_text("seq\tspecies\nreference\tPhysalia physalis\n")
-    (upstream / "gene_trees/CO1.all.fasta").write_text(">reference\nACGTACGT\n")
+    (upstream / "accessions.tsv").write_text(
+        "marker\tsample\tspecies\taccession\textraction\nCO1\treference\tPhysalia physalis\tTEST.1\twhole_record\n"
+    )
+    record = SeqRecord(Seq("ACGTACGT"), id="TEST.1", name="TEST", description="test")
+    record.annotations.update(molecule_type="DNA", organism="Physalia physalis")
+    record.features = [
+        SeqFeature(FeatureLocation(0, 8), type="source", qualifiers={"isolate": ["reference"]})
+    ]
+    with gzip.open(upstream / "records.gb.gz", "wt") as f:
+        SeqIO.write(record, f, "genbank")
     (result / "annotations/test/result.fas").write_text(
         ">scaffold; 1-6; +; cox1_0\nACGTAC\n"
         ">scaffold; 7-11; +; cox1_1\nACGTA\n"
@@ -19,12 +32,11 @@ def test_longest_mitos_fragment_competes_with_sharkmer(tmp_path, monkeypatch):
     )
     (qc / "test/markers/test_cnidaria_CO1.fasta").write_text(">test product 0\nACGT\n")
     for name, value in [
-        ("CONFIG", {}),
-        ("UPSTREAM", upstream),
+        ("REFERENCE", upstream),
         ("QC", qc),
         ("RESULTS", result),
         ("ANALYSIS", tmp_path),
-        ("IDS", ["test"]),
+        ("QC_IDS", ["test"]),
     ]:
         monkeypatch.setattr(prepare, name, value)
     prepare.prepare("CO1")

@@ -2,7 +2,7 @@ name: physalia-trees
 channels: [conda-forge, bioconda]
 dependencies:
   - python=3.12
-  - biopython=1.86
+  - biopython=1.85
   - matplotlib
   - numpy
   - pyyaml

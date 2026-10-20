@@ -9,8 +9,8 @@ This addition does not infer genome-wide ancestry from mitochondrial markers.
 
 COI and 16S now have one combined analysis each in `../analyses/results`,
 including CH887, the published references, all five Gulf of Mexico (Progreso)
-specimens, six utriculus comparators and Rhizophysa outgroups. There are 57 COI
-tips and 60 16S tips. This folder contains the chromatograms and processing evidence;
+specimens, six utriculus comparators and Rhizophysa outgroups. There are 54 COI
+tips and 57 16S tips in the NCBI-based rerun. This folder contains the chromatograms and processing evidence;
 it does not contain a second set of tree results.
 
 ## Combined trees
@@ -32,7 +32,7 @@ regions. Partial markers do not resolve all relationships among specimens.
 | 16S | 553 bp | 0 | Agreeing forward/reverse overlap |
 
 The retained COI sequence has a stop-free frame under mitochondrial code 4.
-The 16S overlap exactly matches multiple published Physalia sequences, so sequence
+The 16S overlap exactly matches multiple Physalia reference sequences, so sequence
 identity alone cannot distinguish those specimens.
 
 [Quality overview](results/qc/quality_overview.png) ·
@@ -133,3 +133,13 @@ Locality labels were clarified by the user: YPM-IZ-116693–116697 are
 **Gulf of Mexico (Progreso)** and CH887 is **Caribbean Sea (Puerto Morelos)**.
 The reproducible label overrides are in `config/localities.tsv`. These are
 collection localities; genetic-group assignments are unchanged.
+
+## NCBI-based tree rerun
+
+The current combined trees use freshly extracted GenBank reference sequences and
+de novo MAFFT alignments. YPM-IZ-110972 is omitted from COI/16S because it has no
+deposited mitogenome in the selected accession set. Redundant RefSeq copies of
+OQ957199.1 and OQ957206.1 are omitted. The CH887 consensus sequences and trace QC
+are unchanged. Original reference-match tables here document the historical trace
+review; they are not reference inputs to the new tree inference. See
+[the current accession manifest](../references/ncbi/accessions.tsv).

@@ -1,6 +1,8 @@
 {
   "analysis": "CO1",
-  "tips": 56,
+  "tips": 53,
   "local_tips": 5,
-  "reference_tips": 51
+  "reference_tips": 48,
+  "reference_source": "NCBI GenBank accession manifest",
+  "alignment": "de_novo"
 }

@@ -1,0 +1,44 @@
+{
+  "run_id": "ncbi-denovo-2026-10-20",
+  "previous_commit": "207aaaabed73dd55be6abd2a92127b9df3a01510",
+  "previous_snapshot_local": "manuscript-review/historical/pre-ncbi-2026-10-20.tar.gz",
+  "previous_snapshot_sha256": "67c22f85e7c47cfa25d697bfe0b0aefd195771e42c7c6a4ed5c6065de5838fad",
+  "scope": "All five alignments and tree inferences rerun from accession-defined NCBI references; local sequences and prior genetic label metadata retained.",
+  "status": "complete",
+  "reference_accessions": 140,
+  "expected_tips": {
+    "CO1": 54,
+    "16S": 57,
+    "18S": 48,
+    "ITS": 46,
+    "mitogenome_submitted": 48
+  },
+  "initial_slurm_job": "13629991",
+  "refinement_slurm_array": "13630240",
+  "cancelled_before_start": "13630225",
+  "searches": {
+    "CO1": 10,
+    "16S": 10,
+    "18S": 5,
+    "ITS": 5,
+    "mitogenome_submitted": 10
+  },
+  "refinement_reason": "Initial five COI, 16S and mitogenome searches had only one occurrence of the best likelihood; extended to ten in separate outputs before selection.",
+  "mitogenome_refinement_job": "13630330",
+  "plot_job": "13630616",
+  "plot_partition_attempt": "Scheduler rejected change from day to devel under accounting/QOS policy; job remains on day.",
+  "validation": {
+    "pytest": "18 passed",
+    "ruff": "passed",
+    "artifact_hashes": 266,
+    "exact_tree_tip_sets": 5,
+    "reference_accessions_matched": 140,
+    "reference_occurrences_matched": 226,
+    "preserved_local_sequences": 25,
+    "preserved_sanger_consensuses": 2,
+    "forced_replot_exit_code": 0,
+    "manuscript_edit_ledger": "passed",
+    "citation_keys": "resolved"
+  },
+  "execution_evidence": "analyses/provenance/ncbi-denovo-2026-10-20"
+}

@@ -40,7 +40,7 @@ def check(root: Path) -> dict:
                 a, b = read_record(left, row["R1"]), read_record(right, row["R2"])
                 if a is None or b is None or record_id(a[0]) != record_id(b[0]):
                     raise ValueError(f"Paired prefix validation failed: {row['sample']}")
-    refs = [config[k] for k in ("human_bwa", "mito_seed", "sharkmer", "rego")]
+    refs = [config[k] for k in ("human_bwa", "mito_seed", "sharkmer")]
     refs += [config["human_bwa"] + x for x in (".amb", ".ann", ".bwt", ".pac", ".sa")]
     refs += [str(Path(config["kraken_db"]) / x) for x in ("hash.k2d", "opts.k2d", "taxo.k2d")]
     for path in refs:

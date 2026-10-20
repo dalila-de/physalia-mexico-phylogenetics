@@ -1,6 +1,6 @@
 IQ-TREE 3.0.1 built May  5 2025
 
-Input file name: /vast/palmer/pi/dunn/dd2233/physalia-illumina-qc/phylogenetics/results/alignments/18S.fasta
+Input file name: /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/analyses/results/alignments/18S.fasta
 Type of analysis: ModelFinder + tree reconstruction + ultrafast bootstrap (1000 replicates)
 Random seed number: 20265012
 
@@ -384,22 +384,22 @@ ALISIM COMMAND
 --------------
 To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
 
---alisim simulated_MSA -t /vast/palmer/pi/dunn/dd2233/physalia-illumina-qc/phylogenetics/results/trees/18S.treefile -m "HKY{13.8999}+F{0.268499,0.191785,0.259308,0.280409}" --length 1791
+--alisim simulated_MSA -t /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/analyses/results/trees/18S.treefile -m "HKY{13.8999}+F{0.268499,0.191785,0.259308,0.280409}" --length 1791
 
 To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
 
-iqtree -s /vast/palmer/pi/dunn/dd2233/physalia-illumina-qc/phylogenetics/results/alignments/18S.fasta --alisim mimicked_MSA
+iqtree -s /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/analyses/results/alignments/18S.fasta --alisim mimicked_MSA
 
 To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
 
-iqtree -s /vast/palmer/pi/dunn/dd2233/physalia-illumina-qc/phylogenetics/results/alignments/18S.fasta --alisim mimicked_MSA --num-alignments 100
+iqtree -s /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/analyses/results/alignments/18S.fasta --alisim mimicked_MSA --num-alignments 100
 
 For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
 
 TIME STAMP
 ----------
 
-Date and time: Mon Oct 12 11:20:22 2026
-Total CPU time used: 6.127591 seconds (0h:0m:6s)
-Total wall-clock time used: 2.511574965 seconds (0h:0m:2s)
+Date and time: Tue Oct 20 16:49:34 2026
+Total CPU time used: 288.533639 seconds (0h:4m:48s)
+Total wall-clock time used: 94.86859167 seconds (0h:1m:34s)
 

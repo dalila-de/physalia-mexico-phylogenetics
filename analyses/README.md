@@ -1,112 +1,120 @@
-# Mexican and published specimen phylogenetics
+# Mexican Physalia with NCBI reference sequences
 
-The four marker analyses use 35 published Atlantic specimens and five Mexican
-specimens. Six published P. utriculus specimens provide comparison; Rhizophysa
-is the outgroup wherever the source panel provides it. Each specimen appears
-once. COI and 16S also include one Caribbean Sanger specimen (CH887).
-These are the only retained COI and 16S tree analyses. The mitochondrial tree excludes YPM-IZ-110972 because its mitogenome was not
-included in the [reference repository](https://github.com/shchurch/Physalia_spatiotemporal_patterns)
-following concerns about its assembly.
+All five analyses use versioned NCBI GenBank records selected by accession and
+voucher/isolate, the five retained Progreso specimens, and CH887 for COI/16S.
+Every alignment is generated de novo. No pre-existing alignment backbone or
+external repository sequence panel is used.
 
-| Analysis | Atlantic published | Mexico | utriculus | Rhizophysa | Sanger | Total |
+| Analysis | P. physalis references | Progreso | P. utriculus | Rhizophysa records | CH887 | Total |
 |---|---:|---:|---:|---:|---:|---:|
-|16S|35|5|6|13|1|60|
+|16S|34|5|6|11|1|57|
 |18S|35|5|6|2|0|48|
-|COI|35|5|6|10|1|57|
+|COI|34|5|6|8|1|54|
 |ITS|35|5|6|0|0|46|
 |Mitogenome|34|5|6|3|0|48|
 
-MAFFT 7.526 aligns the marker sequences de novo with direction adjustment;
-mitogenomes are added to the reference repository's aligned backbone. IQ-TREE 3.0.1 uses
-ModelFinder/BIC, 1000 ultrafast bootstraps, five searches, and base seed 20261012 (incremented by 1000 for each subsequent search).
-For Mexican 16S/CO1, select the longest individual MITOS rrnL/cox1 fragment or
-canonical sharkmer product, with MITOS winning ties. 18S/ITS select the longest
-canonical sharkmer product. Fragmented genes are never concatenated for length.
-Candidate selection is recorded in `inputs/*.candidates.tsv`.
-In the retained selection, MITOS2 supplied COI and 16S for all five Progreso
-specimens; canonical `cnidaria_18S` and `cnidaria_ITS` sharkmer products supplied
-18S and ITS. Other recovered primer products were not added as duplicate tips.
-The MITOS2 annotations used version 2.1.9 with `refseq89m`, code 4, and
+The [accession manifest](../references/ncbi/accessions.tsv) contains all reference
+identities and extraction modes. [Reference documentation](../references/ncbi/README.md)
+describes the 140 distinct downloaded records and source-response checksums.
+COI/16S are extracted from annotated mitochondrial features when a whole
+mitogenome is the source; nuclear and stand-alone marker records are used whole.
+YPM-IZ-110972 remains in 18S/ITS only. Redundant RefSeq copies NC_080941.1 and
+NC_080942.1 are omitted in favor of OQ957199.1 and OQ957206.1.
+
+## Local sequences and inference
+
+For Mexican COI/16S, select the longest individual MITOS cox1/rrnL fragment or
+canonical sharkmer product, with MITOS winning ties. 18S/ITS use the longest
+canonical sharkmer product. Fragmented gene annotations are not concatenated.
+MITOS2 supplied COI/16S for all five specimens; sharkmer supplied 18S/ITS.
+`inputs/*.candidates.tsv` records the selection. These sequences and the CH887
+consensuses are unchanged from the preceding analysis.
+MITOS2 2.1.9 used `refseq89m`, code 4 and
 `--linear --orih 0 --oril 0 --trna 0 --intron 0`.
-The WGS/reference FASTAs in `inputs/` are intermediate panels. Final COI/16S
-inputs in `inputs/combined/` add the quality-controlled Sanger sequences; all
-alignments, inferred trees and figures are together under `results/`.
-See [Sanger processing](../sanger-2026-10-14/README.md) for trace evidence.
 
-Marker alignment uses `--auto --adjustdirectionaccurately`; mitogenome addition
-uses `--add --adjustdirectionaccurately`. Validation normalizes direction prefixes,
-checks unique IDs, exact input membership and the nucleotide/IUPAC alphabet,
-and removes columns containing only `-` or `?`. None were removed from the
-five retained alignments. ModelFinder selected models under the Bayesian
-information criterion (BIC). Outgroups are *Rhizophysa filiformis* and
-*R. eysenhardtii*; the table counts accession records, not verified individuals.
+MAFFT 7.526 uses `--auto --adjustdirectionaccurately` on each complete, unaligned
+panel, including mitogenomes. Validation normalizes MAFFT direction prefixes,
+checks unique IDs, exact tip membership and the nucleotide/IUPAC alphabet,
+and removes columns containing only `-` or `?`.
+IQ-TREE 3.0.1 uses ModelFinder (`-m MFP`) with the Bayesian information criterion,
+1,000 ultrafast bootstraps per search (`-B 1000`) and base seed 20261012.
+18S and ITS use five searches; COI, 16S and mitogenomes were extended to ten
+because their initial five searches did not repeat the best likelihood.
+`search_runs_by_marker` records these settings. IQ-TREE increments the seed
+by 1000 for successive searches.
+The four markers and mitogenomes are separate nucleotide analyses; no codon
+partitioning or marker concatenation is applied.
 
-## Figures
+## Display metadata and interpretation
 
-`results/genetic_groups/` contains PDF, SVG and PNG figures of rooted bootstrap
-consensus trees (`.contree`), rather than the separate maximum-likelihood trees. Full plots retain
-all taxa; `.focal` plots prune utriculus/Rhizophysa only for display, preserving
-focal branch lengths and topology. The existing combined COI/16S inference and the other three inferences are preserved.
-Full and focal figures are two views of each single analysis, not independent trees.
-Filled internal-node dots indicate bootstrap ≥95; hollow dots indicate 70–94;
-values below 70 are unmarked. Exact values remain in Newick trees.
-Rhizophysa roots the reported non-ITS trees; ITS is midpoint-rooted for display.
+Figures display rooted bootstrap consensus trees (`.contree`), not the separate
+best maximum-likelihood trees (`.treefile`). Non-ITS trees are rooted on the
+Rhizophysa split when monophyletic; ITS is midpoint-rooted. Actual rooting and
+selected models are recorded in `results/tree_reports/*.json`. Full and focal
+figures show the same inference; pruning comparator/outgroup tips for the focal
+view preserves the remaining topology and branch lengths. Internal-node labels
+show ultrafast-bootstrap support percentages only for branches with support ≥95%; all branches remain visible. Exact values remain in Newick files.
 
-Blue/orange E/W groups come from the **prior genome-wide NGSadmix K2 results**,
-not these gene trees or collection geography. The five Gulf of Mexico (Progreso) specimens are pink and unassigned here;
-CH887, Caribbean Sea (Puerto Morelos), is purple and also unassigned.
-The three vagrants have a dagger:110844 W-like,111012 E-like,111018 predominantly
-E-like (94.73% eastern component in the whole-assembly analysis). Frozen evidence
-and annotations are in `provenance/genetic_groups/` and
-`inputs/genetic_annotations.tsv`. Coefficients are not calibrated historical
-ancestry proportions. Colored specimen labels and collection locations sit directly beside branch tips.
+E/W colors and vagrant labels are **prior genome-wide assignments**, retained at
+the author's request. They come from the frozen whole-assembly NGSadmix K2
+analysis documented in `provenance/genetic_groups/` and
+`inputs/genetic_annotations.tsv`; they are not inferred from GenBank records or
+these new trees. Church et al. (2025), DOI
+[10.1016/j.cub.2025.05.066](https://doi.org/10.1016/j.cub.2025.05.066), supplies
+published population-genomic context. The five Progreso specimens and CH887
+remain unassigned for E/W. Mitochondrial placement does not establish genome-wide
+ancestry, and nearest-reference distances do not alone confirm species identity.
 
-## Interpretation of the retained placements
+The previous trees and availability reports are preserved in a historical local
+snapshot and the previous Git revision, identified by
+[rerun provenance](../provenance/ncbi-rerun.json). Their support values do not
+describe the new trees. No assembly, trace processing or annotation was rerun.
 
-The new specimens group with published *P. physalis* references, consistent with
-that identification. This is not definitive species confirmation or a genome-wide
-E/W assignment. In the rooted bootstrap consensus trees, the clade containing all
-published *P. physalis* references and the new specimens has support of 36% (COI),
-58% (16S), 75% (ITS), and 77% (mitogenomes). The corresponding 18S node has no
-recorded support value; a missing value is not a zero-support estimate.
-CH887's immediate groupings have 14% COI and 30% 16S support. These values describe
-particular branches, not probabilities of species identity. Its COI sequence is
-partial and forward-only. Short or near-zero branches and weak groupings limit
-within-species resolution. Some mitochondrial subclades have stronger support,
-but mitochondrial placement alone does not establish genome-wide ancestry.
+## Retained result summary
 
-Support values are retained in `results/trees/*.contree` and their rooted display
-copies in `results/figures/*.rooted.nwk`. Nearest-reference reports use the separate
-maximum-likelihood trees and should not be substituted for consensus branch support.
-The five mitochondrial assemblies have automated, fragmented MITOS2 annotations;
-manual annotation validation and genome completeness have not been established.
+| Dataset | Aligned sites | Model | Searches | P. physalis reference-clade support |
+|---|---:|---|---:|---:|
+| COI | 1,569 | TPM2u+F+G4 | 10 | 43% |
+| 16S | 2,091 | TPM2u+F+G4 | 10 | 37% |
+| 18S | 1,791 | HKY+F | 5 | Not recorded |
+| ITS | 877 | F81+I | 5 | 76% |
+| Mitogenome | 16,119 | TPM3u+F+I+R3 | 10 | 89% |
+
+All new tips fall within the corresponding *P. physalis* reference clade,
+consistent with that identification. CH887's immediate groupings have 23% COI
+and 63% 16S support. These values describe particular branches, not probabilities
+of species identity. Partial markers, near-zero branches and weak groupings limit
+within-species resolution. Missing support is not interpreted as zero.
+
+`results/ncbi_run_summary.json` records every search likelihood and local grouping.
+16S and mitogenome searches retain small likelihood differences after expansion
+to ten runs; optimization convergence is not asserted. No empty alignment columns
+were removed. No genome-wide ancestry assignments were made for the new specimens.
 
 ## Reproduce
 
-From the repository root, use the top-level environment.yml:
+From the repository root, with the environment from `environment.yml` and
+MAFFT 7.526 / IQ-TREE 3.0.1 available:
 
 ```bash
+python analyses/scripts/download_references.py
+snakemake all --snakefile analyses/Snakefile --cores 16 --dry-run
+snakemake all --snakefile analyses/Snakefile --cores 16
+python analyses/scripts/audit_availability.py
 snakemake --snakefile analyses/plots.smk --cores 2 --forceall
+python scripts/validate_release.py
 ```
 
-This needs only the files shipped here and recreates the figures. To rerun the
-full annotation/alignment/inference chain, configure the MITOS environment and
-refseq89m database in `config/config.yaml`, set `iqtree` to an executable path,
-and run `snakemake all --snakefile analyses/Snakefile --cores 24`. Full runs
-consume bundled reference panels and QC assemblies; no raw reads are needed.
-Plotting does not depend on access to raw FASTQs or MITOS databases.
+The download step verifies and reuses the bundled NCBI snapshot. This tree
+workflow consumes retained Mexican annotations/assemblies and Sanger consensuses;
+it does not need raw Illumina reads, MITOS databases, or the previous reference
+repository. Raw-read and annotation reproduction have their own documented paths.
 
-## Public-sequence audit
+For the existing cluster installation, `sbatch analyses/batch.sh` captures source,
+versions, commands and execution status under `provenance/slurm-<job>/` before
+running the same workflow. Its site-specific paths must be adapted elsewhere.
 
-See [availability findings](results/README.md),
-[specimen-by-marker accession table](results/specimen_marker_availability.tsv),
-and [all sharkmer matches](results/all_sharkmer_product_matches.tsv).
-The dated NCBI record snapshot is retained as `provenance/ncbi_records.gb.gz`;
-`python analyses/scripts/audit_availability.py` rereads that frozen snapshot.
-An absent voucher match does not prove a sequence is novel. Five Mexican
-mitogenomes lack exact matches in the queried datasets; confirmation requires
-assembly/read review. Sequence-identity relationships and specimen matches are
-kept separate. The availability audit covers the 35 published specimens and five Mexican
-specimens; local sequence comparisons use only the five Mexican assemblies.
-`inputs/cohort.tsv` selects the phylogenetic cohort independently of the
-five-specimen Illumina manifest.
+![Tree workflow](docs/rulegraph.svg)
+
+Generate the rule graph using `analyses/scripts/update_rulegraph.sh`.
+[Reference audit](results/README.md) lists accession/feature-level verification.

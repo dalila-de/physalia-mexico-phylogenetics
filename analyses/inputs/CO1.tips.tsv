@@ -1,57 +1,54 @@
-tip	sample	source	species	original_header	sequence_sha256
-ref__FM-16644	FM-16644	repository	Physalia physalis	FM-16644	5528d226ca06c9d3f11446d69c3d65f45b4d3057e2689b8f40b17c9865bba2a3
-ref__OA-190531-1	OA-190531-1	repository	Physalia utriculus	OA-190531-1	e0970531e1b5cf326f6510951748dc621bc4511e7979767d89748da06393baca
-ref__WAM-Z97902	WAM-Z97902	repository	Physalia utriculus	WAM-Z97902	2cf4ac90fca0d4c4d443cfc060b0da06ee393652ed098ba96039c0b8d0d06e35
-ref__YPM-IZ-104460	YPM-IZ-104460	repository	Physalia utriculus	YPM-IZ-104460	14acab0e392f13461d2d4f48e1e2bec45130418f88ea9e57fd8da3f17a604b03
-ref__YPM-IZ-106935	YPM-IZ-106935	repository	Physalia physalis	YPM-IZ-106935	7f539feb7fe18b76b421f0276f7269ef7751d3979954b0210b6882f5b78f540e
-ref__YPM-IZ-106936	YPM-IZ-106936	repository	Physalia physalis	YPM-IZ-106936	d40462e164bb5efd9890c623f82dd388bc79b6317d9bd145fdef3e2a040c2aad
-ref__YPM-IZ-106937	YPM-IZ-106937	repository	Physalia physalis	YPM-IZ-106937	a67d3e4c3a8955ea8295098db87cbebf0f3d3f539b6d40d70624c4e0a9a9932b
-ref__YPM-IZ-106941	YPM-IZ-106941	repository	Physalia physalis	YPM-IZ-106941	8481ca23e0540e64a0dc05669b186825ca609672b96e70a4ccc1ab6820a3dc43
-ref__YPM-IZ-106943	YPM-IZ-106943	repository	Physalia physalis	YPM-IZ-106943	8b6b1fafb60554afdc7ad76da8bf2d9cb5ef63535585ab6f3ce477e0c859ab83
-ref__YPM-IZ-106954	YPM-IZ-106954	repository	Physalia physalis	YPM-IZ-106954	b43997b906a3069fe10665f198d393b621d191f45686f366c74f56b3b2e033d0
-ref__YPM-IZ-106958	YPM-IZ-106958	repository	Physalia physalis	YPM-IZ-106958	a17b5c3ef2bf6d8adaf8bcaa2faea71a8854b53409035e76c4721088d8f81f5e
-ref__YPM-IZ-110251	YPM-IZ-110251	repository	Physalia physalis	YPM-IZ-110251	f2c3268e62a855eef29f2b109c662ea0a9cc2b3efcf97d654b30c4875fe27414
-ref__YPM-IZ-110254	YPM-IZ-110254	repository	Physalia physalis	YPM-IZ-110254	2da8fd6ff24d285b0dbbc411d2c5c315e25a77cc6163508d732407c44e1ace4e
-ref__YPM-IZ-110264	YPM-IZ-110264	repository	Physalia utriculus	YPM-IZ-110264	729fbb055c35c183cb507e73d5c5b5372812ef0762c9e8cbaee63f49b667e03d
-ref__YPM-IZ-110433	YPM-IZ-110433	repository	Physalia physalis	YPM-IZ-110433	07164d151ebfa068d9151ac0e9bfd33a07f0d525f952a80fe711849ad3e21311
-ref__YPM-IZ-110434	YPM-IZ-110434	repository	Physalia physalis	YPM-IZ-110434	3cd87ebde14ff4a80a94153ee6aca4bc878c2acf05d310c72421379a70c7c862
-ref__YPM-IZ-110436	YPM-IZ-110436	repository	Physalia physalis	YPM-IZ-110436	2d39ea80d1a0962153e5eb528fcac8d52c60e27217d0cfef3517d59b622d234b
-ref__YPM-IZ-110631	YPM-IZ-110631	repository	Physalia physalis	YPM-IZ-110631	79812f6f7cbaba3cfb981d205a69f7fbb65e8269a28ac6117db7133f060e34c3
-ref__YPM-IZ-110633	YPM-IZ-110633	repository	Physalia physalis	YPM-IZ-110633	eaed63bb4486f028111921f16f9e416d3fef664bf03b2b376802ea15f5670d7e
-ref__YPM-IZ-110667	YPM-IZ-110667	repository	Physalia physalis	YPM-IZ-110667	c2bc9f191ef1515b9afd138cac25f6012b8d6ab63161da5548e4e3ef993bac78
-ref__YPM-IZ-110694	YPM-IZ-110694	repository	Physalia physalis	YPM-IZ-110694	c2bc9f191ef1515b9afd138cac25f6012b8d6ab63161da5548e4e3ef993bac78
-ref__YPM-IZ-110716	YPM-IZ-110716	repository	Physalia physalis	YPM-IZ-110716	21fd9392fb81aa32a6170cac4e28869e95db1f8401c2ff27b5fcfd4f6bc98d4a
-ref__YPM-IZ-110726	YPM-IZ-110726	repository	Physalia physalis	YPM-IZ-110726	430646331067c2a23b68e198ad807862dacc8ebee76fea4ffd54d362725febb8
-ref__YPM-IZ-110738	YPM-IZ-110738	repository	Physalia physalis	YPM-IZ-110738	b999f112dee5cb12767d34c0585436db96e131a1f30697a7fe10753486430a35
-ref__YPM-IZ-110830	YPM-IZ-110830	repository	Physalia utriculus	YPM-IZ-110830	f7cddc7af675b55bb175dce2467cf2707d3753887e4d37fcd3deb043d8cf68a5
-ref__YPM-IZ-110842	YPM-IZ-110842	repository	Physalia physalis	YPM-IZ-110842	68ec659f9162f0aa2c6973a00dec82107664e89794ebdf4953bbb86573342e1a
-ref__YPM-IZ-110843	YPM-IZ-110843	repository	Physalia physalis	YPM-IZ-110843	7c355f24eb0de605fbc012ea6192a11a60c8d25de42876450c59756b38c6816c
-ref__YPM-IZ-110844	YPM-IZ-110844	repository	Physalia physalis	YPM-IZ-110844	1697fb371eba0beae40cdac6f4af946b9927e5079f1565f61b0e8be70cd16cc6
-ref__YPM-IZ-110845	YPM-IZ-110845	repository	Physalia physalis	YPM-IZ-110845	1321142d655f72ac8ceefe35cb15f610c561dd82f7597ddd7cc6b003af04cf07
-ref__YPM-IZ-110846	YPM-IZ-110846	repository	Physalia physalis	YPM-IZ-110846	abf1b547cfe0f36ec85b38599902b4d30ce02d165dd5f65527dba5111f94b0dd
-ref__YPM-IZ-110847	YPM-IZ-110847	repository	Physalia physalis	YPM-IZ-110847	bcfc2db3d62c316e659ff0bc20b58cb82dd3b41e409d28dd83c835978ea4f389
-ref__YPM-IZ-110876	YPM-IZ-110876	repository	Physalia physalis	YPM-IZ-110876	a83eb82085751902bb44e69a082a01f2d4fb1632d5bd58d621b476674603dcdb
-ref__YPM-IZ-110880	YPM-IZ-110880	repository	Physalia physalis	YPM-IZ-110880	8b6b1fafb60554afdc7ad76da8bf2d9cb5ef63535585ab6f3ce477e0c859ab83
-ref__YPM-IZ-110972	YPM-IZ-110972	repository	Physalia physalis	YPM-IZ-110972	cc63f63c055b281c01161b5c253be59e5ea30c65584cf0be15f68ef0d49a48bd
-ref__YPM-IZ-111006	YPM-IZ-111006	repository	Physalia utriculus	YPM-IZ-111006	8f3e67194de37c977924a2e6d9a5162c875b4dc00d2b80de8b4f9dc2c8c8d908
-ref__YPM-IZ-111012	YPM-IZ-111012	repository	Physalia physalis	YPM-IZ-111012	29047f9aecdbd50c655c79bf2e12429971ebc8cc2e89c294841c708776a0b940
-ref__YPM-IZ-111013	YPM-IZ-111013	repository	Physalia physalis	YPM-IZ-111013	674425cc6f71c0f62cd97816e298840c8a7e004d15d9b96c381e882f91171a06
-ref__YPM-IZ-111014	YPM-IZ-111014	repository	Physalia physalis	YPM-IZ-111014	5648004544d150f5eda7ebd0ed479ceea392c24368e2f4c536c7055c7db82320
-ref__YPM-IZ-111016	YPM-IZ-111016	repository	Physalia physalis	YPM-IZ-111016	aa8870429642810a4d5ba03f3d88e28e534ca96c06824366915b09285583264a
-ref__YPM-IZ-111017	YPM-IZ-111017	repository	Physalia physalis	YPM-IZ-111017	4f85b8731c79559ec0366cddfef3d211e2bbc5ca147fab89e2f79a8c42731d26
-ref__YPM-IZ-111018	YPM-IZ-111018	repository	Physalia physalis	YPM-IZ-111018	2adcb6af6a63c432b4c5de9710322fc0c5b5f5d14147fcfba3615d32233d24bc
-ref__AY937377.1	AY937377.1	repository	Rhizophysa filiformis	AY937377.1 Rhizophysa filiformis Rhizophysa	03c6d851f8a71f305cc9b9368af6df8f25f1e50bc69df5fe232e2b010c71e841
-ref__GQ120038.1	GQ120038.1	repository	Rhizophysa eysenhardtii	GQ120038.1 Rhizophysa eysenhardtii Rhizophysa	e6466b15a9d5015993e259ebaf2ed27ce0c0d8c169fdfec95da1310ea19cb8f3
-ref__GQ120039.1	GQ120039.1	repository	Rhizophysa eysenhardtii	GQ120039.1 Rhizophysa eysenhardtii Rhizophysa	c776ad6b486a0f004d70376a1d93699029963b720d60d4347ff0eabda6cae889
-ref__GQ120040.1	GQ120040.1	repository	Rhizophysa eysenhardtii	GQ120040.1 Rhizophysa eysenhardtii Rhizophysa	e22705a9e967a8fc00db8caa5835a003b393a131a05f7363535522a3babaebeb
-ref__GQ120041.1	GQ120041.1	repository	Rhizophysa filiformis	GQ120041.1 Rhizophysa filiformis Rhizophysa	00ae751ceffc0a16e684d09875d840f7549b7c54c31689be4039fd69c2eabf2a
-ref__KT809335.1	KT809335.1	repository	Rhizophysa eysenhardtii	KT809335.1 Rhizophysa eysenhardtii Rhizophysa	5b3b420bd0e3b3834186abcbca988b6f5b3e49afe49e90f001a7752bbef1f492
-ref__NC_080941.1	NC_080941.1	repository	Rhizophysa filiformis	NC_080941.1 Rhizophysa filiformis Rhizophysa	663ccc5479813769ca89ed2aa4f902d6d1d9eb33deeee71422fd365b9db5d068
-ref__NC_080942.1	NC_080942.1	repository	Rhizophysa eysenhardtii	NC_080942.1 Rhizophysa eysenhardtii Rhizophysa	6d67a8eb047c18e3fae71c6243d426233a888bbc29ac44e41cdd31733ee77faa
-ref__OQ957199.1	OQ957199.1	repository	Rhizophysa filiformis	OQ957199.1 Rhizophysa filiformis Rhizophysa	663ccc5479813769ca89ed2aa4f902d6d1d9eb33deeee71422fd365b9db5d068
-ref__OQ957206.1	OQ957206.1	repository	Rhizophysa eysenhardtii	OQ957206.1 Rhizophysa eysenhardtii Rhizophysa	6d67a8eb047c18e3fae71c6243d426233a888bbc29ac44e41cdd31733ee77faa
-local__YPM-IZ-116693	YPM-IZ-116693	October_QC_MITOS2		scaffold_1--400857+; 13444-15009; +; cox1_0	ed6e7b16de81ac1da2e2e16e2e899118824f8f2b2afc969e8d65d2465bb1cd7a
-local__YPM-IZ-116694	YPM-IZ-116694	October_QC_MITOS2		scaffold_1--47433+; 13444-15009; +; cox1_0	09055a1e80b2c73093688e17071da3f93052cb5bdec2a3c46ecd7da15ef1faab
-local__YPM-IZ-116695	YPM-IZ-116695	October_QC_MITOS2		scaffold_1--1282500+; 30-1595; -; cox1_0	0df93aa7030929d1ee6e8ecd6ec436abdc11606b8869327e051dae886a57fe02
-local__YPM-IZ-116696	YPM-IZ-116696	October_QC_MITOS2		scaffold_1--46523+; 13444-15009; +; cox1_0	4b382696c332d0a080cff23a3dac678eef1d575e2940c1c992362f04ade2be64
-local__YPM-IZ-116697	YPM-IZ-116697	October_QC_MITOS2		scaffold_1--42731+; 13444-15009; +; cox1_0	2e5c1de61f2d165dd775ea325197ecc0112532c892eed272d0cbcbed3778478a
+tip	sample	source	species	original_header	sequence_sha256	accession	extraction	feature
+ref__FM-16644	FM-16644	NCBI_GenBank	Physalia physalis	Physalia physalis isolate FM-16644 mitochondrion, complete genome	5528d226ca06c9d3f11446d69c3d65f45b4d3057e2689b8f40b17c9865bba2a3	PZ224317.1	cox1_CDS	CDS:[13443:15009](+)
+ref__OA-190531-1	OA-190531-1	NCBI_GenBank	Physalia utriculus	Physalia utriculus isolate OA-190531-1 mitochondrion, complete genome	e0970531e1b5cf326f6510951748dc621bc4511e7979767d89748da06393baca	PZ224320.1	cox1_CDS	CDS:[13443:15009](+)
+ref__WAM-Z97902	WAM-Z97902	NCBI_GenBank	Physalia utriculus	Physalia utriculus isolate WAM-Z97902 mitochondrion, complete genome	2cf4ac90fca0d4c4d443cfc060b0da06ee393652ed098ba96039c0b8d0d06e35	PZ224330.1	cox1_CDS	CDS:[13443:15009](+)
+ref__YPM-IZ-104460	YPM-IZ-104460	NCBI_GenBank	Physalia utriculus	Physalia utriculus isolate YPM-IZ-104460 mitochondrion, complete genome	17abd653509a2007ca9e7768136c5ae2da82da4180af1fe3f1852d416fdaeab3	PZ224344.1	cox1_CDS	CDS:[13670:>15222](+)
+ref__YPM-IZ-106935	YPM-IZ-106935	NCBI_GenBank	Physalia physalis	Physalia physalis isolate YPM-IZ-106935 mitochondrion, complete genome	7f539feb7fe18b76b421f0276f7269ef7751d3979954b0210b6882f5b78f540e	PZ224350.1	cox1_CDS	CDS:[29:1595](-)
+ref__YPM-IZ-106936	YPM-IZ-106936	NCBI_GenBank	Physalia physalis	Physalia physalis isolate YPM-IZ-106936 mitochondrion, complete genome	d40462e164bb5efd9890c623f82dd388bc79b6317d9bd145fdef3e2a040c2aad	PZ224351.1	cox1_CDS	CDS:[13443:15009](+)
+ref__YPM-IZ-106937	YPM-IZ-106937	NCBI_GenBank	Physalia physalis	Physalia physalis isolate YPM-IZ-106937 mitochondrion, complete genome	a67d3e4c3a8955ea8295098db87cbebf0f3d3f539b6d40d70624c4e0a9a9932b	PZ224352.1	cox1_CDS	CDS:[29:1595](-)
+ref__YPM-IZ-106941	YPM-IZ-106941	NCBI_GenBank	Physalia physalis	Physalia physalis isolate YPM-IZ-106941 mitochondrion, complete genome	8481ca23e0540e64a0dc05669b186825ca609672b96e70a4ccc1ab6820a3dc43	PZ224353.1	cox1_CDS	CDS:[13505:15071](+)
+ref__YPM-IZ-106943	YPM-IZ-106943	NCBI_GenBank	Physalia physalis	Physalia physalis isolate YPM-IZ-106943 mitochondrion, complete genome	8b6b1fafb60554afdc7ad76da8bf2d9cb5ef63535585ab6f3ce477e0c859ab83	PZ224354.1	cox1_CDS	CDS:[13443:15009](+)
+ref__YPM-IZ-106954	YPM-IZ-106954	NCBI_GenBank	Physalia physalis	Physalia physalis isolate YPM-IZ-106954 mitochondrion, complete genome	b43997b906a3069fe10665f198d393b621d191f45686f366c74f56b3b2e033d0	PZ224355.1	cox1_CDS	CDS:[13444:15010](+)
+ref__YPM-IZ-106958	YPM-IZ-106958	NCBI_GenBank	Physalia physalis	Physalia physalis isolate YPM-IZ-106958 mitochondrion, complete genome	a17b5c3ef2bf6d8adaf8bcaa2faea71a8854b53409035e76c4721088d8f81f5e	PZ224356.1	cox1_CDS	CDS:[13443:15009](+)
+ref__YPM-IZ-110251	YPM-IZ-110251	NCBI_GenBank	Physalia physalis	Physalia physalis isolate YPM-IZ-110251 mitochondrion, complete genome	f2c3268e62a855eef29f2b109c662ea0a9cc2b3efcf97d654b30c4875fe27414	PZ224357.1	cox1_CDS	CDS:[13443:15006](+)
+ref__YPM-IZ-110254	YPM-IZ-110254	NCBI_GenBank	Physalia physalis	Physalia physalis isolate YPM-IZ-110254 mitochondrion, complete genome	2da8fd6ff24d285b0dbbc411d2c5c315e25a77cc6163508d732407c44e1ace4e	PZ224358.1	cox1_CDS	CDS:[33:1599](-)
+ref__YPM-IZ-110264	YPM-IZ-110264	NCBI_GenBank	Physalia utriculus	Physalia utriculus isolate YPM-IZ-110264 mitochondrion, complete genome	729fbb055c35c183cb507e73d5c5b5372812ef0762c9e8cbaee63f49b667e03d	PZ224359.1	cox1_CDS	CDS:[28:1594](-)
+ref__YPM-IZ-110433	YPM-IZ-110433	NCBI_GenBank	Physalia physalis	Physalia physalis isolate YPM-IZ-110433 mitochondrion, complete genome	07164d151ebfa068d9151ac0e9bfd33a07f0d525f952a80fe711849ad3e21311	PZ224365.1	cox1_CDS	CDS:[13443:15009](+)
+ref__YPM-IZ-110434	YPM-IZ-110434	NCBI_GenBank	Physalia physalis	Physalia physalis isolate YPM-IZ-110434 mitochondrion, complete genome	3cd87ebde14ff4a80a94153ee6aca4bc878c2acf05d310c72421379a70c7c862	PZ224366.1	cox1_CDS	CDS:[13443:15009](+)
+ref__YPM-IZ-110436	YPM-IZ-110436	NCBI_GenBank	Physalia physalis	Physalia physalis isolate YPM-IZ-110436 mitochondrion, complete genome	2d39ea80d1a0962153e5eb528fcac8d52c60e27217d0cfef3517d59b622d234b	PZ224367.1	cox1_CDS	CDS:[13442:15008](+)
+ref__YPM-IZ-110631	YPM-IZ-110631	NCBI_GenBank	Physalia physalis	Physalia physalis isolate YPM-IZ-110631 mitochondrion, complete genome	79812f6f7cbaba3cfb981d205a69f7fbb65e8269a28ac6117db7133f060e34c3	PZ224393.1	cox1_CDS	CDS:[29:1595](-)
+ref__YPM-IZ-110633	YPM-IZ-110633	NCBI_GenBank	Physalia physalis	Physalia physalis isolate YPM-IZ-110633 mitochondrion, complete genome	eaed63bb4486f028111921f16f9e416d3fef664bf03b2b376802ea15f5670d7e	PZ224394.1	cox1_CDS	CDS:[29:1595](-)
+ref__YPM-IZ-110667	YPM-IZ-110667	NCBI_GenBank	Physalia physalis	Physalia physalis isolate YPM-IZ-110667 mitochondrion, complete genome	c2bc9f191ef1515b9afd138cac25f6012b8d6ab63161da5548e4e3ef993bac78	PZ224395.1	cox1_CDS	CDS:[28:1594](-)
+ref__YPM-IZ-110694	YPM-IZ-110694	NCBI_GenBank	Physalia physalis	Physalia physalis isolate YPM-IZ-110694 mitochondrion, complete genome	c2bc9f191ef1515b9afd138cac25f6012b8d6ab63161da5548e4e3ef993bac78	PZ224396.1	cox1_CDS	CDS:[88:1654](-)
+ref__YPM-IZ-110716	YPM-IZ-110716	NCBI_GenBank	Physalia physalis	Physalia physalis isolate YPM-IZ-110716 mitochondrion, complete genome	21fd9392fb81aa32a6170cac4e28869e95db1f8401c2ff27b5fcfd4f6bc98d4a	PZ224397.1	cox1_CDS	CDS:[29:1595](-)
+ref__YPM-IZ-110726	YPM-IZ-110726	NCBI_GenBank	Physalia physalis	Physalia physalis isolate YPM-IZ-110726 mitochondrion, complete genome	430646331067c2a23b68e198ad807862dacc8ebee76fea4ffd54d362725febb8	PZ224398.1	cox1_CDS	CDS:[13443:15009](+)
+ref__YPM-IZ-110738	YPM-IZ-110738	NCBI_GenBank	Physalia physalis	Physalia physalis isolate YPM-IZ-110738 mitochondrion, complete genome	b999f112dee5cb12767d34c0585436db96e131a1f30697a7fe10753486430a35	PZ224399.1	cox1_CDS	CDS:[13443:15009](+)
+ref__YPM-IZ-110830	YPM-IZ-110830	NCBI_GenBank	Physalia utriculus	Physalia utriculus isolate YPM-IZ-110830 mitochondrion, complete genome	f7cddc7af675b55bb175dce2467cf2707d3753887e4d37fcd3deb043d8cf68a5	PZ224406.1	cox1_CDS	CDS:[30:1596](-)
+ref__YPM-IZ-110842	YPM-IZ-110842	NCBI_GenBank	Physalia physalis	Physalia physalis isolate YPM-IZ-110842 mitochondrion, complete genome	68ec659f9162f0aa2c6973a00dec82107664e89794ebdf4953bbb86573342e1a	PZ224407.1	cox1_CDS	CDS:[29:1595](-)
+ref__YPM-IZ-110843	YPM-IZ-110843	NCBI_GenBank	Physalia physalis	Physalia physalis isolate YPM-IZ-110843 mitochondrion, complete genome	7c355f24eb0de605fbc012ea6192a11a60c8d25de42876450c59756b38c6816c	PZ224408.1	cox1_CDS	CDS:[13443:15009](+)
+ref__YPM-IZ-110844	YPM-IZ-110844	NCBI_GenBank	Physalia physalis	Physalia physalis isolate YPM-IZ-110844 mitochondrion, complete genome	1697fb371eba0beae40cdac6f4af946b9927e5079f1565f61b0e8be70cd16cc6	PZ224409.1	cox1_CDS	CDS:[13443:15009](+)
+ref__YPM-IZ-110845	YPM-IZ-110845	NCBI_GenBank	Physalia physalis	Physalia physalis isolate YPM-IZ-110845 mitochondrion, complete genome	1321142d655f72ac8ceefe35cb15f610c561dd82f7597ddd7cc6b003af04cf07	PZ224410.1	cox1_CDS	CDS:[13443:15009](+)
+ref__YPM-IZ-110846	YPM-IZ-110846	NCBI_GenBank	Physalia physalis	Physalia physalis isolate YPM-IZ-110846 mitochondrion, complete genome	abf1b547cfe0f36ec85b38599902b4d30ce02d165dd5f65527dba5111f94b0dd	PZ224411.1	cox1_CDS	CDS:[13444:15010](+)
+ref__YPM-IZ-110847	YPM-IZ-110847	NCBI_GenBank	Physalia physalis	Physalia physalis isolate YPM-IZ-110847 mitochondrion, complete genome	bcfc2db3d62c316e659ff0bc20b58cb82dd3b41e409d28dd83c835978ea4f389	PZ224412.1	cox1_CDS	CDS:[29:1595](-)
+ref__YPM-IZ-110876	YPM-IZ-110876	NCBI_GenBank	Physalia physalis	Physalia physalis isolate YPM-IZ-110876 mitochondrion, complete genome	a83eb82085751902bb44e69a082a01f2d4fb1632d5bd58d621b476674603dcdb	PZ224413.1	cox1_CDS	CDS:[13443:15009](+)
+ref__YPM-IZ-110880	YPM-IZ-110880	NCBI_GenBank	Physalia physalis	Physalia physalis isolate YPM-IZ-110880 mitochondrion, complete genome	8b6b1fafb60554afdc7ad76da8bf2d9cb5ef63535585ab6f3ce477e0c859ab83	PZ224416.1	cox1_CDS	CDS:[13439:15005](+)
+ref__YPM-IZ-111006	YPM-IZ-111006	NCBI_GenBank	Physalia utriculus	Physalia utriculus isolate YPM-IZ-111006 mitochondrion, complete genome	8f3e67194de37c977924a2e6d9a5162c875b4dc00d2b80de8b4f9dc2c8c8d908	PZ224430.1	cox1_CDS	CDS:[28:1594](-)
+ref__YPM-IZ-111012	YPM-IZ-111012	NCBI_GenBank	Physalia physalis	Physalia physalis isolate YPM-IZ-111012 mitochondrion, complete genome	29047f9aecdbd50c655c79bf2e12429971ebc8cc2e89c294841c708776a0b940	PZ224435.1	cox1_CDS	CDS:[13444:15010](+)
+ref__YPM-IZ-111013	YPM-IZ-111013	NCBI_GenBank	Physalia physalis	Physalia physalis isolate YPM-IZ-111013 mitochondrion, complete genome	674425cc6f71c0f62cd97816e298840c8a7e004d15d9b96c381e882f91171a06	PZ224436.1	cox1_CDS	CDS:[13443:15012](+)
+ref__YPM-IZ-111014	YPM-IZ-111014	NCBI_GenBank	Physalia physalis	Physalia physalis isolate YPM-IZ-111014 mitochondrion, complete genome	5648004544d150f5eda7ebd0ed479ceea392c24368e2f4c536c7055c7db82320	PZ224437.1	cox1_CDS	CDS:[13443:15009](+)
+ref__YPM-IZ-111016	YPM-IZ-111016	NCBI_GenBank	Physalia physalis	Physalia physalis isolate YPM-IZ-111016 mitochondrion, complete genome	aa8870429642810a4d5ba03f3d88e28e534ca96c06824366915b09285583264a	PZ224438.1	cox1_CDS	CDS:[13443:15009](+)
+ref__YPM-IZ-111017	YPM-IZ-111017	NCBI_GenBank	Physalia physalis	Physalia physalis isolate YPM-IZ-111017 mitochondrion, complete genome	4f85b8731c79559ec0366cddfef3d211e2bbc5ca147fab89e2f79a8c42731d26	PZ224439.1	cox1_CDS	CDS:[29:1595](-)
+ref__YPM-IZ-111018	YPM-IZ-111018	NCBI_GenBank	Physalia physalis	Physalia physalis isolate YPM-IZ-111018 mitochondrion, complete genome	2adcb6af6a63c432b4c5de9710322fc0c5b5f5d14147fcfba3615d32233d24bc	PZ224440.1	cox1_CDS	CDS:[29:1595](-)
+ref__AY937377.1	AY937377.1	NCBI_GenBank	Rhizophysa filiformis	Rhizophysa filiformis cytochrome oxidase subunit I (COI) gene, partial cds; mitochondrial	03c6d851f8a71f305cc9b9368af6df8f25f1e50bc69df5fe232e2b010c71e841	AY937377.1	whole_record	whole_record
+ref__GQ120038.1	GQ120038.1	NCBI_GenBank	Rhizophysa eysenhardtii	Rhizophysa eysenhardtii voucher Hy011.1. cytochrome oxidase subunit I (COI) gene, partial cds; mitochondrial	e6466b15a9d5015993e259ebaf2ed27ce0c0d8c169fdfec95da1310ea19cb8f3	GQ120038.1	whole_record	whole_record
+ref__GQ120039.1	GQ120039.1	NCBI_GenBank	Rhizophysa eysenhardtii	Rhizophysa eysenhardtii voucher Hy011.2. cytochrome oxidase subunit I (COI) gene, partial cds; mitochondrial	c776ad6b486a0f004d70376a1d93699029963b720d60d4347ff0eabda6cae889	GQ120039.1	whole_record	whole_record
+ref__GQ120040.1	GQ120040.1	NCBI_GenBank	Rhizophysa eysenhardtii	Rhizophysa eysenhardtii voucher Hy011.3.1 cytochrome oxidase subunit I (COI) gene, partial cds; mitochondrial	e22705a9e967a8fc00db8caa5835a003b393a131a05f7363535522a3babaebeb	GQ120040.1	whole_record	whole_record
+ref__GQ120041.1	GQ120041.1	NCBI_GenBank	Rhizophysa filiformis	Rhizophysa filiformis voucher Hy066.1.1 cytochrome oxidase subunit I (COI) gene, partial cds; mitochondrial	00ae751ceffc0a16e684d09875d840f7549b7c54c31689be4039fd69c2eabf2a	GQ120041.1	whole_record	whole_record
+ref__KT809335.1	KT809335.1	NCBI_GenBank	Rhizophysa eysenhardtii	Rhizophysa eysenhardtii mitochondrion, partial genome	5b3b420bd0e3b3834186abcbca988b6f5b3e49afe49e90f001a7752bbef1f492	KT809335.1	cox1_CDS	CDS:[13204:>13915](+)
+ref__OQ957199.1	OQ957199.1	NCBI_GenBank	Rhizophysa filiformis	Rhizophysa filiformis voucher YPM:IZ:35347 mitochondrion, complete genome	663ccc5479813769ca89ed2aa4f902d6d1d9eb33deeee71422fd365b9db5d068	OQ957199.1	cox1_CDS	CDS:[13943:15506](+)
+ref__OQ957206.1	OQ957206.1	NCBI_GenBank	Rhizophysa eysenhardtii	Rhizophysa eysenhardtii voucher YPM:IZ:35355 mitochondrion, complete genome	6d67a8eb047c18e3fae71c6243d426233a888bbc29ac44e41cdd31733ee77faa	OQ957206.1	cox1_CDS	CDS:[13882:15445](+)
+local__YPM-IZ-116693	YPM-IZ-116693	October_QC_MITOS2		scaffold_1--400857+; 13444-15009; +; cox1_0	ed6e7b16de81ac1da2e2e16e2e899118824f8f2b2afc969e8d65d2465bb1cd7a			
+local__YPM-IZ-116694	YPM-IZ-116694	October_QC_MITOS2		scaffold_1--47433+; 13444-15009; +; cox1_0	09055a1e80b2c73093688e17071da3f93052cb5bdec2a3c46ecd7da15ef1faab			
+local__YPM-IZ-116695	YPM-IZ-116695	October_QC_MITOS2		scaffold_1--1282500+; 30-1595; -; cox1_0	0df93aa7030929d1ee6e8ecd6ec436abdc11606b8869327e051dae886a57fe02			
+local__YPM-IZ-116696	YPM-IZ-116696	October_QC_MITOS2		scaffold_1--46523+; 13444-15009; +; cox1_0	4b382696c332d0a080cff23a3dac678eef1d575e2940c1c992362f04ade2be64			
+local__YPM-IZ-116697	YPM-IZ-116697	October_QC_MITOS2		scaffold_1--42731+; 13444-15009; +; cox1_0	2e5c1de61f2d165dd775ea325197ecc0112532c892eed272d0cbcbed3778478a			

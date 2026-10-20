@@ -37,8 +37,13 @@ def main(gene: str) -> None:
         consensus.root_at_midpoint()
     consensus.ladderize()
     (results / "figures").mkdir(exist_ok=True)
-    Phylo.write(consensus, results / "figures" / f"{gene}.rooted.nwk", "newick")
-    references = [t for t in tree.get_terminals() if metadata[t.name]["source"] == "repository"]
+    Phylo.write(
+        consensus,
+        results / "figures" / f"{gene}.rooted.nwk",
+        "newick",
+        format_branch_length="%.17g",
+    )
+    references = [t for t in tree.get_terminals() if metadata[t.name]["source"] == "NCBI_GenBank"]
     comparison = []
     for tip in tree.get_terminals():
         row = metadata[tip.name]

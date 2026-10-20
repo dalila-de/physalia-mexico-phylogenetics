@@ -6,6 +6,7 @@ import json
 from pathlib import Path
 
 from Bio import Phylo, SeqIO
+from Bio.Seq import Seq
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -17,23 +18,23 @@ def main():
         path = ROOT / row["file"]
         if hashlib.sha256(path.read_bytes()).hexdigest() != row["sha256"]:
             raise ValueError(f"Changed artifact: {path}")
-    consolidation = json.loads((ROOT / "provenance/tree-consolidation.json").read_text())
-    for row in consolidation["relocated"]:
-        if "/genetic_groups/" not in row["to"]:
-            if hashlib.sha256((ROOT / row["to"]).read_bytes()).hexdigest() != row["sha256"]:
-                raise ValueError(f"Consolidation changed a scientific artifact: {row['to']}")
+    rerun = json.loads((ROOT / "provenance/ncbi-rerun.json").read_text())
+    # Earlier consolidation hashes identify the archived run, not these new results.
+    # Current scientific outputs are checked against the release manifest above.
     if list((ROOT / "sanger-2026-10-14/results").rglob("*.treefile")):
         raise ValueError("Duplicate Sanger tree results remain outside analyses")
     mexico = {f"YPM-IZ-{i}" for i in range(116693, 116698)}
     for name in ("samples", "reads"):
-        with (ROOT / f"illumina-preparation-qc-mitogenome-assembly/metadata/{name}.tsv").open() as stream:
+        with (
+            ROOT / f"illumina-preparation-qc-mitogenome-assembly/metadata/{name}.tsv"
+        ).open() as stream:
             rows = list(csv.DictReader(stream, delimiter="\t"))
         if len(rows) != 5 or {r["sample"] for r in rows} != mexico:
             raise ValueError(f"Unexpected QC scope: {name}")
     qc = ROOT / "illumina-preparation-qc-mitogenome-assembly/results/cohort-2026-10-09"
     if {p.name for p in qc.iterdir() if p.is_dir()} != mexico:
         raise ValueError("Unexpected bundled QC specimens")
-    expected = {"16S": 60, "18S": 48, "CO1": 57, "ITS": 46, "mitogenome_submitted": 48}
+    expected = rerun["expected_tips"]
     for gene, count in expected.items():
         panel = (
             ROOT / "analyses/inputs/combined"
@@ -58,7 +59,16 @@ def main():
             tree = Phylo.read(ROOT / f"analyses/results/trees/{gene}.{ext}", "newick")
             if {t.name for t in tree.get_terminals()} != tips:
                 raise ValueError(f"Tree/input mismatch: {gene}")
+        inputs = {r.id: str(r.seq).upper() for r in SeqIO.parse(panel / f"{gene}.fasta", "fasta")}
+        for row in rows:
+            if hashlib.sha256(inputs[row["tip"]].encode()).hexdigest() != row["sequence_sha256"]:
+                raise ValueError(f"Input/metadata hash mismatch: {row['tip']}")
         alignment = list(SeqIO.parse(ROOT / f"analyses/results/alignments/{gene}.fasta", "fasta"))
+        for record in alignment:
+            observed = str(record.seq).replace("-", "").upper()
+            original = inputs[record.id]
+            if observed not in (original, str(Seq(original).reverse_complement())):
+                raise ValueError(f"Alignment changed sequence: {gene} {record.id}")
         if {r.id for r in alignment} != tips or len({len(r) for r in alignment}) != 1:
             raise ValueError(f"Alignment/input mismatch: {gene}")
     with (ROOT / "analyses/inputs/genetic_annotations.tsv").open() as stream:

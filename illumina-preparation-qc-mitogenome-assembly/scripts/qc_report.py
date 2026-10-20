@@ -95,13 +95,6 @@ def write_report(sample: str, output: Path, requested: int) -> None:
         lines.extend(
             f"    {name}: {length} bp" for name, length in list(fasta_lengths(product))[:5]
         )
-    lines += ["", "### Rego Results ###"]
-    for primer in ["16sF", "16sR", "co1F", "co1R", "18sF", "18sR", "ITSfullF"]:
-        path = Path("rego_results") / sample / f"{sample}_{primer}.txt"
-        match = re.search(r"^Hits found:\s*(\d+)", path.read_text(), re.M)
-        if not match:
-            raise ValueError(f"Missing hit count: {path}")
-        lines.append(f"{primer}: {match.group(1)}")
     output = Path(output)
     output.parent.mkdir(parents=True, exist_ok=True)
     tmp = output.with_name(output.name + ".tmp")

@@ -18,18 +18,12 @@ Trimmomatic removes adapters and trims low-quality bases. FastQC assesses the
 trimmed reads, Kraken2 classifies them, and BWA screens for human reads. These
 screens do not filter the reads supplied to assembly. GetOrganelle attempts an
 animal mitochondrial assembly; sharkmer recovers cnidarian, metazoan, and bacterial
-primer products; rego retrieves reads matching seven established primers. A
+primer products. A
 recovered assembly path is not, by itself, evidence of a complete mitogenome.
 
 GetOrganelle consumes paired trimmed reads. sharkmer v0.2.0 consumes the
 trimmed forward reads with `-k 31 -n 100` and the `cnidaria`, `metazoa`, and
-`bacteria` primer panels. rego also consumes trimmed forward reads, searching
-seven primer patterns (16S forward/reverse, COI forward/reverse, 18S
-forward/reverse, and ITS forward) with `--before 150 --after 150 --max_hits 50`.
-rego retrieves primer-matching reads; this step does not independently assemble
-or validate the recovered marker sequences. The unversioned executed script
-is identified in `../provenance/illumina-qc/references.tsv` by SHA256
-`c38082482ff84540871a0ffac2eaa160a47e25eb97e78152b6ee68471dc1d48c`.
+`bacteria` primer panels.
 
 ## Storage
 
@@ -61,10 +55,10 @@ python scripts/preflight.py --output provenance/preflight.json
 ```
 
 The environment includes Snakemake 9.14.5, Python 3.12.12, Biopython 1.86, and
-GetOrganelle 1.7.7.1. Sharkmer 0.2.0 and rego are configured local tools.
+GetOrganelle 1.7.7.1. Sharkmer 0.2.0 is a configured local tool.
 The conda explicit specification in `env/illuminaqc-linux-64.explicit.txt` can
 recreate the conda packages with `conda create -p <new-prefix> --file <specification>`;
-it does not install the module tools, sharkmer, rego, or reference databases.
+it does not install the module tools, sharkmer, or reference databases.
 The historical package request is also retained in `env/illuminaqc-history.yaml`.
 Paths are configurable in `config/config.yaml`. Access to the original YCGA
 FASTQs and shared reference databases is required; they are not distributed here.
@@ -124,3 +118,11 @@ This directory is the five-specimen selection from the historical QC run. Full r
 site-specific configuration of scratch, FASTQ and database paths. Compact
 outputs are included, but the original checksums also reference omitted screening
 evidence; use the top-level release validator for included files.
+
+The unused rego primer-read retrieval branch and its report sections were removed
+from the maintained workflow. It supplied no downstream marker or tree inputs.
+Historical execution configs, tool hashes and original per-specimen checksum
+manifests retain the record of that run. The five displayed QC reports omit only
+the rego section; [removal provenance](../provenance/rego-removal.json) records
+the original and revised hashes. Use the current release manifest for these
+reports; historical checksum manifests describe their original versions.

@@ -1,0 +1,119 @@
+{
+  "reason": "Superseded reference panels and availability reports archived for NCBI-only de novo analysis. Historical source remains retrievable from previous git commit and local snapshot.",
+  "previous_commit": "207aaaabed73dd55be6abd2a92127b9df3a01510",
+  "local_archive": "manuscript-review/historical/retired-reference-material",
+  "files": [
+    {
+      "file": "references/church/LICENSE",
+      "sha256": "7959573fb249ee5ed127d82a490a6f1b2cc4bfe4bad76bef8e803ed1398a35c4"
+    },
+    {
+      "file": "references/church/README.md",
+      "sha256": "e03e265f423ce4e5bf13053e7c79cf4cf32353c51063caa02ff83468c2304225"
+    },
+    {
+      "file": "references/church/data/sample_ids.tsv",
+      "sha256": "ee363bbec409b548374177fab537b78b18348a823223932e4a0689ebedd8444e"
+    },
+    {
+      "file": "references/church/phylogenetics/tip_metadata.tsv",
+      "sha256": "2a3e940cf7e4a46dbf143859e4be41ebec71d80cfa519d4b8240e81e6ee522e7"
+    },
+    {
+      "file": "references/church/phylogenetics/gene_trees/16S.all.fasta",
+      "sha256": "dbd2b3801778aa87c78dbaca6bed01871977c0dd87c0097c40123b409c01f923"
+    },
+    {
+      "file": "references/church/phylogenetics/gene_trees/18S.all.fasta",
+      "sha256": "dba293a151b0dfec3b21e534774be984d37d657cefe891f68437211487345775"
+    },
+    {
+      "file": "references/church/phylogenetics/gene_trees/CO1.all.fasta",
+      "sha256": "37642023aff6af14ca9c511256cf60347113497041d937c7787f200b1ca8eaa7"
+    },
+    {
+      "file": "references/church/phylogenetics/gene_trees/ITS.all.fasta",
+      "sha256": "433c0ba252d7321420f01cdc1d92162cab17456bea52d8af0900035b6593bb81"
+    },
+    {
+      "file": "references/church/phylogenetics/mitogenome_submission/Physalia_mitogenomes_sourcemodifiers_accessioned.tsv",
+      "sha256": "6d330457bfa99470b1a4566fd5b1f03191db182481e984e7fea53f72fa55867b"
+    },
+    {
+      "file": "references/church/phylogenetics/mitogenome_tree/identification.aln.fa",
+      "sha256": "9828eed9339d25e005a58cce3d2b0b92754eeb5e7547dae4037feb4089d5ada8"
+    },
+    {
+      "file": "references/church/phylogenetics/mitogenome_tree/rhizophysa_outgroups.fasta",
+      "sha256": "70ad6448c65a59156e525c994207aa505e564b0a5b22742718eca4d2c3089c81"
+    },
+    {
+      "file": "references/church/phylogenetics/mitogenome_tree/submitted_rooted.aln.fa",
+      "sha256": "c7eb2cdd891e80025871ca5b10212e44d83a26a1873aff29784481d291e2400a"
+    },
+    {
+      "file": "analyses/scripts/compare_mitogenomes.py",
+      "sha256": "2b8c64a4faf0b61d3045150b31fd41c2659bcdce60275bf671b2dcceb7a76b55"
+    },
+    {
+      "file": "analyses/scripts/compare_mitogenomes.sh",
+      "sha256": "d4d9be2df4bc668a1f70f238cac4945797ff33d31f351aa0c562147d8f64cd7e"
+    },
+    {
+      "file": "analyses/scripts/fetch_ncbi.py",
+      "sha256": "28f3db353391f0215d96bae8fafdda3682a3d36a9a09b708f87034093438059b"
+    },
+    {
+      "file": "analyses/sanger.smk",
+      "sha256": "536208332065ac3a05f6b30d02a5a1be51d8e5f3eea5e9523ab72e77f616bc73"
+    },
+    {
+      "file": "analyses/results/all_sharkmer_product_matches.tsv",
+      "sha256": "4769d9e509c7095f669f5b018d4232045a5425a9fae372a1a8e6ab9967d03bac"
+    },
+    {
+      "file": "analyses/results/availability_report.md",
+      "sha256": "333fbbeb51f866b9988d22d7a6138f48f5ffdd44f6b87312b6a9e2d14dcc3422"
+    },
+    {
+      "file": "analyses/results/availability_summary.json",
+      "sha256": "5fecbd3db5ac70bce8cb0413bd1effe3cb7d1d1261e074e773430566e4a7d335"
+    },
+    {
+      "file": "analyses/results/mitogenome_blast.tsv",
+      "sha256": "24d508da42fc3e0ea3b269c7330c8aaaef44bb535dd21f2e1251e6e3d3f72ef7"
+    },
+    {
+      "file": "analyses/results/mitogenome_haplotype_matches.tsv",
+      "sha256": "17802b3e627b9ef6467e6947a1b3d1a074a932b77772d51933d9b6fc1d9a29ad"
+    },
+    {
+      "file": "analyses/results/mitogenome_nearest_matches.tsv",
+      "sha256": "44ecf5c6797b4c006739dea2311a2689269d209ea28f6aec28cf96104c83a23e"
+    },
+    {
+      "file": "analyses/results/ncbi_record_inventory.tsv",
+      "sha256": "bfe5898bde2697d808912782817107c53203b6cb3e33eb942f18e094a5945d49"
+    },
+    {
+      "file": "analyses/results/same_specimen_sequence_comparisons.tsv",
+      "sha256": "8a8aa2581f9f60e89e8c69359c14d4eeeb91b2a96dd815fbde7004abbb72db28"
+    },
+    {
+      "file": "analyses/results/sanger_tree_summary.json",
+      "sha256": "2057768ce5e80866d7317b36a8cdcc62b6ed7cd0daa4bf56e654e67ec37df369"
+    },
+    {
+      "file": "analyses/results/specimen_marker_availability.tsv",
+      "sha256": "ab36cb03eb1a5dfb818d3d016ce5906ed9407390397382fb8912afc0a7540b5c"
+    },
+    {
+      "file": "analyses/inputs/mitogenome_audit_queries.fasta",
+      "sha256": "3fd595094a6cc7646a684e52954bd56bf2eeb13cfbb0f67d5e5b18b7b73241ab"
+    },
+    {
+      "file": "analyses/inputs/mitogenome_audit_references.fasta",
+      "sha256": "895fbee7aa3e5b7a9e357d166c02888f135b6653bc7fe4ed40e224be0b351114"
+    }
+  ]
+}

@@ -1,38 +1,28 @@
-"""Record identities of consumed QC, upstream, NCBI, and annotation resources."""
+"""Record current accession-defined references and actual tree input identities."""
 
 import argparse
 import hashlib
 from pathlib import Path
 
-from common import CONFIG, IDS, QC, SCRATCH, UPSTREAM, write_table
+from common import ANALYSIS, ROOT, write_table
 
 
 def main(output: Path) -> None:
-    paths = [p for sid in IDS for p in (QC / sid).rglob("*.fasta")]
-    paths += list((UPSTREAM / "gene_trees").glob("*.all.fasta"))
-    paths += [UPSTREAM / "tip_metadata.tsv"]
-    paths += [
-        UPSTREAM / "mitogenome_tree" / name
-        for name in [
-            "identification.aln.fa",
-            "submitted_rooted.aln.fa",
-            "rhizophysa_outgroups.fasta",
-        ]
-    ]
-    paths += list((SCRATCH / "ncbi").glob("*.gb"))
-    paths += [
-        p
-        for p in (Path(CONFIG["mitos_refdir"]) / CONFIG["mitos_refname"]).rglob("*")
+    paths = list((ROOT / "references/ncbi").glob("*"))
+    paths += list((ANALYSIS / "inputs").glob("*.fasta"))
+    paths += list((ANALYSIS / "inputs").glob("*.tips.tsv"))
+    paths += list((ANALYSIS / "inputs/combined").glob("*"))
+    paths += [ANALYSIS / "config/config.yaml", ANALYSIS / "inputs/genetic_annotations.tsv"]
+    paths += list((ROOT / "sanger-2026-10-14/inputs").glob("*.sanger.fasta"))
+    rows = [
+        dict(
+            path=str(p.relative_to(ROOT)),
+            bytes=p.stat().st_size,
+            sha256=hashlib.sha256(p.read_bytes()).hexdigest(),
+        )
+        for p in sorted(set(paths))
         if p.is_file()
     ]
-    paths += [Path(CONFIG["iqtree"]), Path(CONFIG["mitos_env"]) / "bin/runmitos.py"]
-    rows = []
-    for p in paths:
-        digest = hashlib.sha256()
-        with p.open("rb") as stream:
-            for block in iter(lambda: stream.read(8 * 1024 * 1024), b""):
-                digest.update(block)
-        rows.append({"path": str(p), "bytes": p.stat().st_size, "sha256": digest.hexdigest()})
     write_table(output, rows)
 
 

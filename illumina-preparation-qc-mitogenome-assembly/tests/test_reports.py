@@ -26,8 +26,6 @@ def make_outputs(tmp_path):
     write("getorganelle/test_mtgenome/get_org.log.txt", "No assembly paths\n")
     write("shark_results/test/test.stats", "test statistics\n")
     write("shark_results/test/test_cnidaria_16S.fasta", ">test\nACGT\nACGT\n")
-    for primer in ["16sF", "16sR", "co1F", "co1R", "18sF", "18sR", "ITSfullF"]:
-        write(f"rego_results/test/test_{primer}.txt", "Hits found: 0\n")
     for mate in ["R1", "R2"]:
         path = work / "fastqc/test" / f"test.{mate}.trimmed_fastqc.zip"
         path.parent.mkdir(parents=True, exist_ok=True)
@@ -45,6 +43,7 @@ def test_retains_multiline_markers_and_no_assembly_status(tmp_path, monkeypatch)
     assert result["human_percent_reads"] == 12.5  # 2 records / (2 * 8 pairs)
     assert result["mitogenome_status"] == "no_path_recovered"
     assert result["marker_files"] == 1
+    assert "Rego Results" not in (out / sample / "qc_report.txt").read_text()
     assert json.loads((out / sample / "sequence_lengths.json").read_text())[
         "test_cnidaria_16S.fasta"
     ] == [8]

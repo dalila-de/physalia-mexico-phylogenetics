@@ -1,0 +1,12 @@
+{
+  "distinct_accessions": 140,
+  "reference_input_occurrences": 226,
+  "by_marker": {
+    "CO1": 48,
+    "16S": 51,
+    "18S": 43,
+    "ITS": 41,
+    "mitogenome_submitted": 43
+  },
+  "identity": "versioned accession and voucher/isolate checked; exact feature/record sequence match"
+}

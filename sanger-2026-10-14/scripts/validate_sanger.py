@@ -46,7 +46,7 @@ def main():
             names = [t.name for t in tree.get_terminals()]
             assert len(names) == len(set(names)) and set(names) == set(new)
     print(
-        "Verified 8 original files, unchanged reference panels, consensus sequences, alignments and both tree tip sets."
+        "Verified 8 original files, consistent expanded reference panels, consensus sequences, alignments and both tree tip sets."
     )
 
 

@@ -10,4 +10,3 @@ human_bwa: /gpfs/gibbs/data/genomes/Homo_sapiens/NCBI/GRCh38/Sequence/BWAIndex/g
 mito_seed: /gpfs/gibbs/pi/dunn/sc2962/20241018_IlluminaQC/siph_mitochondrion_ncbi.fasta
 getorganelle_db: /vast/palmer/pi/dunn/dd2233/Illumina_QC_Pop_Gen/runs/libraries_2026_09_08/getorganelle_db
 sharkmer: /vast/palmer/home.mccleary/dd2233/bin/sharkmer/sharkmer/target/release/sharkmer
-rego: /vast/palmer/pi/dunn/dd2233/Illumina_QC_Pop_Gen/runs/libraries_2026_09_08/rego/rego.py

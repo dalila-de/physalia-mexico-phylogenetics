@@ -2,5 +2,7 @@
   "analysis": "mitogenome_submitted",
   "tips": 48,
   "local_tips": 5,
-  "reference_tips": 43
+  "reference_tips": 43,
+  "reference_source": "NCBI GenBank accession manifest",
+  "alignment": "de_novo"
 }

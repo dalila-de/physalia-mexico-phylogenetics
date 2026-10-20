@@ -90,7 +90,6 @@ def retain_sample(work: Path, destination: Path, sample: str, maximum: int) -> N
         getorg_log,
     ]
     artifacts.extend((work / "fastqc" / sample).glob("*"))
-    artifacts.extend((work / "rego_results" / sample).glob("*.txt"))
     for path in artifacts:
         if path.is_file():
             shutil.copy2(path, evidence / path.name)

@@ -12,7 +12,6 @@ ROOT = Path(__file__).resolve().parents[2]
 ANALYSIS = ROOT / "analyses"
 CONFIG = yaml.safe_load((ANALYSIS / "config/config.yaml").read_text())
 SCRATCH = ROOT / CONFIG["scratch"]
-UPSTREAM = ROOT / "references/church/phylogenetics"
 RESULTS = ANALYSIS / "results"
 QC = ROOT / "illumina-preparation-qc-mitogenome-assembly/results" / CONFIG["qc_run"]
 GENES = {"16S": "cnidaria_16S", "18S": "cnidaria_18S", "CO1": "cnidaria_CO1", "ITS": "cnidaria_ITS"}

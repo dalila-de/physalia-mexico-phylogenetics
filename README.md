@@ -4,9 +4,9 @@ Illumina read QC, mitochondrial annotation, and marker/mitogenome phylogenies
 for five Mexican specimens alongside published Physalia sequences.
 
 The five new specimens are **YPM-IZ-116693–116697**. The Illumina workflow and bundled QC outputs cover only these five specimens.
-The trees use published sequences for those 35 Atlantic specimens, the five Mexican
-assemblies, six published P. utriculus comparators, and available Rhizophysa
-outgroups. COI and 16S also include the Caribbean Sanger specimen CH887.
+The trees use NCBI reference sequences for 35 P. physalis specimens in the
+nuclear panels and 34 in mitochondrial panels, the five Mexican specimens,
+six P. utriculus comparators, and available Rhizophysa outgroups. COI and 16S also include the Caribbean Sanger specimen CH887.
 There is one sequence per specimen per analysis and one retained tree analysis
 per marker; the full and focal figures are views of that same tree.
 
@@ -26,13 +26,13 @@ PNG and editable SVG versions are alongside each PDF. E/W colors represent
 **prior genome-wide genetic assignments**, not classifications inferred from
 these trees. A dagger marks the three known vagrants; Mexican specimens are
 pink and labeled **Gulf of Mexico (Progreso)**. CH887 is labeled
-**Caribbean Sea (Puerto Morelos)** and shown in purple, without an E/W assignment. Filled/hollow internal-node dots show bootstrap
-support ≥95/70–94. All original support values remain in the Newick files.
+**Caribbean Sea (Puerto Morelos)** and shown in purple, without an E/W assignment. Internal-node labels show ultrafast-bootstrap support percentages only for branches with support ≥95%; all branches remain visible. All original support values remain in the Newick files.
 
 ITS lacks a Rhizophysa sequence in the reference panel and is midpoint-rooted
-for display. The mitochondrial tree excludes YPM-IZ-110972 because its mitogenome was not
-included in the [reference repository](https://github.com/shchurch/Physalia_spatiotemporal_patterns)
-following concerns about its assembly.
+for display. YPM-IZ-110972 is excluded from mitochondrial, COI and 16S analyses because no
+mitogenome was deposited for it in the selected accession set. It remains in
+18S and ITS. All five datasets are aligned de novo from NCBI records and local
+sequences; no alignment backbone is used.
 Focal views only prune comparison/outgroup taxa for display; they do not rerun
 inference or change the retained subtree's branch lengths.
 
@@ -43,7 +43,7 @@ inference or change the retained subtree's branch lengths.
 |[illumina-preparation-qc-mitogenome-assembly](illumina-preparation-qc-mitogenome-assembly/)|Five-specimen Mexican workflow, manifests, environment records, compact QC reports, sharkmer products, and mitochondrial assemblies|
 |[mitogenome-annotation](mitogenome-annotation/)|Five Mexican assemblies, original MITOS2 FASTA/GFF3/gene-order annotations, and a summary|
 |[analyses](analyses/)|Selected sequences, alignments, IQ-TREE outputs, genetic-group annotations, figures, and public-sequence audit|
-|[references/church](references/church/)|Pinned published reference panels, specimen metadata, and upstream license/attribution|
+|[references/ncbi](references/ncbi/)|Versioned GenBank records, accession manifest, extraction rules and download provenance|
 |[sanger-2026-10-14](sanger-2026-10-14/)|Original chromatograms, trace QC and processed CH887 sequences; combined trees are in analyses|
 |[provenance](provenance/)|Historical execution settings, tool/environment records, input identities, and artifact checksums|
 
@@ -80,18 +80,19 @@ what was used; update execution configs when running elsewhere.
 
 ## Data availability and interpretation
 
-The [public-sequence audit](analyses/results/README.md) and
-[accession table](analyses/results/specimen_marker_availability.tsv) distinguish
-specimen identity from sequence matches. Existing marker/mitogenome records were
-checked against the pinned repository and a dated NCBI snapshot. Missing voucher
-matches or non-identical assemblies alone do not establish biological novelty.
-MITOS outputs are automated annotations, including fragmented features, and
-have not been manually curated for GenBank submission.
+The [reference audit](analyses/results/README.md) verifies all reference
+sequences against their versioned GenBank records and voucher/isolate metadata.
+[The accession manifest](references/ncbi/accessions.tsv) identifies the selected
+34 mitochondrial and 35 nuclear P. physalis references, six P. utriculus
+comparators, and Rhizophysa outgroups. Sequence identity does not by itself
+establish specimen identity. Local mitochondrial annotations remain automated
+and have not been manually curated to establish genome completeness.
 
-Published reference data are from
-[Church's Physalia repository](https://github.com/shchurch/Physalia_spatiotemporal_patterns),
-commit `d08f0edf4d819e21c85705e4965de71673808dec`. See
-[third-party attribution](references/church/README.md) and its preserved LICENSE.
+E/W and vagrant labels are retained prior genome-wide assignments, with explicit
+attribution in [analysis methods](analyses/README.md#display-metadata-and-interpretation).
+They are separate from the NCBI sequence inputs. The new specimens remain
+unassigned. [Rerun provenance](provenance/ncbi-rerun.json) records the historical
+snapshot and fresh NCBI-based analysis.
 
 
 ## Caribbean Sanger specimen
@@ -103,7 +104,7 @@ as different mitochondrial markers. CH887 is shown separately from genetic E/W.
 The single COI and 16S trees linked above include CH887, the published reference
 panels and all five Mexican specimens. Superseded WGS-only COI/16S results were
 archived outside this repository; [consolidation provenance](provenance/tree-consolidation.json)
-records their replacement by the previously completed combined analyses.
+records the earlier consolidation; the current NCBI-based rerun supersedes those trees.
 
 ## Validation
 

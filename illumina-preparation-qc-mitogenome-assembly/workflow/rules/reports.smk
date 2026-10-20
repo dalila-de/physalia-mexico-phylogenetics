@@ -11,7 +11,6 @@ rule report_sample:
         human=WORK + "/human/{sample}.mapped_paired",
         mito=WORK + "/getorganelle/{sample}_mtgenome",
         shark=WORK + "/shark_results/{sample}",
-        rego=WORK + "/rego_results/{sample}",
         trim=WORK + "/logs/trimmomatic/{sample}.log",
         counts=WORK + "/reads/{sample}.json",
         script=str(REPO / "scripts/retain_results.py"),

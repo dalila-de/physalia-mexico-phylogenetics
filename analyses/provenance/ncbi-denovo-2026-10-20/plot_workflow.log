@@ -1,0 +1,94 @@
+Assuming unrestricted shared filesystem usage.
+host: r209u11n04.mccleary.ycrc.yale.edu
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 2
+Rules claiming more threads will be scaled down.
+Job stats:
+job      count
+-----  -------
+all          1
+plot         5
+total        6
+
+Select jobs to execute...
+Failed to solve scheduling problem with ILP solver, falling back to greedy scheduler. You likely have to fix your ILP solver installation. Error message: PULP_CBC_CMD: Not Available (check permissions on cbc)
+Execute 2 jobs...
+
+[Tue Oct 20 17:07:32 2026]
+localrule plot:
+    input: /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/analyses/scripts/plot_genetic_groups.py, /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/analyses/results/figures/16S.rooted.nwk, /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/analyses/inputs/combined/16S.tips.tsv, /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/analyses/inputs/genetic_annotations.tsv
+    output: /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/analyses/results/genetic_groups/16S.pdf, /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/analyses/results/genetic_groups/16S.png, /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/analyses/results/genetic_groups/16S.svg, /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/analyses/results/genetic_groups/16S.focal.pdf, /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/analyses/results/genetic_groups/16S.focal.png, /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/analyses/results/genetic_groups/16S.focal.svg
+    jobid: 1
+    reason: Forced execution
+    wildcards: gene=16S
+    resources: tmpdir=/tmp
+[Tue Oct 20 17:07:32 2026]
+localrule plot:
+    input: /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/analyses/scripts/plot_genetic_groups.py, /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/analyses/results/figures/ITS.rooted.nwk, /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/analyses/inputs/ITS.tips.tsv, /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/analyses/inputs/genetic_annotations.tsv
+    output: /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/analyses/results/genetic_groups/ITS.pdf, /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/analyses/results/genetic_groups/ITS.png, /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/analyses/results/genetic_groups/ITS.svg, /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/analyses/results/genetic_groups/ITS.focal.pdf, /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/analyses/results/genetic_groups/ITS.focal.png, /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/analyses/results/genetic_groups/ITS.focal.svg
+    jobid: 4
+    reason: Forced execution
+    wildcards: gene=ITS
+    resources: tmpdir=/tmp
+Select jobs to execute...
+[Tue Oct 20 17:07:35 2026]
+Finished jobid: 4 (Rule: plot)
+1 of 6 steps (17%) done
+Execute 1 jobs...
+
+[Tue Oct 20 17:07:35 2026]
+localrule plot:
+    input: /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/analyses/scripts/plot_genetic_groups.py, /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/analyses/results/figures/CO1.rooted.nwk, /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/analyses/inputs/combined/CO1.tips.tsv, /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/analyses/inputs/genetic_annotations.tsv
+    output: /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/analyses/results/genetic_groups/CO1.pdf, /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/analyses/results/genetic_groups/CO1.png, /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/analyses/results/genetic_groups/CO1.svg, /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/analyses/results/genetic_groups/CO1.focal.pdf, /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/analyses/results/genetic_groups/CO1.focal.png, /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/analyses/results/genetic_groups/CO1.focal.svg
+    jobid: 3
+    reason: Forced execution
+    wildcards: gene=CO1
+    resources: tmpdir=/tmp
+[Tue Oct 20 17:07:35 2026]
+Finished jobid: 1 (Rule: plot)
+2 of 6 steps (33%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Tue Oct 20 17:07:35 2026]
+localrule plot:
+    input: /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/analyses/scripts/plot_genetic_groups.py, /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/analyses/results/figures/mitogenome_submitted.rooted.nwk, /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/analyses/inputs/mitogenome_submitted.tips.tsv, /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/analyses/inputs/genetic_annotations.tsv
+    output: /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/analyses/results/genetic_groups/mitogenome_submitted.pdf, /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/analyses/results/genetic_groups/mitogenome_submitted.png, /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/analyses/results/genetic_groups/mitogenome_submitted.svg, /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/analyses/results/genetic_groups/mitogenome_submitted.focal.pdf, /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/analyses/results/genetic_groups/mitogenome_submitted.focal.png, /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/analyses/results/genetic_groups/mitogenome_submitted.focal.svg
+    jobid: 5
+    reason: Forced execution
+    wildcards: gene=mitogenome_submitted
+    resources: tmpdir=/tmp
+Select jobs to execute...
+[Tue Oct 20 17:07:38 2026]
+Finished jobid: 3 (Rule: plot)
+3 of 6 steps (50%) done
+Execute 1 jobs...
+
+[Tue Oct 20 17:07:38 2026]
+localrule plot:
+    input: /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/analyses/scripts/plot_genetic_groups.py, /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/analyses/results/figures/18S.rooted.nwk, /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/analyses/inputs/18S.tips.tsv, /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/analyses/inputs/genetic_annotations.tsv
+    output: /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/analyses/results/genetic_groups/18S.pdf, /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/analyses/results/genetic_groups/18S.png, /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/analyses/results/genetic_groups/18S.svg, /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/analyses/results/genetic_groups/18S.focal.pdf, /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/analyses/results/genetic_groups/18S.focal.png, /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/analyses/results/genetic_groups/18S.focal.svg
+    jobid: 2
+    reason: Forced execution
+    wildcards: gene=18S
+    resources: tmpdir=/tmp
+[Tue Oct 20 17:07:38 2026]
+Finished jobid: 5 (Rule: plot)
+4 of 6 steps (67%) done
+[Tue Oct 20 17:07:40 2026]
+Finished jobid: 2 (Rule: plot)
+5 of 6 steps (83%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Tue Oct 20 17:07:40 2026]
+localrule all:
+    input: /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/analyses/results/genetic_groups/16S.pdf, /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/analyses/results/genetic_groups/18S.pdf, /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/analyses/results/genetic_groups/CO1.pdf, /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/analyses/results/genetic_groups/ITS.pdf, /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/analyses/results/genetic_groups/mitogenome_submitted.pdf
+    jobid: 0
+    reason: Forced execution
+    resources: tmpdir=/tmp
+[Tue Oct 20 17:07:40 2026]
+Finished jobid: 0 (Rule: all)
+6 of 6 steps (100%) done
+Complete log(s): /vast/palmer/pi/dunn/dd2233/physalia-mexico-phylogenetics/.snakemake/log/2026-10-20T170731.541039.snakemake.log

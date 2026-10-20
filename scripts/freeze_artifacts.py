@@ -10,11 +10,20 @@ paths = [
     "mitogenome-annotation/inputs",
     "mitogenome-annotation/results",
     "analyses/inputs",
-    "analyses/results/alignments",
-    "analyses/results/trees",
-    "references/church",
+    "analyses/results",
+    "sanger-2026-10-14/inputs",
+    "references/ncbi",
 ]
-files = sorted({p for name in paths for p in (ROOT / name).rglob("*") if p.is_file()})
+files = sorted(
+    {
+        p
+        for name in paths
+        for p in (ROOT / name).rglob("*")
+        if p.is_file()
+        and not p.name.endswith((".ckp.gz", ".model.gz"))
+        and "/__pycache__/" not in str(p)
+    }
+)
 with (ROOT / "provenance/artifact_checksums.tsv").open("w") as stream:
     writer = csv.DictWriter(stream, fieldnames=["file", "sha256", "bytes"], delimiter="\t")
     writer.writeheader()

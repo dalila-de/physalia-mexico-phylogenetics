@@ -84,12 +84,3 @@ shark_results/YPM-IZ-116696/YPM-IZ-116696_metazoa_18S-V9-v2.fasta
     YPM-IZ-116696: 167 bp
 shark_results/YPM-IZ-116696/YPM-IZ-116696_metazoa_18S-V9.fasta
     YPM-IZ-116696: 129 bp
-
-### Rego Results ###
-16sF: 0
-16sR: 14
-co1F: 9
-co1R: 2
-18sF: 0
-18sR: 0
-ITSfullF: 50

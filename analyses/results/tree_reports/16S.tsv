@@ -1,7 +1,7 @@
 sample	local_tip	nearest_reference_distance	nearest_reference_tips	nearest_reference_species	same_specimen_reference_distance
-CH887	sanger__CH887	0.0006663405	ref__YPM-IZ-110667;ref__YPM-IZ-110694	Physalia physalis	not_available
-YPM-IZ-116696	local__YPM-IZ-116696	0.0006644816000000001	ref__YPM-IZ-110972	Physalia physalis	not_available
-YPM-IZ-116694	local__YPM-IZ-116694	0.0019541741	ref__YPM-IZ-110667;ref__YPM-IZ-110694	Physalia physalis	not_available
-YPM-IZ-116695	local__YPM-IZ-116695	0.0019378549	ref__YPM-IZ-110633	Physalia physalis	not_available
+YPM-IZ-116696	local__YPM-IZ-116696	0.0012920193	ref__YPM-IZ-111018	Physalia physalis	not_available
+YPM-IZ-116694	local__YPM-IZ-116694	0.00188735	ref__YPM-IZ-110876	Physalia physalis	not_available
+CH887	sanger__CH887	5.0373e-06	ref__YPM-IZ-110876	Physalia physalis	not_available
+YPM-IZ-116695	local__YPM-IZ-116695	0.0018898801	ref__YPM-IZ-110633	Physalia physalis	not_available
 YPM-IZ-116693	local__YPM-IZ-116693	0.0	ref__YPM-IZ-106941;ref__YPM-IZ-110846;ref__YPM-IZ-111014	Physalia physalis	not_available
 YPM-IZ-116697	local__YPM-IZ-116697	0.0	ref__YPM-IZ-106941;ref__YPM-IZ-110846;ref__YPM-IZ-111014	Physalia physalis	not_available

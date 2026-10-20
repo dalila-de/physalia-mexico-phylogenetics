@@ -1,0 +1,34 @@
+"""Optional reproduction of the five retained MITOS2 annotations; not a tree dependency."""
+from pathlib import Path
+HERE = Path(workflow.basedir).resolve()
+ROOT = HERE.parent
+configfile: str(ROOT / "analyses/config/config.yaml")
+SAMPLES = [f"YPM-IZ-{i}" for i in range(116693, 116698)]
+WORK = str(ROOT / "work/mitos")
+rule annotate_mitogenome_mitos:
+    input:
+        fasta=str(HERE / "inputs/{sample}.fasta"),
+        reference=str(Path(config["mitos_refdir"]) / config["mitos_refname"]),
+        tool=str(Path(config["mitos_env"]) / "bin/runmitos.py")
+    output:
+        fas=str(HERE / "results/{sample}/result.fas"),
+        gff=str(HERE / "results/{sample}/result.gff"),
+        order=str(HERE / "results/{sample}/result.geneorder")
+    params:
+        env=config["mitos_env"], refdir=config["mitos_refdir"],
+        refname=config["mitos_refname"], outdir=WORK + "/{sample}"
+    threads: 1
+    resources: mem_mb=8000
+    log: WORK + "/logs/{sample}.log"
+    shell:
+        "mkdir -p {params.outdir:q} $(dirname {log:q}); PATH={params.env:q}/bin:$PATH PYTHONNOUSERSITE=1 "
+        "{params.env:q}/bin/python {input.tool:q} -i {input.fasta:q} "
+        "-R {params.refdir:q} -r {params.refname:q} --orih 0 --oril 0 --trna 0 --intron 0 "
+        "--linear -c 4 -o {params.outdir:q} > {log:q} 2>&1; "
+        "cp {params.outdir:q}/result.fas {output.fas:q}; "
+        "cp {params.outdir:q}/result.gff {output.gff:q}; "
+        "cp {params.outdir:q}/result.geneorder {output.order:q}"
+rule all:
+    input:
+        expand(str(HERE / "results/{sample}/result.fas"), sample=SAMPLES)
+    default_target: True

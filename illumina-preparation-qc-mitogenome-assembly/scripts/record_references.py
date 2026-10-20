@@ -13,7 +13,7 @@ def main() -> None:
     parser.add_argument("--output", type=Path, required=True)
     args = parser.parse_args()
     config = yaml.safe_load(Path("config/config.yaml").read_text())
-    paths = [Path(config[k]) for k in ("human_bwa", "mito_seed", "sharkmer", "rego")]
+    paths = [Path(config[k]) for k in ("human_bwa", "mito_seed", "sharkmer")]
     paths += [Path(config["human_bwa"] + ext) for ext in (".amb", ".ann", ".bwt", ".pac", ".sa")]
     paths += [Path(config["kraken_db"]) / name for name in ("hash.k2d", "opts.k2d", "taxo.k2d")]
     paths += [p for p in Path(config["getorganelle_db"]).rglob("*") if p.is_file()]

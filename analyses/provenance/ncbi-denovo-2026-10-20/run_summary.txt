@@ -1,0 +1,112 @@
+{
+  "CO1": {
+    "tips": 54,
+    "sites": 1569,
+    "all_gap_columns_removed": 0,
+    "rooting": "Rhizophysa_outgroup",
+    "model": "TPM2u+F+G4",
+    "searches": 10,
+    "run_log_likelihoods": [
+      -5434.854,
+      -5434.9391,
+      -5434.874,
+      -5434.869,
+      -5434.8856,
+      -5434.8531,
+      -5434.8623,
+      -5434.8704,
+      -5434.9012,
+      -5434.8736
+    ],
+    "best_likelihood_repeats_within_0_001": 2,
+    "physalis_reference_clade_support": 43.0,
+    "all_new_tips_within_reference_clade": true,
+    "nonfocal_reference_species": []
+  },
+  "16S": {
+    "tips": 57,
+    "sites": 2091,
+    "all_gap_columns_removed": 0,
+    "rooting": "Rhizophysa_outgroup",
+    "model": "TPM2u+F+G4",
+    "searches": 10,
+    "run_log_likelihoods": [
+      -6030.0409,
+      -6029.9377,
+      -6029.9685,
+      -6030.0382,
+      -6030.0441,
+      -6030.0812,
+      -6030.048,
+      -6030.0464,
+      -6029.9855,
+      -6030.051
+    ],
+    "best_likelihood_repeats_within_0_001": 1,
+    "physalis_reference_clade_support": 37.0,
+    "all_new_tips_within_reference_clade": true,
+    "nonfocal_reference_species": []
+  },
+  "18S": {
+    "tips": 48,
+    "sites": 1791,
+    "all_gap_columns_removed": 0,
+    "rooting": "Rhizophysa_outgroup",
+    "model": "HKY+F",
+    "searches": 5,
+    "run_log_likelihoods": [
+      -2690.5452,
+      -2690.5452,
+      -2690.5452,
+      -2690.5452,
+      -2690.5452
+    ],
+    "best_likelihood_repeats_within_0_001": 5,
+    "physalis_reference_clade_support": null,
+    "all_new_tips_within_reference_clade": true,
+    "nonfocal_reference_species": []
+  },
+  "ITS": {
+    "tips": 46,
+    "sites": 877,
+    "all_gap_columns_removed": 0,
+    "rooting": "midpoint",
+    "model": "F81+I",
+    "searches": 5,
+    "run_log_likelihoods": [
+      -1450.7549,
+      -1450.755,
+      -1450.7549,
+      -1450.7646,
+      -1450.7549
+    ],
+    "best_likelihood_repeats_within_0_001": 4,
+    "physalis_reference_clade_support": 76.0,
+    "all_new_tips_within_reference_clade": true,
+    "nonfocal_reference_species": []
+  },
+  "mitogenome_submitted": {
+    "tips": 48,
+    "sites": 16119,
+    "all_gap_columns_removed": 0,
+    "rooting": "Rhizophysa_outgroup",
+    "model": "TPM3u+F+I+R3",
+    "searches": 10,
+    "run_log_likelihoods": [
+      -60765.0464,
+      -60765.0213,
+      -60765.0318,
+      -60765.0933,
+      -60765.0452,
+      -60764.9845,
+      -60764.9598,
+      -60765.0797,
+      -60765.0301,
+      -60765.1247
+    ],
+    "best_likelihood_repeats_within_0_001": 1,
+    "physalis_reference_clade_support": 89.0,
+    "all_new_tips_within_reference_clade": true,
+    "nonfocal_reference_species": []
+  }
+}
