@@ -51,7 +51,8 @@ identity alone cannot distinguish those specimens.
 - `../analyses/results/`: the single set of combined alignments, IQ-TREE results
   and figures; full and focal plots share the same inference.
 
-The COI reverse trace fails quality control; COI is a **single-forward-read sequence**,
+The COI reverse trace retains only two bases after trimming and fails the
+100-bp minimum-length criterion; COI is a **single-forward-read sequence**,
 not a bidirectionally verified consensus. Its ambiguous calls remain N. The 16S
 consensus uses only the region covered by both quality-trimmed strands, after
 reverse-complementing the reverse read. The high-quality overlap agrees; five
@@ -61,6 +62,12 @@ mixed-template PCR product. Read the chromatograms alongside the summaries.
 
 ## Processing rules
 
+`scripts/process_sanger.py` reads existing AB1 base calls and Phred quality
+scores using Biopython 1.85; it does not call bases anew from fluorescence signals.
+This analysis Python environment is distinct from the workflow orchestration
+environment, whose provenance lists Biopython 1.86. Original AB1 and SEQ files
+are retained, including reads excluded from consensus construction.
+
 1. Select the maximum-scoring contiguous interval using score
    `0.01 - 10^(-Phred/10)` per base (a Q20 error-probability threshold).
    This is a documented Mott-style implementation, rather than Biopython's
@@ -69,10 +76,10 @@ mixed-template PCR product. Read the chromatograms alongside the summaries.
 2. Mask single-strand calls below Q20 to N. No reference sequence fills uncertain
    bases. Local forward/reverse alignment uses match +2, mismatch −3, gap opening
    −6 and extension −1, and requires at least 300 identical bases.
-3. Within overlap, accept agreeing bases if either is Q20; use the Q20 base when
-   the other is low quality; preserve conflicting Q20 calls as IUPAC ambiguity.
+3. Within overlap, accept agreeing bases if either has Q ≥20; use the Q ≥20 base when
+   the other is low quality; preserve conflicting calls with Q ≥20 on both strands as IUPAC ambiguity.
    Exclude an insertion only if its sole supporting call is below Q20 and both
-   flanking calls on the opposing strand are Q20. Other indel conflicts stop the
+   flanking calls on the opposing strand have Q ≥20. Other indel conflicts stop the
    workflow for review. Uncovered ends are not added to the 16S consensus.
 4. The COI forward read contains an exact terminal reverse-complement match to
    the published **HCO2198** primer sequence. Exclude that motif and everything
