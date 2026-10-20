@@ -30,8 +30,9 @@ pink and labeled **Gulf of Mexico (Progreso)**. CH887 is labeled
 support ≥95/70–94. All original support values remain in the Newick files.
 
 ITS lacks a Rhizophysa sequence in the reference panel and is midpoint-rooted
-for display. The mitochondrial tree excludes YPM-IZ-110972 because its published
-repository assembly has unresolved alternative paths and no deposited mitogenome.
+for display. The mitochondrial tree excludes YPM-IZ-110972 because its mitogenome was not
+included in the [reference repository](https://github.com/shchurch/Physalia_spatiotemporal_patterns)
+following concerns about its assembly.
 Focal views only prune comparison/outgroup taxa for display; they do not rerun
 inference or change the retained subtree's branch lengths.
 

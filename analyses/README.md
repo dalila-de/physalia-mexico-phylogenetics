@@ -4,8 +4,9 @@ The four marker analyses use 35 published Atlantic specimens and five Mexican
 specimens. Six published P. utriculus specimens provide comparison; Rhizophysa
 is the outgroup wherever the source panel provides it. Each specimen appears
 once. COI and 16S also include one Caribbean Sanger specimen (CH887).
-These are the only retained COI and 16S tree analyses. The mitochondrial tree excludes YPM-IZ-110972 because its repository
-mitogenome has unresolved alternative paths and was not deposited.
+These are the only retained COI and 16S tree analyses. The mitochondrial tree excludes YPM-IZ-110972 because its mitogenome was not
+included in the [reference repository](https://github.com/shchurch/Physalia_spatiotemporal_patterns)
+following concerns about its assembly.
 
 | Analysis | Atlantic published | Mexico | utriculus | Rhizophysa | Sanger | Total |
 |---|---:|---:|---:|---:|---:|---:|
@@ -16,8 +17,8 @@ mitogenome has unresolved alternative paths and was not deposited.
 |Mitogenome|34|5|6|3|0|48|
 
 MAFFT 7.526 aligns the marker sequences de novo with direction adjustment;
-mitogenomes are added to the paper's aligned backbone. IQ-TREE 3.0.1 uses
-ModelFinder/BIC, 1000 ultrafast bootstraps, five searches, and seed 20261012.
+mitogenomes are added to the reference repository's aligned backbone. IQ-TREE 3.0.1 uses
+ModelFinder/BIC, 1000 ultrafast bootstraps, five searches, and base seed 20261012 (incremented by 1000 for each subsequent search).
 For Mexican 16S/CO1, select the longest individual MITOS rrnL/cox1 fragment or
 canonical sharkmer product, with MITOS winning ties. 18S/ITS select the longest
 canonical sharkmer product. Fragmented genes are never concatenated for length.
@@ -32,9 +33,18 @@ inputs in `inputs/combined/` add the quality-controlled Sanger sequences; all
 alignments, inferred trees and figures are together under `results/`.
 See [Sanger processing](../sanger-2026-10-14/README.md) for trace evidence.
 
+Marker alignment uses `--auto --adjustdirectionaccurately`; mitogenome addition
+uses `--add --adjustdirectionaccurately`. Validation normalizes direction prefixes,
+checks unique IDs, exact input membership and the nucleotide/IUPAC alphabet,
+and removes columns containing only `-` or `?`. None were removed from the
+five retained alignments. ModelFinder selected models under the Bayesian
+information criterion (BIC). Outgroups are *Rhizophysa filiformis* and
+*R. eysenhardtii*; the table counts accession records, not verified individuals.
+
 ## Figures
 
-`results/genetic_groups/` contains PDF, SVG and PNG figures. Full plots retain
+`results/genetic_groups/` contains PDF, SVG and PNG figures of rooted bootstrap
+consensus trees (`.contree`), rather than the separate maximum-likelihood trees. Full plots retain
 all taxa; `.focal` plots prune utriculus/Rhizophysa only for display, preserving
 focal branch lengths and topology. The existing combined COI/16S inference and the other three inferences are preserved.
 Full and focal figures are two views of each single analysis, not independent trees.
